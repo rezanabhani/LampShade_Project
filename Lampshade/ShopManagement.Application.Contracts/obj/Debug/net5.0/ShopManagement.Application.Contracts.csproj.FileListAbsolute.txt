@@ -1,0 +1,15 @@
+D:\آموزش\رزومه\Code\Lampshade\ShopManagement.Application.Contracts\bin\Debug\net5.0\ShopManagement.Application.Contracts.deps.json
+D:\آموزش\رزومه\Code\Lampshade\ShopManagement.Application.Contracts\bin\Debug\net5.0\ShopManagement.Application.Contracts.dll
+D:\آموزش\رزومه\Code\Lampshade\ShopManagement.Application.Contracts\bin\Debug\net5.0\ShopManagement.Application.Contracts.pdb
+D:\آموزش\رزومه\Code\Lampshade\ShopManagement.Application.Contracts\bin\Debug\net5.0\0_Framework.dll
+D:\آموزش\رزومه\Code\Lampshade\ShopManagement.Application.Contracts\bin\Debug\net5.0\0_Framework.pdb
+D:\آموزش\رزومه\Code\Lampshade\ShopManagement.Application.Contracts\obj\Debug\net5.0\ShopManagement.Application.Contracts.csproj.AssemblyReference.cache
+D:\آموزش\رزومه\Code\Lampshade\ShopManagement.Application.Contracts\obj\Debug\net5.0\ShopManagement.Application.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+D:\آموزش\رزومه\Code\Lampshade\ShopManagement.Application.Contracts\obj\Debug\net5.0\ShopManagement.Application.Contracts.AssemblyInfoInputs.cache
+D:\آموزش\رزومه\Code\Lampshade\ShopManagement.Application.Contracts\obj\Debug\net5.0\ShopManagement.Application.Contracts.AssemblyInfo.cs
+D:\آموزش\رزومه\Code\Lampshade\ShopManagement.Application.Contracts\obj\Debug\net5.0\ShopManagement.Application.Contracts.csproj.CoreCompileInputs.cache
+D:\آموزش\رزومه\Code\Lampshade\ShopManagement.Application.Contracts\obj\Debug\net5.0\ShopManagement.Application.Contracts.csproj.CopyComplete
+D:\آموزش\رزومه\Code\Lampshade\ShopManagement.Application.Contracts\obj\Debug\net5.0\ShopManagement.Application.Contracts.dll
+D:\آموزش\رزومه\Code\Lampshade\ShopManagement.Application.Contracts\obj\Debug\net5.0\refint\ShopManagement.Application.Contracts.dll
+D:\آموزش\رزومه\Code\Lampshade\ShopManagement.Application.Contracts\obj\Debug\net5.0\ShopManagement.Application.Contracts.pdb
+D:\آموزش\رزومه\Code\Lampshade\ShopManagement.Application.Contracts\obj\Debug\net5.0\ref\ShopManagement.Application.Contracts.dll
