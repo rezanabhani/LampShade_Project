@@ -145,7 +145,12 @@ D:\آموزش\رزومه\Code\Lampshade\ServiceHost\obj\Debug\net5.0\ServiceHost
 D:\آموزش\رزومه\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Index.cshtml.g.cs
 D:\آموزش\رزومه\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shared\_AdminLayout.cshtml.g.cs
 D:\آموزش\رزومه\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\آموزش\رزومه\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\ProductCategories\Create.cshtml.g.cs
+D:\آموزش\رزومه\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\ProductCategories\Edit.cshtml.g.cs
 D:\آموزش\رزومه\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\ProductCategories\Index.cshtml.g.cs
+D:\آموزش\رزومه\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\Products\Create.cshtml.g.cs
+D:\آموزش\رزومه\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\Products\Edit.cshtml.g.cs
+D:\آموزش\رزومه\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\Products\Index.cshtml.g.cs
 D:\آموزش\رزومه\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\_ViewImports.cshtml.g.cs
 D:\آموزش\رزومه\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\_ViewStart.cshtml.g.cs
 D:\آموزش\رزومه\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
@@ -164,5 +169,10 @@ D:\آموزش\رزومه\Code\Lampshade\ServiceHost\obj\Debug\net5.0\refint\Serv
 D:\آموزش\رزومه\Code\Lampshade\ServiceHost\obj\Debug\net5.0\ServiceHost.pdb
 D:\آموزش\رزومه\Code\Lampshade\ServiceHost\obj\Debug\net5.0\ServiceHost.genruntimeconfig.cache
 D:\آموزش\رزومه\Code\Lampshade\ServiceHost\obj\Debug\net5.0\ref\ServiceHost.dll
-D:\آموزش\رزومه\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\ProductCategories\Create.cshtml.g.cs
-D:\آموزش\رزومه\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\ProductCategories\Edit.cshtml.g.cs
+D:\آموزش\رزومه\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\ProductPictures\Create.cshtml.g.cs
+D:\آموزش\رزومه\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\ProductPictures\Edit.cshtml.g.cs
+D:\آموزش\رزومه\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\ProductPictures\Index.cshtml.g.cs
+D:\آموزش\رزومه\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\Slides\Create.cshtml.g.cs
+D:\آموزش\رزومه\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\Slides\Edit.cshtml.g.cs
+D:\آموزش\رزومه\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\Slides\Index.cshtml.g.cs
+D:\آموزش\رزومه\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shared\_Menu.cshtml.g.cs

@@ -1,21 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Linq.Expressions;
 using _0_Framework.Infrastructure;
-using Microsoft.EntityFrameworkCore;
 using ShopManagement.Application.Contracts.ProductCategory;
 using ShopManagement.Domain.ProductCategoryAgg;
 
 namespace ShopManagement.Infrastructure.EfCore.Repository
 {
-    public class ProductCategoryRepository : RepositoryBase<long,ProductCategory>, IProductCategoryRepository
+    public class ProductCategoryRepository : RepositoryBase<long, ProductCategory>, IProductCategoryRepository
     {
         private readonly ShopContext _context;
 
-        public ProductCategoryRepository(ShopContext context) : base(context) 
+        public ProductCategoryRepository(ShopContext context) : base(context)
         {
             _context = context;
+        }
+
+        public List<ProductCategoryViewModel> GetProductCategories()
+        {
+            return _context.ProductCategories.Select(x => new ProductCategoryViewModel()
+            {
+                Id =x.Id,
+                Name = x.Name
+            }).ToList();
         }
 
         public EditProductCategory GetDetails(long id)
