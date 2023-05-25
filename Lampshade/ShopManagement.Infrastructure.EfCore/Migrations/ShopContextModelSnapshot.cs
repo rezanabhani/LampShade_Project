@@ -165,6 +165,9 @@ namespace ShopManagement.Infrastructure.EfCore.Migrations
                     b.Property<bool>("IsRemoved")
                         .HasColumnType("bit");
 
+                    b.Property<string>("Link")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Picture")
                         .HasColumnType("nvarchar(max)");
 

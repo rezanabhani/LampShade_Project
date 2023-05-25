@@ -21,3 +21,5 @@ D:\آموزش\رزومه\Code\Lampshade\ShopManagement.Configuration\obj\Debug\n
 D:\آموزش\رزومه\Code\Lampshade\ShopManagement.Configuration\obj\Debug\net5.0\refint\ShopManagement.Configuration.dll
 D:\آموزش\رزومه\Code\Lampshade\ShopManagement.Configuration\obj\Debug\net5.0\ShopManagement.Configuration.pdb
 D:\آموزش\رزومه\Code\Lampshade\ShopManagement.Configuration\obj\Debug\net5.0\ref\ShopManagement.Configuration.dll
+D:\آموزش\رزومه\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\01_LampshadeQuery.dll
+D:\آموزش\رزومه\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\01_LampshadeQuery.pdb
