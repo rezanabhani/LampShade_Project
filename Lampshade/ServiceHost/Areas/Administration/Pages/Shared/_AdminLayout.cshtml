@@ -32,6 +32,9 @@
 
 
     <!-- Custom Files -->
+    <link href="~/AdminTheme/assets/css/persian-datepicker.min.css" rel="stylesheet" />
+
+
     <link href="~/AdminTheme/assets/css/helper.css" rel="stylesheet" type="text/css" />
     <link href="~/AdminTheme/assets/css/style.css" rel="stylesheet" type="text/css" />
     <script src="~/AdminTheme/assets/js/modernizr.min.js"></script>
@@ -144,32 +147,30 @@
                 </div>
             </div>
         </div>
+    </div>
 
-      <partial name="_Menu"/>
+    <partial name="_Menu" />
 
-        <div class="content-page">
-            <!-- Start content -->
-            <div class="content">
-                <div class="container">
+    <div class="content-page">
+        <!-- Start content -->
+        <div class="content">
+            <div class="container">
 
-                    @RenderBody()
+                @RenderBody()
 
-                </div> <!-- container -->
+            </div> <!-- container -->
 
-            </div> <!-- content -->
+        </div> <!-- content -->
 
-            <footer class="footer text-right">
-                2015 © Moltran.
-            </footer>
+        <footer class="footer text-right">
+            2015 © Moltran.
+        </footer>
 
-        </div>
+    </div>
 
     <div id="MainModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
         <div class="modal-dialog">
             <div class="modal-content" id="ModalContent">
-
-
-
             </div>
         </div>
 
@@ -227,19 +228,16 @@
     <script src="~/AdminTheme/assets/js/persian-date.min.js"></script>
     <script src="~/AdminTheme/assets/js/persian-datepicker.min.js"></script>
 
-    @RenderSection("Scripts", false)
 
-    <!-- <script type="text/javascript"> -->
-    <!-- /* ============================================== -->
-    <!-- Counter Up -->
-    <!-- =============================================== */ -->
-    <!-- jQuery(document).ready(function($) { -->
-    <!-- $('.counter').counterUp({ -->
-    <!-- delay: 100, -->
-    <!-- time: 1200 -->
-    <!-- }); -->
-    <!-- }); -->
-    <!-- </script> -->
+    @RenderSection("Scripts", false)
+    
+<script>
+        $('.persianDateInput').persianDatepicker({
+            format: 'YYYY/MM/DD',
+            autoCloce: true
+        });
+    </script>
+
 
 </body>
 </html>

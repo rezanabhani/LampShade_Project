@@ -11,7 +11,7 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.Products
     {
         [TempData]
         public string Message { get; set; }
-        public ProductViewModel SearchModel;
+        public ProductSearchModel SearchModel;
         public List<ProductViewModel> Products;
         public SelectList ProductCategories;
 
