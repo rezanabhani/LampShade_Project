@@ -1,0 +1,17 @@
+D:\آموزش\رزومه\Code\Lampshade\InventoryManagement.Domain\bin\Debug\net5.0\InventoryManagement.Domain.deps.json
+D:\آموزش\رزومه\Code\Lampshade\InventoryManagement.Domain\bin\Debug\net5.0\InventoryManagement.Domain.dll
+D:\آموزش\رزومه\Code\Lampshade\InventoryManagement.Domain\bin\Debug\net5.0\InventoryManagement.Domain.pdb
+D:\آموزش\رزومه\Code\Lampshade\InventoryManagement.Domain\bin\Debug\net5.0\0_Framework.dll
+D:\آموزش\رزومه\Code\Lampshade\InventoryManagement.Domain\bin\Debug\net5.0\0_Framework.pdb
+D:\آموزش\رزومه\Code\Lampshade\InventoryManagement.Domain\obj\Debug\net5.0\InventoryManagement.Domain.csproj.AssemblyReference.cache
+D:\آموزش\رزومه\Code\Lampshade\InventoryManagement.Domain\obj\Debug\net5.0\InventoryManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\آموزش\رزومه\Code\Lampshade\InventoryManagement.Domain\obj\Debug\net5.0\InventoryManagement.Domain.AssemblyInfoInputs.cache
+D:\آموزش\رزومه\Code\Lampshade\InventoryManagement.Domain\obj\Debug\net5.0\InventoryManagement.Domain.AssemblyInfo.cs
+D:\آموزش\رزومه\Code\Lampshade\InventoryManagement.Domain\obj\Debug\net5.0\InventoryManagement.Domain.csproj.CoreCompileInputs.cache
+D:\آموزش\رزومه\Code\Lampshade\InventoryManagement.Domain\obj\Debug\net5.0\InventoryManagement.Domain.csproj.CopyComplete
+D:\آموزش\رزومه\Code\Lampshade\InventoryManagement.Domain\obj\Debug\net5.0\InventoryManagement.Domain.dll
+D:\آموزش\رزومه\Code\Lampshade\InventoryManagement.Domain\obj\Debug\net5.0\refint\InventoryManagement.Domain.dll
+D:\آموزش\رزومه\Code\Lampshade\InventoryManagement.Domain\obj\Debug\net5.0\InventoryManagement.Domain.pdb
+D:\آموزش\رزومه\Code\Lampshade\InventoryManagement.Domain\obj\Debug\net5.0\ref\InventoryManagement.Domain.dll
+D:\آموزش\رزومه\Code\Lampshade\InventoryManagement.Domain\bin\Debug\net5.0\InventoryManagement.Application.Contract.dll
+D:\آموزش\رزومه\Code\Lampshade\InventoryManagement.Domain\bin\Debug\net5.0\InventoryManagement.Application.Contract.pdb

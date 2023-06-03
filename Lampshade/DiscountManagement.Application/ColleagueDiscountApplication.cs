@@ -73,7 +73,7 @@ namespace DiscountManagement.Application
                 return operation.Failed(ApplicationMessage.RecordNotFound);
 
 
-            colleagueDiscount.Remove();
+            colleagueDiscount.Restore();
             _colleagueDiscountRepository.SaveChanges();
             return operation.Succedded();
         }

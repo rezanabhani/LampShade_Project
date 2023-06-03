@@ -78,7 +78,5 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.Products
             return RedirectToPage("./Index");
         }
 
-      
-
     }
 }

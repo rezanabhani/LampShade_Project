@@ -1,0 +1,15 @@
+D:\آموزش\رزومه\Code\Lampshade\InventoryManagement.Application.Contract\bin\Debug\net5.0\InventoryManagement.Application.Contract.deps.json
+D:\آموزش\رزومه\Code\Lampshade\InventoryManagement.Application.Contract\bin\Debug\net5.0\InventoryManagement.Application.Contract.dll
+D:\آموزش\رزومه\Code\Lampshade\InventoryManagement.Application.Contract\bin\Debug\net5.0\InventoryManagement.Application.Contract.pdb
+D:\آموزش\رزومه\Code\Lampshade\InventoryManagement.Application.Contract\bin\Debug\net5.0\0_Framework.dll
+D:\آموزش\رزومه\Code\Lampshade\InventoryManagement.Application.Contract\bin\Debug\net5.0\0_Framework.pdb
+D:\آموزش\رزومه\Code\Lampshade\InventoryManagement.Application.Contract\obj\Debug\net5.0\InventoryManagement.Application.Contract.csproj.AssemblyReference.cache
+D:\آموزش\رزومه\Code\Lampshade\InventoryManagement.Application.Contract\obj\Debug\net5.0\InventoryManagement.Application.Contract.GeneratedMSBuildEditorConfig.editorconfig
+D:\آموزش\رزومه\Code\Lampshade\InventoryManagement.Application.Contract\obj\Debug\net5.0\InventoryManagement.Application.Contract.AssemblyInfoInputs.cache
+D:\آموزش\رزومه\Code\Lampshade\InventoryManagement.Application.Contract\obj\Debug\net5.0\InventoryManagement.Application.Contract.AssemblyInfo.cs
+D:\آموزش\رزومه\Code\Lampshade\InventoryManagement.Application.Contract\obj\Debug\net5.0\InventoryManagement.Application.Contract.csproj.CoreCompileInputs.cache
+D:\آموزش\رزومه\Code\Lampshade\InventoryManagement.Application.Contract\obj\Debug\net5.0\InventoryManagement.Application.Contract.csproj.CopyComplete
+D:\آموزش\رزومه\Code\Lampshade\InventoryManagement.Application.Contract\obj\Debug\net5.0\InventoryManagement.Application.Contract.dll
+D:\آموزش\رزومه\Code\Lampshade\InventoryManagement.Application.Contract\obj\Debug\net5.0\refint\InventoryManagement.Application.Contract.dll
+D:\آموزش\رزومه\Code\Lampshade\InventoryManagement.Application.Contract\obj\Debug\net5.0\InventoryManagement.Application.Contract.pdb
+D:\آموزش\رزومه\Code\Lampshade\InventoryManagement.Application.Contract\obj\Debug\net5.0\ref\InventoryManagement.Application.Contract.dll
