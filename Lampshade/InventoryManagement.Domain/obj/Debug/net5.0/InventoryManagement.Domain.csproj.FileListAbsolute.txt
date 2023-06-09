@@ -3,8 +3,10 @@ D:\آموزش\رزومه\Code\Lampshade\InventoryManagement.Domain\bin\Debug\net
 D:\آموزش\رزومه\Code\Lampshade\InventoryManagement.Domain\bin\Debug\net5.0\InventoryManagement.Domain.pdb
 D:\آموزش\رزومه\Code\Lampshade\InventoryManagement.Domain\bin\Debug\net5.0\0_Framework.dll
 D:\آموزش\رزومه\Code\Lampshade\InventoryManagement.Domain\bin\Debug\net5.0\InventoryManagement.Application.Contract.dll
+D:\آموزش\رزومه\Code\Lampshade\InventoryManagement.Domain\bin\Debug\net5.0\ShopManagement.Application.Contracts.dll
 D:\آموزش\رزومه\Code\Lampshade\InventoryManagement.Domain\bin\Debug\net5.0\0_Framework.pdb
 D:\آموزش\رزومه\Code\Lampshade\InventoryManagement.Domain\bin\Debug\net5.0\InventoryManagement.Application.Contract.pdb
+D:\آموزش\رزومه\Code\Lampshade\InventoryManagement.Domain\bin\Debug\net5.0\ShopManagement.Application.Contracts.pdb
 D:\آموزش\رزومه\Code\Lampshade\InventoryManagement.Domain\obj\Debug\net5.0\InventoryManagement.Domain.csproj.AssemblyReference.cache
 D:\آموزش\رزومه\Code\Lampshade\InventoryManagement.Domain\obj\Debug\net5.0\InventoryManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
 D:\آموزش\رزومه\Code\Lampshade\InventoryManagement.Domain\obj\Debug\net5.0\InventoryManagement.Domain.AssemblyInfoInputs.cache

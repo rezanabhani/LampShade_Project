@@ -1,5 +1,4 @@
-﻿using _0_Framework.Application;
-using _0_Framework.Domain;
+﻿using _0_Framework.Domain;
 using System.Collections.Generic;
 using InventoryManagement.Application.Contract.Inventory;
 
@@ -10,5 +9,6 @@ namespace InventoryManagement.Domain.InventoryAgg
         EditInventory GetDetails(long id);
         Inventory GetBy(long productId);
         List<InventoryViewModel> Search(InventorySearchModel searchModel);
+        List<InventoryOperationViewModel> GetOperationLog(long inventoryId);
     }
 }

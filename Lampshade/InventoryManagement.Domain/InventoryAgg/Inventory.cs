@@ -2,7 +2,6 @@
 using System.Linq;
 using _0_Framework.Domain;
 using InventoryManagement.Domain.ProductColorAgg;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace InventoryManagement.Domain.InventoryAgg
 {
@@ -15,10 +14,10 @@ namespace InventoryManagement.Domain.InventoryAgg
         public List<InventoryOperation> Operations { get; private set; }
         public ProductColor ProductColor { get; private set; }
 
-        public Inventory(long productColorId, long productId, double unitPrice)
+        public Inventory(long productId, long productColorId,  double unitPrice)
         {
-            ProductColorId = productColorId;
             ProductId = productId;
+            ProductColorId = productColorId;
             UnitPrice = unitPrice;
             InStock = false;
         }
@@ -33,7 +32,7 @@ namespace InventoryManagement.Domain.InventoryAgg
         public long CalculateCurrentCount()
         {
             var plus = Operations.Where(x => x.Operation).Sum(x => x.Count);
-            var minus = Operations.Where(x => !x.Operation).Min(x => x.Count);
+            var minus = Operations.Where(x => !x.Operation).Sum(x => x.Count);
             return plus - minus;
         }
 

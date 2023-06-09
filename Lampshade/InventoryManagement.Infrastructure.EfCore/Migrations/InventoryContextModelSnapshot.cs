@@ -57,8 +57,8 @@ namespace InventoryManagement.Infrastructure.EfCore.Migrations
 
                     b.Property<string>("Color")
                         .IsRequired()
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
+                        .HasMaxLength(700)
+                        .HasColumnType("nvarchar(700)");
 
                     b.Property<DateTime>("CreationDate")
                         .HasColumnType("datetime2");
@@ -102,7 +102,7 @@ namespace InventoryManagement.Infrastructure.EfCore.Migrations
                             b1.Property<DateTime>("OperationDate")
                                 .HasColumnType("datetime2");
 
-                            b1.Property<long>("OperationId")
+                            b1.Property<long>("OperatorId")
                                 .HasColumnType("bigint");
 
                             b1.Property<long>("OrderId")

@@ -11,8 +11,8 @@ namespace InventoryManagement.Infrastructure.EfCore.Mappings
             builder.ToTable("Inventory");
             builder.HasKey(x => x.Id);
 
-            builder.HasOne(x => x.ProductColor).
-                WithMany(x => x.Inventories).
+            builder.HasOne(x => x.ProductColor)
+                .WithMany(x => x.Inventories).
                 HasForeignKey(x => x.ProductColorId);
 
             builder.OwnsMany(x => x.Operations, modelBuilder =>

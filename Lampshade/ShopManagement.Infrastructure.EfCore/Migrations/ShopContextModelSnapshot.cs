@@ -38,9 +38,6 @@ namespace ShopManagement.Infrastructure.EfCore.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("IsInStock")
-                        .HasColumnType("bit");
-
                     b.Property<string>("Keywords")
                         .HasColumnType("nvarchar(max)");
 
@@ -64,9 +61,6 @@ namespace ShopManagement.Infrastructure.EfCore.Migrations
 
                     b.Property<string>("Slug")
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<double>("UnitPrice")
-                        .HasColumnType("float");
 
                     b.HasKey("Id");
 

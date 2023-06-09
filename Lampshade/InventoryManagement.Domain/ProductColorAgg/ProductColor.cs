@@ -7,11 +7,12 @@ namespace InventoryManagement.Domain.ProductColorAgg
     public class ProductColor : EntityBase
     {
         public string Color { get; private set; }
-        public List<Inventory> Inventories { get;private set; }
+        public List<Inventory> Inventories { get; private set; }
 
         public ProductColor(string color)
         {
             Color = color;
+            Inventories = new List<Inventory>();
         }
 
         public void Edit(string color)
