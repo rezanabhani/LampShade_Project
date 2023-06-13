@@ -3,6 +3,12 @@ D:\آموزش\رزومه\Code\Lampshade\ShopManagement.Configuration\bin\Debug\n
 D:\آموزش\رزومه\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\ShopManagement.Configuration.pdb
 D:\آموزش\رزومه\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\01_LampshadeQuery.dll
 D:\آموزش\رزومه\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\0_Framework.dll
+D:\آموزش\رزومه\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\DiscountManagement.Application.Contract.dll
+D:\آموزش\رزومه\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\DiscountManagement.Domain.dll
+D:\آموزش\رزومه\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\DiscountManagement.Infrastructure.EFCore.dll
+D:\آموزش\رزومه\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\InventoryManagement.Application.Contract.dll
+D:\آموزش\رزومه\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\InventoryManagement.Domain.dll
+D:\آموزش\رزومه\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\InventoryManagement.Infrastructure.EfCore.dll
 D:\آموزش\رزومه\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\ShopManagement.Application.Contracts.dll
 D:\آموزش\رزومه\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\ShopManagement.Application.dll
 D:\آموزش\رزومه\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\ShopManagement.Domain.dll
@@ -12,6 +18,12 @@ D:\آموزش\رزومه\Code\Lampshade\ShopManagement.Configuration\bin\Debug\n
 D:\آموزش\رزومه\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\ShopManagement.Application.pdb
 D:\آموزش\رزومه\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\ShopManagement.Infrastructure.EfCore.pdb
 D:\آموزش\رزومه\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\0_Framework.pdb
+D:\آموزش\رزومه\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\DiscountManagement.Application.Contract.pdb
+D:\آموزش\رزومه\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\DiscountManagement.Domain.pdb
+D:\آموزش\رزومه\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\DiscountManagement.Infrastructure.EFCore.pdb
+D:\آموزش\رزومه\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\InventoryManagement.Application.Contract.pdb
+D:\آموزش\رزومه\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\InventoryManagement.Domain.pdb
+D:\آموزش\رزومه\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\InventoryManagement.Infrastructure.EfCore.pdb
 D:\آموزش\رزومه\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\ShopManagement.Domain.pdb
 D:\آموزش\رزومه\Code\Lampshade\ShopManagement.Configuration\obj\Debug\net5.0\ShopManagement.Configuration.csproj.AssemblyReference.cache
 D:\آموزش\رزومه\Code\Lampshade\ShopManagement.Configuration\obj\Debug\net5.0\ShopManagement.Configuration.GeneratedMSBuildEditorConfig.editorconfig
