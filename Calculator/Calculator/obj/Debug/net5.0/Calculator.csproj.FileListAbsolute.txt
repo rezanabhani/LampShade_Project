@@ -1,0 +1,16 @@
+D:\آموزش\رزومه\Code\Calculator\Calculator\bin\Debug\net5.0\Calculator.exe
+D:\آموزش\رزومه\Code\Calculator\Calculator\bin\Debug\net5.0\Calculator.deps.json
+D:\آموزش\رزومه\Code\Calculator\Calculator\bin\Debug\net5.0\Calculator.runtimeconfig.json
+D:\آموزش\رزومه\Code\Calculator\Calculator\bin\Debug\net5.0\Calculator.runtimeconfig.dev.json
+D:\آموزش\رزومه\Code\Calculator\Calculator\bin\Debug\net5.0\Calculator.dll
+D:\آموزش\رزومه\Code\Calculator\Calculator\bin\Debug\net5.0\Calculator.pdb
+D:\آموزش\رزومه\Code\Calculator\Calculator\obj\Debug\net5.0\Calculator.csproj.AssemblyReference.cache
+D:\آموزش\رزومه\Code\Calculator\Calculator\obj\Debug\net5.0\Calculator.GeneratedMSBuildEditorConfig.editorconfig
+D:\آموزش\رزومه\Code\Calculator\Calculator\obj\Debug\net5.0\Calculator.AssemblyInfoInputs.cache
+D:\آموزش\رزومه\Code\Calculator\Calculator\obj\Debug\net5.0\Calculator.AssemblyInfo.cs
+D:\آموزش\رزومه\Code\Calculator\Calculator\obj\Debug\net5.0\Calculator.csproj.CoreCompileInputs.cache
+D:\آموزش\رزومه\Code\Calculator\Calculator\obj\Debug\net5.0\Calculator.dll
+D:\آموزش\رزومه\Code\Calculator\Calculator\obj\Debug\net5.0\refint\Calculator.dll
+D:\آموزش\رزومه\Code\Calculator\Calculator\obj\Debug\net5.0\Calculator.pdb
+D:\آموزش\رزومه\Code\Calculator\Calculator\obj\Debug\net5.0\Calculator.genruntimeconfig.cache
+D:\آموزش\رزومه\Code\Calculator\Calculator\obj\Debug\net5.0\ref\Calculator.dll

@@ -29,8 +29,8 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.ProductCategories
 
         public JsonResult OnPostCreate(CreateProductCategory command)
         {
-          var result =  _productCategoryApplication.Create(command);
-          return new JsonResult(result);
+            var result = _productCategoryApplication.Create(command);
+            return new JsonResult(result);
         }
 
         public IActionResult OnGetEdit(long id)
@@ -41,6 +41,10 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.ProductCategories
 
         public JsonResult OnPostEdit(EditProductCategory command)
         {
+            if (ModelState.IsValid)
+            {
+
+            }
             var result = _productCategoryApplication.Edit(command);
             return new JsonResult(result);
         }

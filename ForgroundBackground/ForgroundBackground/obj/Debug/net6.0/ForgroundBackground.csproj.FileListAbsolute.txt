@@ -1,0 +1,15 @@
+D:\آموزش\رزومه\Code\ForgroundBackground\ForgroundBackground\bin\Debug\net6.0\ForgroundBackground.exe
+D:\آموزش\رزومه\Code\ForgroundBackground\ForgroundBackground\bin\Debug\net6.0\ForgroundBackground.deps.json
+D:\آموزش\رزومه\Code\ForgroundBackground\ForgroundBackground\bin\Debug\net6.0\ForgroundBackground.runtimeconfig.json
+D:\آموزش\رزومه\Code\ForgroundBackground\ForgroundBackground\bin\Debug\net6.0\ForgroundBackground.dll
+D:\آموزش\رزومه\Code\ForgroundBackground\ForgroundBackground\bin\Debug\net6.0\ForgroundBackground.pdb
+D:\آموزش\رزومه\Code\ForgroundBackground\ForgroundBackground\obj\Debug\net6.0\ForgroundBackground.csproj.AssemblyReference.cache
+D:\آموزش\رزومه\Code\ForgroundBackground\ForgroundBackground\obj\Debug\net6.0\ForgroundBackground.GeneratedMSBuildEditorConfig.editorconfig
+D:\آموزش\رزومه\Code\ForgroundBackground\ForgroundBackground\obj\Debug\net6.0\ForgroundBackground.AssemblyInfoInputs.cache
+D:\آموزش\رزومه\Code\ForgroundBackground\ForgroundBackground\obj\Debug\net6.0\ForgroundBackground.AssemblyInfo.cs
+D:\آموزش\رزومه\Code\ForgroundBackground\ForgroundBackground\obj\Debug\net6.0\ForgroundBackground.csproj.CoreCompileInputs.cache
+D:\آموزش\رزومه\Code\ForgroundBackground\ForgroundBackground\obj\Debug\net6.0\ForgroundBackground.dll
+D:\آموزش\رزومه\Code\ForgroundBackground\ForgroundBackground\obj\Debug\net6.0\refint\ForgroundBackground.dll
+D:\آموزش\رزومه\Code\ForgroundBackground\ForgroundBackground\obj\Debug\net6.0\ForgroundBackground.pdb
+D:\آموزش\رزومه\Code\ForgroundBackground\ForgroundBackground\obj\Debug\net6.0\ForgroundBackground.genruntimeconfig.cache
+D:\آموزش\رزومه\Code\ForgroundBackground\ForgroundBackground\obj\Debug\net6.0\ref\ForgroundBackground.dll

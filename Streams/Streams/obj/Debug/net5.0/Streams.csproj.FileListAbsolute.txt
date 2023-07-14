@@ -1,0 +1,16 @@
+D:\آموزش\رزومه\Code\Streams\Streams\bin\Debug\net5.0\Streams.exe
+D:\آموزش\رزومه\Code\Streams\Streams\bin\Debug\net5.0\Streams.deps.json
+D:\آموزش\رزومه\Code\Streams\Streams\bin\Debug\net5.0\Streams.runtimeconfig.json
+D:\آموزش\رزومه\Code\Streams\Streams\bin\Debug\net5.0\Streams.runtimeconfig.dev.json
+D:\آموزش\رزومه\Code\Streams\Streams\bin\Debug\net5.0\Streams.dll
+D:\آموزش\رزومه\Code\Streams\Streams\bin\Debug\net5.0\Streams.pdb
+D:\آموزش\رزومه\Code\Streams\Streams\obj\Debug\net5.0\Streams.csproj.AssemblyReference.cache
+D:\آموزش\رزومه\Code\Streams\Streams\obj\Debug\net5.0\Streams.GeneratedMSBuildEditorConfig.editorconfig
+D:\آموزش\رزومه\Code\Streams\Streams\obj\Debug\net5.0\Streams.AssemblyInfoInputs.cache
+D:\آموزش\رزومه\Code\Streams\Streams\obj\Debug\net5.0\Streams.AssemblyInfo.cs
+D:\آموزش\رزومه\Code\Streams\Streams\obj\Debug\net5.0\Streams.csproj.CoreCompileInputs.cache
+D:\آموزش\رزومه\Code\Streams\Streams\obj\Debug\net5.0\Streams.dll
+D:\آموزش\رزومه\Code\Streams\Streams\obj\Debug\net5.0\refint\Streams.dll
+D:\آموزش\رزومه\Code\Streams\Streams\obj\Debug\net5.0\Streams.pdb
+D:\آموزش\رزومه\Code\Streams\Streams\obj\Debug\net5.0\Streams.genruntimeconfig.cache
+D:\آموزش\رزومه\Code\Streams\Streams\obj\Debug\net5.0\ref\Streams.dll

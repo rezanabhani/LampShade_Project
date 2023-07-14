@@ -1,0 +1,15 @@
+D:\آموزش\رزومه\Code\RandomNumber\RandomNumber\bin\Debug\net6.0\RandomNumber.exe
+D:\آموزش\رزومه\Code\RandomNumber\RandomNumber\bin\Debug\net6.0\RandomNumber.deps.json
+D:\آموزش\رزومه\Code\RandomNumber\RandomNumber\bin\Debug\net6.0\RandomNumber.runtimeconfig.json
+D:\آموزش\رزومه\Code\RandomNumber\RandomNumber\bin\Debug\net6.0\RandomNumber.dll
+D:\آموزش\رزومه\Code\RandomNumber\RandomNumber\bin\Debug\net6.0\RandomNumber.pdb
+D:\آموزش\رزومه\Code\RandomNumber\RandomNumber\obj\Debug\net6.0\RandomNumber.csproj.AssemblyReference.cache
+D:\آموزش\رزومه\Code\RandomNumber\RandomNumber\obj\Debug\net6.0\RandomNumber.GeneratedMSBuildEditorConfig.editorconfig
+D:\آموزش\رزومه\Code\RandomNumber\RandomNumber\obj\Debug\net6.0\RandomNumber.AssemblyInfoInputs.cache
+D:\آموزش\رزومه\Code\RandomNumber\RandomNumber\obj\Debug\net6.0\RandomNumber.AssemblyInfo.cs
+D:\آموزش\رزومه\Code\RandomNumber\RandomNumber\obj\Debug\net6.0\RandomNumber.csproj.CoreCompileInputs.cache
+D:\آموزش\رزومه\Code\RandomNumber\RandomNumber\obj\Debug\net6.0\RandomNumber.dll
+D:\آموزش\رزومه\Code\RandomNumber\RandomNumber\obj\Debug\net6.0\refint\RandomNumber.dll
+D:\آموزش\رزومه\Code\RandomNumber\RandomNumber\obj\Debug\net6.0\RandomNumber.pdb
+D:\آموزش\رزومه\Code\RandomNumber\RandomNumber\obj\Debug\net6.0\RandomNumber.genruntimeconfig.cache
+D:\آموزش\رزومه\Code\RandomNumber\RandomNumber\obj\Debug\net6.0\ref\RandomNumber.dll

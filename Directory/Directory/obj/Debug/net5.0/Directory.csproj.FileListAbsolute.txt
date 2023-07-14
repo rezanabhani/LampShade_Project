@@ -1,0 +1,16 @@
+D:\آموزش\رزومه\Code\Directory\Directory\bin\Debug\net5.0\Directory.exe
+D:\آموزش\رزومه\Code\Directory\Directory\bin\Debug\net5.0\Directory.deps.json
+D:\آموزش\رزومه\Code\Directory\Directory\bin\Debug\net5.0\Directory.runtimeconfig.json
+D:\آموزش\رزومه\Code\Directory\Directory\bin\Debug\net5.0\Directory.runtimeconfig.dev.json
+D:\آموزش\رزومه\Code\Directory\Directory\bin\Debug\net5.0\Directory.dll
+D:\آموزش\رزومه\Code\Directory\Directory\bin\Debug\net5.0\Directory.pdb
+D:\آموزش\رزومه\Code\Directory\Directory\obj\Debug\net5.0\Directory.csproj.AssemblyReference.cache
+D:\آموزش\رزومه\Code\Directory\Directory\obj\Debug\net5.0\Directory.GeneratedMSBuildEditorConfig.editorconfig
+D:\آموزش\رزومه\Code\Directory\Directory\obj\Debug\net5.0\Directory.AssemblyInfoInputs.cache
+D:\آموزش\رزومه\Code\Directory\Directory\obj\Debug\net5.0\Directory.AssemblyInfo.cs
+D:\آموزش\رزومه\Code\Directory\Directory\obj\Debug\net5.0\Directory.csproj.CoreCompileInputs.cache
+D:\آموزش\رزومه\Code\Directory\Directory\obj\Debug\net5.0\Directory.dll
+D:\آموزش\رزومه\Code\Directory\Directory\obj\Debug\net5.0\refint\Directory.dll
+D:\آموزش\رزومه\Code\Directory\Directory\obj\Debug\net5.0\Directory.pdb
+D:\آموزش\رزومه\Code\Directory\Directory\obj\Debug\net5.0\Directory.genruntimeconfig.cache
+D:\آموزش\رزومه\Code\Directory\Directory\obj\Debug\net5.0\ref\Directory.dll

@@ -1,0 +1,17 @@
+D:\آموزش\رزومه\Code\Streams\SaveFile\bin\Debug\net6.0-windows\SaveFile.exe
+D:\آموزش\رزومه\Code\Streams\SaveFile\bin\Debug\net6.0-windows\SaveFile.deps.json
+D:\آموزش\رزومه\Code\Streams\SaveFile\bin\Debug\net6.0-windows\SaveFile.runtimeconfig.json
+D:\آموزش\رزومه\Code\Streams\SaveFile\bin\Debug\net6.0-windows\SaveFile.dll
+D:\آموزش\رزومه\Code\Streams\SaveFile\bin\Debug\net6.0-windows\SaveFile.pdb
+D:\آموزش\رزومه\Code\Streams\SaveFile\obj\Debug\net6.0-windows\SaveFile.csproj.AssemblyReference.cache
+D:\آموزش\رزومه\Code\Streams\SaveFile\obj\Debug\net6.0-windows\SaveFile.Form1.resources
+D:\آموزش\رزومه\Code\Streams\SaveFile\obj\Debug\net6.0-windows\SaveFile.csproj.GenerateResource.cache
+D:\آموزش\رزومه\Code\Streams\SaveFile\obj\Debug\net6.0-windows\SaveFile.GeneratedMSBuildEditorConfig.editorconfig
+D:\آموزش\رزومه\Code\Streams\SaveFile\obj\Debug\net6.0-windows\SaveFile.AssemblyInfoInputs.cache
+D:\آموزش\رزومه\Code\Streams\SaveFile\obj\Debug\net6.0-windows\SaveFile.AssemblyInfo.cs
+D:\آموزش\رزومه\Code\Streams\SaveFile\obj\Debug\net6.0-windows\SaveFile.csproj.CoreCompileInputs.cache
+D:\آموزش\رزومه\Code\Streams\SaveFile\obj\Debug\net6.0-windows\SaveFile.dll
+D:\آموزش\رزومه\Code\Streams\SaveFile\obj\Debug\net6.0-windows\refint\SaveFile.dll
+D:\آموزش\رزومه\Code\Streams\SaveFile\obj\Debug\net6.0-windows\SaveFile.pdb
+D:\آموزش\رزومه\Code\Streams\SaveFile\obj\Debug\net6.0-windows\SaveFile.genruntimeconfig.cache
+D:\آموزش\رزومه\Code\Streams\SaveFile\obj\Debug\net6.0-windows\ref\SaveFile.dll

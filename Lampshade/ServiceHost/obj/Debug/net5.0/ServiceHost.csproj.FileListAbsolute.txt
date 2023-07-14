@@ -221,3 +221,7 @@ D:\آموزش\رزومه\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages
 D:\آموزش\رزومه\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\Components\Menu\Default.cshtml.g.cs
 D:\آموزش\رزومه\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\Components\Footer\Default.cshtml.g.cs
 D:\آموزش\رزومه\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Search.cshtml.g.cs
+D:\آموزش\رزومه\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Features.dll
+D:\آموزش\رزومه\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+D:\آموزش\رزومه\Code\Lampshade\ServiceHost\bin\Debug\net5.0\System.IO.Pipelines.dll
+D:\آموزش\رزومه\Code\Lampshade\ServiceHost\obj\Debug\net5.0\ServiceHost.MvcApplicationPartsAssemblyInfo.cs
