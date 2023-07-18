@@ -63,9 +63,6 @@ namespace InventoryManagement.Infrastructure.EfCore.Migrations
                     b.Property<DateTime>("CreationDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<long>("ProductId")
-                        .HasColumnType("bigint");
-
                     b.HasKey("Id");
 
                     b.ToTable("ProductColors");

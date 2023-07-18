@@ -226,3 +226,4 @@ D:\آموزش\رزومه\Code\Lampshade\ServiceHost\obj\Debug\net5.0\refint\Serv
 D:\آموزش\رزومه\Code\Lampshade\ServiceHost\obj\Debug\net5.0\ServiceHost.pdb
 D:\آموزش\رزومه\Code\Lampshade\ServiceHost\obj\Debug\net5.0\ServiceHost.genruntimeconfig.cache
 D:\آموزش\رزومه\Code\Lampshade\ServiceHost\obj\Debug\net5.0\ref\ServiceHost.dll
+D:\آموزش\رزومه\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\Comments\Index.cshtml.g.cs

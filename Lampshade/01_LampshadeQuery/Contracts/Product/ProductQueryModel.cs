@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using InventoryManagement.Domain.ProductColorAgg;
 
 namespace _01_LampshadeQuery.Contracts.Product
 {
@@ -24,8 +25,9 @@ namespace _01_LampshadeQuery.Contracts.Product
         public string Keywords { get; set; }
         public string MetaDescription { get; set; }
         public bool IsInStock { get; set; }
+        public bool HasColor { get; set; }
         public List<ProductPictureQueryModel> Pictures { get; set; }
-        public List<ProductColorQueryModel> ProductColors { get; set; }
+        public List<CommentQueryModel> Comments { get; set; }
     }
 
     public class ProductPictureQueryModel
@@ -37,11 +39,18 @@ namespace _01_LampshadeQuery.Contracts.Product
         public bool IsRemoved { get; set; }
     }
 
-    public class ProductColorQueryModel
+    public class CommentQueryModel
     {
-        public long ProductId { get; set; }
-        public string ColorName { get; set; }
+        public long Id { get; set; }
+        public string Name { get; set; }
+        public string Message { get; set; }
     }
+
+    //public class ProductColorQueryModel
+    //{
+    //    public long ColorId { get; set; }
+    //    public string ColorName { get; set; }
+    //}
 
 
 }

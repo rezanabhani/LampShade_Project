@@ -6,7 +6,6 @@ namespace InventoryManagement.Domain.ProductColorAgg
 {
     public class ProductColor : EntityBase
     {
-        public long ProductId { get; private set; }
         public string Color { get; private set; }
         public List<Inventory> Inventories { get; private set; }
 
