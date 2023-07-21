@@ -338,3 +338,4 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+/Lampshade/01_LampshadeQuery/01_LampshadeQuery.csproj
