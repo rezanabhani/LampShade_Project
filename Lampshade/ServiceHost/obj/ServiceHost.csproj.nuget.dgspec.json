@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\آموزش\\رزومه\\Code\\Lampshade\\ServiceHost\\ServiceHost.csproj": {}
+    "D:\\Project\\Code\\Lampshade\\ServiceHost\\ServiceHost.csproj": {}
   },
   "projects": {
-    "D:\\آموزش\\رزومه\\Code\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj": {
+    "D:\\Project\\Code\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\آموزش\\رزومه\\Code\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj",
+        "projectUniqueName": "D:\\Project\\Code\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj",
         "projectName": "01_LampshadeQuery",
-        "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj",
+        "projectPath": "D:\\Project\\Code\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj",
         "packagesPath": "C:\\Users\\r\\.nuget\\packages\\",
-        "outputPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\01_LampshadeQuery\\obj\\",
+        "outputPath": "D:\\Project\\Code\\Lampshade\\01_LampshadeQuery\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\r\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,14 +28,14 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\آموزش\\رزومه\\Code\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj": {
-                "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj"
+              "D:\\Project\\Code\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "D:\\Project\\Code\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj"
               },
-              "D:\\آموزش\\رزومه\\Code\\Lampshade\\InventoryManagement.Infrastructure.EfCore\\InventoryManagement.Infrastructure.EfCore.csproj": {
-                "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\InventoryManagement.Infrastructure.EfCore\\InventoryManagement.Infrastructure.EfCore.csproj"
+              "D:\\Project\\Code\\Lampshade\\InventoryManagement.Infrastructure.EfCore\\InventoryManagement.Infrastructure.EfCore.csproj": {
+                "projectPath": "D:\\Project\\Code\\Lampshade\\InventoryManagement.Infrastructure.EfCore\\InventoryManagement.Infrastructure.EfCore.csproj"
               },
-              "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj": {
-                "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj"
+              "D:\\Project\\Code\\Lampshade\\ShopManagement.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj": {
+                "projectPath": "D:\\Project\\Code\\Lampshade\\ShopManagement.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj"
               }
             }
           }
@@ -69,14 +69,14 @@
         }
       }
     },
-    "D:\\آموزش\\رزومه\\Code\\Lampshade\\0_Framework\\0_Framework.csproj": {
+    "D:\\Project\\Code\\Lampshade\\0_Framework\\0_Framework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\آموزش\\رزومه\\Code\\Lampshade\\0_Framework\\0_Framework.csproj",
+        "projectUniqueName": "D:\\Project\\Code\\Lampshade\\0_Framework\\0_Framework.csproj",
         "projectName": "0_Framework",
-        "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\0_Framework\\0_Framework.csproj",
+        "projectPath": "D:\\Project\\Code\\Lampshade\\0_Framework\\0_Framework.csproj",
         "packagesPath": "C:\\Users\\r\\.nuget\\packages\\",
-        "outputPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\0_Framework\\obj\\",
+        "outputPath": "D:\\Project\\Code\\Lampshade\\0_Framework\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\r\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -138,14 +138,349 @@
         }
       }
     },
-    "D:\\آموزش\\رزومه\\Code\\Lampshade\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj": {
+    "D:\\Project\\Code\\Lampshade\\BlogManagement.Application.Contracts\\BlogManagement.Application.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\آموزش\\رزومه\\Code\\Lampshade\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj",
+        "projectUniqueName": "D:\\Project\\Code\\Lampshade\\BlogManagement.Application.Contracts\\BlogManagement.Application.Contracts.csproj",
+        "projectName": "BlogManagement.Application.Contracts",
+        "projectPath": "D:\\Project\\Code\\Lampshade\\BlogManagement.Application.Contracts\\BlogManagement.Application.Contracts.csproj",
+        "packagesPath": "C:\\Users\\r\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\Code\\Lampshade\\BlogManagement.Application.Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\r\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\Project\\Code\\Lampshade\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "D:\\Project\\Code\\Lampshade\\0_Framework\\0_Framework.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Project\\Code\\Lampshade\\BlogManagement.Application\\BlogManagement.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Project\\Code\\Lampshade\\BlogManagement.Application\\BlogManagement.Application.csproj",
+        "projectName": "BlogManagement.Application",
+        "projectPath": "D:\\Project\\Code\\Lampshade\\BlogManagement.Application\\BlogManagement.Application.csproj",
+        "packagesPath": "C:\\Users\\r\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\Code\\Lampshade\\BlogManagement.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\r\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\Project\\Code\\Lampshade\\BlogManagement.Application.Contracts\\BlogManagement.Application.Contracts.csproj": {
+                "projectPath": "D:\\Project\\Code\\Lampshade\\BlogManagement.Application.Contracts\\BlogManagement.Application.Contracts.csproj"
+              },
+              "D:\\Project\\Code\\Lampshade\\BlogManagement.Domain\\BlogManagement.Domain.csproj": {
+                "projectPath": "D:\\Project\\Code\\Lampshade\\BlogManagement.Domain\\BlogManagement.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Project\\Code\\Lampshade\\BlogManagement.Domain\\BlogManagement.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Project\\Code\\Lampshade\\BlogManagement.Domain\\BlogManagement.Domain.csproj",
+        "projectName": "BlogManagement.Domain",
+        "projectPath": "D:\\Project\\Code\\Lampshade\\BlogManagement.Domain\\BlogManagement.Domain.csproj",
+        "packagesPath": "C:\\Users\\r\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\Code\\Lampshade\\BlogManagement.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\r\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\Project\\Code\\Lampshade\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "D:\\Project\\Code\\Lampshade\\0_Framework\\0_Framework.csproj"
+              },
+              "D:\\Project\\Code\\Lampshade\\BlogManagement.Application.Contracts\\BlogManagement.Application.Contracts.csproj": {
+                "projectPath": "D:\\Project\\Code\\Lampshade\\BlogManagement.Application.Contracts\\BlogManagement.Application.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Project\\Code\\Lampshade\\BlogManagement.Infrastructure.Configuration\\BlogManagement.Infrastructure.Configuration.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Project\\Code\\Lampshade\\BlogManagement.Infrastructure.Configuration\\BlogManagement.Infrastructure.Configuration.csproj",
+        "projectName": "BlogManagement.Infrastructure.Configuration",
+        "projectPath": "D:\\Project\\Code\\Lampshade\\BlogManagement.Infrastructure.Configuration\\BlogManagement.Infrastructure.Configuration.csproj",
+        "packagesPath": "C:\\Users\\r\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\Code\\Lampshade\\BlogManagement.Infrastructure.Configuration\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\r\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\Project\\Code\\Lampshade\\BlogManagement.Application.Contracts\\BlogManagement.Application.Contracts.csproj": {
+                "projectPath": "D:\\Project\\Code\\Lampshade\\BlogManagement.Application.Contracts\\BlogManagement.Application.Contracts.csproj"
+              },
+              "D:\\Project\\Code\\Lampshade\\BlogManagement.Application\\BlogManagement.Application.csproj": {
+                "projectPath": "D:\\Project\\Code\\Lampshade\\BlogManagement.Application\\BlogManagement.Application.csproj"
+              },
+              "D:\\Project\\Code\\Lampshade\\BlogManagement.Infrastructure.EfCore\\BlogManagement.Infrastructure.EfCore.csproj": {
+                "projectPath": "D:\\Project\\Code\\Lampshade\\BlogManagement.Infrastructure.EfCore\\BlogManagement.Infrastructure.EfCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Project\\Code\\Lampshade\\BlogManagement.Infrastructure.EfCore\\BlogManagement.Infrastructure.EfCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Project\\Code\\Lampshade\\BlogManagement.Infrastructure.EfCore\\BlogManagement.Infrastructure.EfCore.csproj",
+        "projectName": "BlogManagement.Infrastructure.EfCore",
+        "projectPath": "D:\\Project\\Code\\Lampshade\\BlogManagement.Infrastructure.EfCore\\BlogManagement.Infrastructure.EfCore.csproj",
+        "packagesPath": "C:\\Users\\r\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\Code\\Lampshade\\BlogManagement.Infrastructure.EfCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\r\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\Project\\Code\\Lampshade\\BlogManagement.Domain\\BlogManagement.Domain.csproj": {
+                "projectPath": "D:\\Project\\Code\\Lampshade\\BlogManagement.Domain\\BlogManagement.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Project\\Code\\Lampshade\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Project\\Code\\Lampshade\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj",
         "projectName": "DiscountManagement.Application.Contract",
-        "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj",
+        "projectPath": "D:\\Project\\Code\\Lampshade\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj",
         "packagesPath": "C:\\Users\\r\\.nuget\\packages\\",
-        "outputPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\DiscountManagement.Application.Contract\\obj\\",
+        "outputPath": "D:\\Project\\Code\\Lampshade\\DiscountManagement.Application.Contract\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\r\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -162,11 +497,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\آموزش\\رزومه\\Code\\Lampshade\\0_Framework\\0_Framework.csproj": {
-                "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\0_Framework\\0_Framework.csproj"
+              "D:\\Project\\Code\\Lampshade\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "D:\\Project\\Code\\Lampshade\\0_Framework\\0_Framework.csproj"
               },
-              "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
-                "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
+              "D:\\Project\\Code\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
+                "projectPath": "D:\\Project\\Code\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
               }
             }
           }
@@ -200,14 +535,14 @@
         }
       }
     },
-    "D:\\آموزش\\رزومه\\Code\\Lampshade\\DiscountManagement.Application\\DiscountManagement.Application.csproj": {
+    "D:\\Project\\Code\\Lampshade\\DiscountManagement.Application\\DiscountManagement.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\آموزش\\رزومه\\Code\\Lampshade\\DiscountManagement.Application\\DiscountManagement.Application.csproj",
+        "projectUniqueName": "D:\\Project\\Code\\Lampshade\\DiscountManagement.Application\\DiscountManagement.Application.csproj",
         "projectName": "DiscountManagement.Application",
-        "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\DiscountManagement.Application\\DiscountManagement.Application.csproj",
+        "projectPath": "D:\\Project\\Code\\Lampshade\\DiscountManagement.Application\\DiscountManagement.Application.csproj",
         "packagesPath": "C:\\Users\\r\\.nuget\\packages\\",
-        "outputPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\DiscountManagement.Application\\obj\\",
+        "outputPath": "D:\\Project\\Code\\Lampshade\\DiscountManagement.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\r\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -224,11 +559,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\آموزش\\رزومه\\Code\\Lampshade\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj": {
-                "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj"
+              "D:\\Project\\Code\\Lampshade\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj": {
+                "projectPath": "D:\\Project\\Code\\Lampshade\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj"
               },
-              "D:\\آموزش\\رزومه\\Code\\Lampshade\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj": {
-                "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj"
+              "D:\\Project\\Code\\Lampshade\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj": {
+                "projectPath": "D:\\Project\\Code\\Lampshade\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj"
               }
             }
           }
@@ -262,14 +597,14 @@
         }
       }
     },
-    "D:\\آموزش\\رزومه\\Code\\Lampshade\\DiscountManagement.Configuration\\DiscountManagement.Configuration.csproj": {
+    "D:\\Project\\Code\\Lampshade\\DiscountManagement.Configuration\\DiscountManagement.Configuration.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\آموزش\\رزومه\\Code\\Lampshade\\DiscountManagement.Configuration\\DiscountManagement.Configuration.csproj",
+        "projectUniqueName": "D:\\Project\\Code\\Lampshade\\DiscountManagement.Configuration\\DiscountManagement.Configuration.csproj",
         "projectName": "DiscountManagement.Configuration",
-        "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\DiscountManagement.Configuration\\DiscountManagement.Configuration.csproj",
+        "projectPath": "D:\\Project\\Code\\Lampshade\\DiscountManagement.Configuration\\DiscountManagement.Configuration.csproj",
         "packagesPath": "C:\\Users\\r\\.nuget\\packages\\",
-        "outputPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\DiscountManagement.Configuration\\obj\\",
+        "outputPath": "D:\\Project\\Code\\Lampshade\\DiscountManagement.Configuration\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\r\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -286,14 +621,14 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\آموزش\\رزومه\\Code\\Lampshade\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj": {
-                "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj"
+              "D:\\Project\\Code\\Lampshade\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj": {
+                "projectPath": "D:\\Project\\Code\\Lampshade\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj"
               },
-              "D:\\آموزش\\رزومه\\Code\\Lampshade\\DiscountManagement.Application\\DiscountManagement.Application.csproj": {
-                "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\DiscountManagement.Application\\DiscountManagement.Application.csproj"
+              "D:\\Project\\Code\\Lampshade\\DiscountManagement.Application\\DiscountManagement.Application.csproj": {
+                "projectPath": "D:\\Project\\Code\\Lampshade\\DiscountManagement.Application\\DiscountManagement.Application.csproj"
               },
-              "D:\\آموزش\\رزومه\\Code\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj": {
-                "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj"
+              "D:\\Project\\Code\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "D:\\Project\\Code\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj"
               }
             }
           }
@@ -333,14 +668,14 @@
         }
       }
     },
-    "D:\\آموزش\\رزومه\\Code\\Lampshade\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj": {
+    "D:\\Project\\Code\\Lampshade\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\آموزش\\رزومه\\Code\\Lampshade\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj",
+        "projectUniqueName": "D:\\Project\\Code\\Lampshade\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj",
         "projectName": "DiscountManagement.Domain",
-        "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj",
+        "projectPath": "D:\\Project\\Code\\Lampshade\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj",
         "packagesPath": "C:\\Users\\r\\.nuget\\packages\\",
-        "outputPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\DiscountManagement.Domain\\obj\\",
+        "outputPath": "D:\\Project\\Code\\Lampshade\\DiscountManagement.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\r\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -357,11 +692,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\آموزش\\رزومه\\Code\\Lampshade\\0_Framework\\0_Framework.csproj": {
-                "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\0_Framework\\0_Framework.csproj"
+              "D:\\Project\\Code\\Lampshade\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "D:\\Project\\Code\\Lampshade\\0_Framework\\0_Framework.csproj"
               },
-              "D:\\آموزش\\رزومه\\Code\\Lampshade\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj": {
-                "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj"
+              "D:\\Project\\Code\\Lampshade\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj": {
+                "projectPath": "D:\\Project\\Code\\Lampshade\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj"
               }
             }
           }
@@ -395,14 +730,14 @@
         }
       }
     },
-    "D:\\آموزش\\رزومه\\Code\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj": {
+    "D:\\Project\\Code\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\آموزش\\رزومه\\Code\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj",
+        "projectUniqueName": "D:\\Project\\Code\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj",
         "projectName": "DiscountManagement.Infrastructure.EFCore",
-        "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj",
+        "projectPath": "D:\\Project\\Code\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj",
         "packagesPath": "C:\\Users\\r\\.nuget\\packages\\",
-        "outputPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\obj\\",
+        "outputPath": "D:\\Project\\Code\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\r\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -419,11 +754,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\آموزش\\رزومه\\Code\\Lampshade\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj": {
-                "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj"
+              "D:\\Project\\Code\\Lampshade\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj": {
+                "projectPath": "D:\\Project\\Code\\Lampshade\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj"
               },
-              "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj": {
-                "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj"
+              "D:\\Project\\Code\\Lampshade\\ShopManagement.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj": {
+                "projectPath": "D:\\Project\\Code\\Lampshade\\ShopManagement.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj"
               }
             }
           }
@@ -473,14 +808,14 @@
         }
       }
     },
-    "D:\\آموزش\\رزومه\\Code\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj": {
+    "D:\\Project\\Code\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\آموزش\\رزومه\\Code\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj",
+        "projectUniqueName": "D:\\Project\\Code\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj",
         "projectName": "InventoryManagement.Application.Contract",
-        "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj",
+        "projectPath": "D:\\Project\\Code\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj",
         "packagesPath": "C:\\Users\\r\\.nuget\\packages\\",
-        "outputPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\InventoryManagement.Application.Contract\\obj\\",
+        "outputPath": "D:\\Project\\Code\\Lampshade\\InventoryManagement.Application.Contract\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\r\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -497,11 +832,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\آموزش\\رزومه\\Code\\Lampshade\\0_Framework\\0_Framework.csproj": {
-                "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\0_Framework\\0_Framework.csproj"
+              "D:\\Project\\Code\\Lampshade\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "D:\\Project\\Code\\Lampshade\\0_Framework\\0_Framework.csproj"
               },
-              "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
-                "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
+              "D:\\Project\\Code\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
+                "projectPath": "D:\\Project\\Code\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
               }
             }
           }
@@ -535,14 +870,14 @@
         }
       }
     },
-    "D:\\آموزش\\رزومه\\Code\\Lampshade\\InventoryManagement.Application\\InventoryManagement.Application.csproj": {
+    "D:\\Project\\Code\\Lampshade\\InventoryManagement.Application\\InventoryManagement.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\آموزش\\رزومه\\Code\\Lampshade\\InventoryManagement.Application\\InventoryManagement.Application.csproj",
+        "projectUniqueName": "D:\\Project\\Code\\Lampshade\\InventoryManagement.Application\\InventoryManagement.Application.csproj",
         "projectName": "InventoryManagement.Application",
-        "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\InventoryManagement.Application\\InventoryManagement.Application.csproj",
+        "projectPath": "D:\\Project\\Code\\Lampshade\\InventoryManagement.Application\\InventoryManagement.Application.csproj",
         "packagesPath": "C:\\Users\\r\\.nuget\\packages\\",
-        "outputPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\InventoryManagement.Application\\obj\\",
+        "outputPath": "D:\\Project\\Code\\Lampshade\\InventoryManagement.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\r\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -559,11 +894,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\آموزش\\رزومه\\Code\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj": {
-                "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj"
+              "D:\\Project\\Code\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj": {
+                "projectPath": "D:\\Project\\Code\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj"
               },
-              "D:\\آموزش\\رزومه\\Code\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj": {
-                "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj"
+              "D:\\Project\\Code\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj": {
+                "projectPath": "D:\\Project\\Code\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj"
               }
             }
           }
@@ -597,14 +932,14 @@
         }
       }
     },
-    "D:\\آموزش\\رزومه\\Code\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj": {
+    "D:\\Project\\Code\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\آموزش\\رزومه\\Code\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj",
+        "projectUniqueName": "D:\\Project\\Code\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj",
         "projectName": "InventoryManagement.Domain",
-        "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj",
+        "projectPath": "D:\\Project\\Code\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj",
         "packagesPath": "C:\\Users\\r\\.nuget\\packages\\",
-        "outputPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\InventoryManagement.Domain\\obj\\",
+        "outputPath": "D:\\Project\\Code\\Lampshade\\InventoryManagement.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\r\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -621,11 +956,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\آموزش\\رزومه\\Code\\Lampshade\\0_Framework\\0_Framework.csproj": {
-                "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\0_Framework\\0_Framework.csproj"
+              "D:\\Project\\Code\\Lampshade\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "D:\\Project\\Code\\Lampshade\\0_Framework\\0_Framework.csproj"
               },
-              "D:\\آموزش\\رزومه\\Code\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj": {
-                "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj"
+              "D:\\Project\\Code\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj": {
+                "projectPath": "D:\\Project\\Code\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj"
               }
             }
           }
@@ -659,14 +994,14 @@
         }
       }
     },
-    "D:\\آموزش\\رزومه\\Code\\Lampshade\\InventoryManagement.Infrastructure.EfCore\\InventoryManagement.Infrastructure.EfCore.csproj": {
+    "D:\\Project\\Code\\Lampshade\\InventoryManagement.Infrastructure.EfCore\\InventoryManagement.Infrastructure.EfCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\آموزش\\رزومه\\Code\\Lampshade\\InventoryManagement.Infrastructure.EfCore\\InventoryManagement.Infrastructure.EfCore.csproj",
+        "projectUniqueName": "D:\\Project\\Code\\Lampshade\\InventoryManagement.Infrastructure.EfCore\\InventoryManagement.Infrastructure.EfCore.csproj",
         "projectName": "InventoryManagement.Infrastructure.EfCore",
-        "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\InventoryManagement.Infrastructure.EfCore\\InventoryManagement.Infrastructure.EfCore.csproj",
+        "projectPath": "D:\\Project\\Code\\Lampshade\\InventoryManagement.Infrastructure.EfCore\\InventoryManagement.Infrastructure.EfCore.csproj",
         "packagesPath": "C:\\Users\\r\\.nuget\\packages\\",
-        "outputPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\InventoryManagement.Infrastructure.EfCore\\obj\\",
+        "outputPath": "D:\\Project\\Code\\Lampshade\\InventoryManagement.Infrastructure.EfCore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\r\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -683,11 +1018,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\آموزش\\رزومه\\Code\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj": {
-                "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj"
+              "D:\\Project\\Code\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj": {
+                "projectPath": "D:\\Project\\Code\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj"
               },
-              "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj": {
-                "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj"
+              "D:\\Project\\Code\\Lampshade\\ShopManagement.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj": {
+                "projectPath": "D:\\Project\\Code\\Lampshade\\ShopManagement.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj"
               }
             }
           }
@@ -737,14 +1072,14 @@
         }
       }
     },
-    "D:\\آموزش\\رزومه\\Code\\Lampshade\\InventoryManagement.InfrastructureConfiguration\\InventoryManagement.InfrastructureConfiguration.csproj": {
+    "D:\\Project\\Code\\Lampshade\\InventoryManagement.InfrastructureConfiguration\\InventoryManagement.InfrastructureConfiguration.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\آموزش\\رزومه\\Code\\Lampshade\\InventoryManagement.InfrastructureConfiguration\\InventoryManagement.InfrastructureConfiguration.csproj",
+        "projectUniqueName": "D:\\Project\\Code\\Lampshade\\InventoryManagement.InfrastructureConfiguration\\InventoryManagement.InfrastructureConfiguration.csproj",
         "projectName": "InventoryManagement.InfrastructureConfiguration",
-        "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\InventoryManagement.InfrastructureConfiguration\\InventoryManagement.InfrastructureConfiguration.csproj",
+        "projectPath": "D:\\Project\\Code\\Lampshade\\InventoryManagement.InfrastructureConfiguration\\InventoryManagement.InfrastructureConfiguration.csproj",
         "packagesPath": "C:\\Users\\r\\.nuget\\packages\\",
-        "outputPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\InventoryManagement.InfrastructureConfiguration\\obj\\",
+        "outputPath": "D:\\Project\\Code\\Lampshade\\InventoryManagement.InfrastructureConfiguration\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\r\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -761,14 +1096,14 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\آموزش\\رزومه\\Code\\Lampshade\\InventoryManagement.Application\\InventoryManagement.Application.csproj": {
-                "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\InventoryManagement.Application\\InventoryManagement.Application.csproj"
+              "D:\\Project\\Code\\Lampshade\\InventoryManagement.Application\\InventoryManagement.Application.csproj": {
+                "projectPath": "D:\\Project\\Code\\Lampshade\\InventoryManagement.Application\\InventoryManagement.Application.csproj"
               },
-              "D:\\آموزش\\رزومه\\Code\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj": {
-                "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj"
+              "D:\\Project\\Code\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj": {
+                "projectPath": "D:\\Project\\Code\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj"
               },
-              "D:\\آموزش\\رزومه\\Code\\Lampshade\\InventoryManagement.Infrastructure.EfCore\\InventoryManagement.Infrastructure.EfCore.csproj": {
-                "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\InventoryManagement.Infrastructure.EfCore\\InventoryManagement.Infrastructure.EfCore.csproj"
+              "D:\\Project\\Code\\Lampshade\\InventoryManagement.Infrastructure.EfCore\\InventoryManagement.Infrastructure.EfCore.csproj": {
+                "projectPath": "D:\\Project\\Code\\Lampshade\\InventoryManagement.Infrastructure.EfCore\\InventoryManagement.Infrastructure.EfCore.csproj"
               }
             }
           }
@@ -808,14 +1143,14 @@
         }
       }
     },
-    "D:\\آموزش\\رزومه\\Code\\Lampshade\\ServiceHost\\ServiceHost.csproj": {
+    "D:\\Project\\Code\\Lampshade\\ServiceHost\\ServiceHost.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\آموزش\\رزومه\\Code\\Lampshade\\ServiceHost\\ServiceHost.csproj",
+        "projectUniqueName": "D:\\Project\\Code\\Lampshade\\ServiceHost\\ServiceHost.csproj",
         "projectName": "ServiceHost",
-        "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\ServiceHost\\ServiceHost.csproj",
+        "projectPath": "D:\\Project\\Code\\Lampshade\\ServiceHost\\ServiceHost.csproj",
         "packagesPath": "C:\\Users\\r\\.nuget\\packages\\",
-        "outputPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\ServiceHost\\obj\\",
+        "outputPath": "D:\\Project\\Code\\Lampshade\\ServiceHost\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\r\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -832,14 +1167,17 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\آموزش\\رزومه\\Code\\Lampshade\\DiscountManagement.Configuration\\DiscountManagement.Configuration.csproj": {
-                "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\DiscountManagement.Configuration\\DiscountManagement.Configuration.csproj"
+              "D:\\Project\\Code\\Lampshade\\BlogManagement.Infrastructure.Configuration\\BlogManagement.Infrastructure.Configuration.csproj": {
+                "projectPath": "D:\\Project\\Code\\Lampshade\\BlogManagement.Infrastructure.Configuration\\BlogManagement.Infrastructure.Configuration.csproj"
               },
-              "D:\\آموزش\\رزومه\\Code\\Lampshade\\InventoryManagement.InfrastructureConfiguration\\InventoryManagement.InfrastructureConfiguration.csproj": {
-                "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\InventoryManagement.InfrastructureConfiguration\\InventoryManagement.InfrastructureConfiguration.csproj"
+              "D:\\Project\\Code\\Lampshade\\DiscountManagement.Configuration\\DiscountManagement.Configuration.csproj": {
+                "projectPath": "D:\\Project\\Code\\Lampshade\\DiscountManagement.Configuration\\DiscountManagement.Configuration.csproj"
               },
-              "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Configuration\\ShopManagement.Configuration.csproj": {
-                "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Configuration\\ShopManagement.Configuration.csproj"
+              "D:\\Project\\Code\\Lampshade\\InventoryManagement.InfrastructureConfiguration\\InventoryManagement.InfrastructureConfiguration.csproj": {
+                "projectPath": "D:\\Project\\Code\\Lampshade\\InventoryManagement.InfrastructureConfiguration\\InventoryManagement.InfrastructureConfiguration.csproj"
+              },
+              "D:\\Project\\Code\\Lampshade\\ShopManagement.Configuration\\ShopManagement.Configuration.csproj": {
+                "projectPath": "D:\\Project\\Code\\Lampshade\\ShopManagement.Configuration\\ShopManagement.Configuration.csproj"
               }
             }
           }
@@ -894,14 +1232,14 @@
         }
       }
     },
-    "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
+    "D:\\Project\\Code\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj",
+        "projectUniqueName": "D:\\Project\\Code\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj",
         "projectName": "ShopManagement.Application.Contracts",
-        "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj",
+        "projectPath": "D:\\Project\\Code\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj",
         "packagesPath": "C:\\Users\\r\\.nuget\\packages\\",
-        "outputPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Application.Contracts\\obj\\",
+        "outputPath": "D:\\Project\\Code\\Lampshade\\ShopManagement.Application.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\r\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -918,8 +1256,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\آموزش\\رزومه\\Code\\Lampshade\\0_Framework\\0_Framework.csproj": {
-                "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\0_Framework\\0_Framework.csproj"
+              "D:\\Project\\Code\\Lampshade\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "D:\\Project\\Code\\Lampshade\\0_Framework\\0_Framework.csproj"
               }
             }
           }
@@ -959,14 +1297,14 @@
         }
       }
     },
-    "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Application\\ShopManagement.Application.csproj": {
+    "D:\\Project\\Code\\Lampshade\\ShopManagement.Application\\ShopManagement.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Application\\ShopManagement.Application.csproj",
+        "projectUniqueName": "D:\\Project\\Code\\Lampshade\\ShopManagement.Application\\ShopManagement.Application.csproj",
         "projectName": "ShopManagement.Application",
-        "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Application\\ShopManagement.Application.csproj",
+        "projectPath": "D:\\Project\\Code\\Lampshade\\ShopManagement.Application\\ShopManagement.Application.csproj",
         "packagesPath": "C:\\Users\\r\\.nuget\\packages\\",
-        "outputPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Application\\obj\\",
+        "outputPath": "D:\\Project\\Code\\Lampshade\\ShopManagement.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\r\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -983,11 +1321,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
-                "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
+              "D:\\Project\\Code\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
+                "projectPath": "D:\\Project\\Code\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
               },
-              "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
-                "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj"
+              "D:\\Project\\Code\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
+                "projectPath": "D:\\Project\\Code\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj"
               }
             }
           }
@@ -1021,14 +1359,14 @@
         }
       }
     },
-    "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Configuration\\ShopManagement.Configuration.csproj": {
+    "D:\\Project\\Code\\Lampshade\\ShopManagement.Configuration\\ShopManagement.Configuration.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Configuration\\ShopManagement.Configuration.csproj",
+        "projectUniqueName": "D:\\Project\\Code\\Lampshade\\ShopManagement.Configuration\\ShopManagement.Configuration.csproj",
         "projectName": "ShopManagement.Configuration",
-        "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Configuration\\ShopManagement.Configuration.csproj",
+        "projectPath": "D:\\Project\\Code\\Lampshade\\ShopManagement.Configuration\\ShopManagement.Configuration.csproj",
         "packagesPath": "C:\\Users\\r\\.nuget\\packages\\",
-        "outputPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Configuration\\obj\\",
+        "outputPath": "D:\\Project\\Code\\Lampshade\\ShopManagement.Configuration\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\r\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1045,17 +1383,17 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\آموزش\\رزومه\\Code\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj": {
-                "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj"
+              "D:\\Project\\Code\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj": {
+                "projectPath": "D:\\Project\\Code\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj"
               },
-              "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
-                "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
+              "D:\\Project\\Code\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
+                "projectPath": "D:\\Project\\Code\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
               },
-              "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Application\\ShopManagement.Application.csproj": {
-                "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Application\\ShopManagement.Application.csproj"
+              "D:\\Project\\Code\\Lampshade\\ShopManagement.Application\\ShopManagement.Application.csproj": {
+                "projectPath": "D:\\Project\\Code\\Lampshade\\ShopManagement.Application\\ShopManagement.Application.csproj"
               },
-              "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj": {
-                "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj"
+              "D:\\Project\\Code\\Lampshade\\ShopManagement.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj": {
+                "projectPath": "D:\\Project\\Code\\Lampshade\\ShopManagement.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj"
               }
             }
           }
@@ -1095,14 +1433,14 @@
         }
       }
     },
-    "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
+    "D:\\Project\\Code\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj",
+        "projectUniqueName": "D:\\Project\\Code\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj",
         "projectName": "ShopManagement.Domain",
-        "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj",
+        "projectPath": "D:\\Project\\Code\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj",
         "packagesPath": "C:\\Users\\r\\.nuget\\packages\\",
-        "outputPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Domain\\obj\\",
+        "outputPath": "D:\\Project\\Code\\Lampshade\\ShopManagement.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\r\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1119,11 +1457,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\آموزش\\رزومه\\Code\\Lampshade\\0_Framework\\0_Framework.csproj": {
-                "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\0_Framework\\0_Framework.csproj"
+              "D:\\Project\\Code\\Lampshade\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "D:\\Project\\Code\\Lampshade\\0_Framework\\0_Framework.csproj"
               },
-              "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
-                "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
+              "D:\\Project\\Code\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
+                "projectPath": "D:\\Project\\Code\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
               }
             }
           }
@@ -1157,14 +1495,14 @@
         }
       }
     },
-    "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj": {
+    "D:\\Project\\Code\\Lampshade\\ShopManagement.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj",
+        "projectUniqueName": "D:\\Project\\Code\\Lampshade\\ShopManagement.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj",
         "projectName": "ShopManagement.Infrastructure.EfCore",
-        "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj",
+        "projectPath": "D:\\Project\\Code\\Lampshade\\ShopManagement.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj",
         "packagesPath": "C:\\Users\\r\\.nuget\\packages\\",
-        "outputPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Infrastructure.EfCore\\obj\\",
+        "outputPath": "D:\\Project\\Code\\Lampshade\\ShopManagement.Infrastructure.EfCore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\r\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1181,8 +1519,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
-                "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj"
+              "D:\\Project\\Code\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
+                "projectPath": "D:\\Project\\Code\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj"
               }
             }
           }

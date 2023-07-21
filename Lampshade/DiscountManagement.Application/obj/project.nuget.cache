@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AQQeZyoWNIy6fZ2c37kari0rACRBbLNzug3hD63ghMs8z9RdPdlGqgdsqJO25yK7o163S0PTmDI5dE9llAqreg==",
+  "dgSpecHash": "MfLbOHVivV0dXY87Za1SVutBhQlldbRL8m4CpYDEyHpjgPsRLH/d/8E5aqlkxCrdErFuwiimkjjKo9T1N0hxAA==",
   "success": true,
-  "projectFilePath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\DiscountManagement.Application\\DiscountManagement.Application.csproj",
+  "projectFilePath": "D:\\Project\\Code\\Lampshade\\DiscountManagement.Application\\DiscountManagement.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\r\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\r\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",

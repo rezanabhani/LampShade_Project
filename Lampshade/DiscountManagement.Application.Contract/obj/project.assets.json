@@ -888,11 +888,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\آموزش\\رزومه\\Code\\Lampshade\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj",
+      "projectUniqueName": "D:\\Project\\Code\\Lampshade\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj",
       "projectName": "DiscountManagement.Application.Contract",
-      "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj",
+      "projectPath": "D:\\Project\\Code\\Lampshade\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj",
       "packagesPath": "C:\\Users\\r\\.nuget\\packages\\",
-      "outputPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\DiscountManagement.Application.Contract\\obj\\",
+      "outputPath": "D:\\Project\\Code\\Lampshade\\DiscountManagement.Application.Contract\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\r\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -909,11 +909,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\آموزش\\رزومه\\Code\\Lampshade\\0_Framework\\0_Framework.csproj": {
-              "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\0_Framework\\0_Framework.csproj"
+            "D:\\Project\\Code\\Lampshade\\0_Framework\\0_Framework.csproj": {
+              "projectPath": "D:\\Project\\Code\\Lampshade\\0_Framework\\0_Framework.csproj"
             },
-            "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
-              "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
+            "D:\\Project\\Code\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
+              "projectPath": "D:\\Project\\Code\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
             }
           }
         }

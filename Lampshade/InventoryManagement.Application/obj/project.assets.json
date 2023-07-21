@@ -926,11 +926,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\آموزش\\رزومه\\Code\\Lampshade\\InventoryManagement.Application\\InventoryManagement.Application.csproj",
+      "projectUniqueName": "D:\\Project\\Code\\Lampshade\\InventoryManagement.Application\\InventoryManagement.Application.csproj",
       "projectName": "InventoryManagement.Application",
-      "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\InventoryManagement.Application\\InventoryManagement.Application.csproj",
+      "projectPath": "D:\\Project\\Code\\Lampshade\\InventoryManagement.Application\\InventoryManagement.Application.csproj",
       "packagesPath": "C:\\Users\\r\\.nuget\\packages\\",
-      "outputPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\InventoryManagement.Application\\obj\\",
+      "outputPath": "D:\\Project\\Code\\Lampshade\\InventoryManagement.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\r\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -947,11 +947,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\آموزش\\رزومه\\Code\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj": {
-              "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj"
+            "D:\\Project\\Code\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj": {
+              "projectPath": "D:\\Project\\Code\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj"
             },
-            "D:\\آموزش\\رزومه\\Code\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj": {
-              "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj"
+            "D:\\Project\\Code\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj": {
+              "projectPath": "D:\\Project\\Code\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj"
             }
           }
         }

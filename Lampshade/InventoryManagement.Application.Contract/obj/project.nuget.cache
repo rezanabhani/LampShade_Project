@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UhBpSrzcM7RLDFi8cUytJJAgp4kAXZm+X0mQeUtOI5PYGNOwFNukzKv5ae3gqdI/DeGnbCq7ACl4xG4QMuGHjw==",
+  "dgSpecHash": "zF3vwHq/9aurVZNSaxbv5gI7NqkpEPLaefoUTmsIF/ZlHElC+LREXH94nuT47XN+LCRSsuSj0kKkx/X02ef6NQ==",
   "success": true,
-  "projectFilePath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj",
+  "projectFilePath": "D:\\Project\\Code\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\r\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\r\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",

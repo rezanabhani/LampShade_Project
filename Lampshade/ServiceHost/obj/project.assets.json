@@ -2445,6 +2445,79 @@
           "bin/placeholder/0_Framework.dll": {}
         }
       },
+      "BlogManagement.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "BlogManagement.Application.Contracts": "1.0.0",
+          "BlogManagement.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BlogManagement.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BlogManagement.Application.dll": {}
+        }
+      },
+      "BlogManagement.Application.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_Framework": "1.0.0",
+          "Microsoft.AspNetCore.Http.Features": "5.0.17"
+        },
+        "compile": {
+          "bin/placeholder/BlogManagement.Application.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BlogManagement.Application.Contracts.dll": {}
+        }
+      },
+      "BlogManagement.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_Framework": "1.0.0",
+          "BlogManagement.Application.Contracts": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BlogManagement.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BlogManagement.Domain.dll": {}
+        }
+      },
+      "BlogManagement.Infrastructure.Configuration/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "BlogManagement.Application": "1.0.0",
+          "BlogManagement.Application.Contracts": "1.0.0",
+          "BlogManagement.Infrastructure.EfCore": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BlogManagement.Infrastructure.Configuration.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BlogManagement.Infrastructure.Configuration.dll": {}
+        }
+      },
+      "BlogManagement.Infrastructure.EfCore/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "BlogManagement.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BlogManagement.Infrastructure.EfCore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BlogManagement.Infrastructure.EfCore.dll": {}
+        }
+      },
       "DiscountManagement.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -7907,6 +7980,31 @@
       "path": "../0_Framework/0_Framework.csproj",
       "msbuildProject": "../0_Framework/0_Framework.csproj"
     },
+    "BlogManagement.Application/1.0.0": {
+      "type": "project",
+      "path": "../BlogManagement.Application/BlogManagement.Application.csproj",
+      "msbuildProject": "../BlogManagement.Application/BlogManagement.Application.csproj"
+    },
+    "BlogManagement.Application.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../BlogManagement.Application.Contracts/BlogManagement.Application.Contracts.csproj",
+      "msbuildProject": "../BlogManagement.Application.Contracts/BlogManagement.Application.Contracts.csproj"
+    },
+    "BlogManagement.Domain/1.0.0": {
+      "type": "project",
+      "path": "../BlogManagement.Domain/BlogManagement.Domain.csproj",
+      "msbuildProject": "../BlogManagement.Domain/BlogManagement.Domain.csproj"
+    },
+    "BlogManagement.Infrastructure.Configuration/1.0.0": {
+      "type": "project",
+      "path": "../BlogManagement.Infrastructure.Configuration/BlogManagement.Infrastructure.Configuration.csproj",
+      "msbuildProject": "../BlogManagement.Infrastructure.Configuration/BlogManagement.Infrastructure.Configuration.csproj"
+    },
+    "BlogManagement.Infrastructure.EfCore/1.0.0": {
+      "type": "project",
+      "path": "../BlogManagement.Infrastructure.EfCore/BlogManagement.Infrastructure.EfCore.csproj",
+      "msbuildProject": "../BlogManagement.Infrastructure.EfCore/BlogManagement.Infrastructure.EfCore.csproj"
+    },
     "DiscountManagement.Application/1.0.0": {
       "type": "project",
       "path": "../DiscountManagement.Application/DiscountManagement.Application.csproj",
@@ -7985,6 +8083,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "BlogManagement.Infrastructure.Configuration >= 1.0.0",
       "DiscountManagement.Configuration >= 1.0.0",
       "InventoryManagement.InfrastructureConfiguration >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.0",
@@ -7998,11 +8097,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\آموزش\\رزومه\\Code\\Lampshade\\ServiceHost\\ServiceHost.csproj",
+      "projectUniqueName": "D:\\Project\\Code\\Lampshade\\ServiceHost\\ServiceHost.csproj",
       "projectName": "ServiceHost",
-      "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\ServiceHost\\ServiceHost.csproj",
+      "projectPath": "D:\\Project\\Code\\Lampshade\\ServiceHost\\ServiceHost.csproj",
       "packagesPath": "C:\\Users\\r\\.nuget\\packages\\",
-      "outputPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\ServiceHost\\obj\\",
+      "outputPath": "D:\\Project\\Code\\Lampshade\\ServiceHost\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\r\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8019,14 +8118,17 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\آموزش\\رزومه\\Code\\Lampshade\\DiscountManagement.Configuration\\DiscountManagement.Configuration.csproj": {
-              "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\DiscountManagement.Configuration\\DiscountManagement.Configuration.csproj"
+            "D:\\Project\\Code\\Lampshade\\BlogManagement.Infrastructure.Configuration\\BlogManagement.Infrastructure.Configuration.csproj": {
+              "projectPath": "D:\\Project\\Code\\Lampshade\\BlogManagement.Infrastructure.Configuration\\BlogManagement.Infrastructure.Configuration.csproj"
             },
-            "D:\\آموزش\\رزومه\\Code\\Lampshade\\InventoryManagement.InfrastructureConfiguration\\InventoryManagement.InfrastructureConfiguration.csproj": {
-              "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\InventoryManagement.InfrastructureConfiguration\\InventoryManagement.InfrastructureConfiguration.csproj"
+            "D:\\Project\\Code\\Lampshade\\DiscountManagement.Configuration\\DiscountManagement.Configuration.csproj": {
+              "projectPath": "D:\\Project\\Code\\Lampshade\\DiscountManagement.Configuration\\DiscountManagement.Configuration.csproj"
             },
-            "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Configuration\\ShopManagement.Configuration.csproj": {
-              "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Configuration\\ShopManagement.Configuration.csproj"
+            "D:\\Project\\Code\\Lampshade\\InventoryManagement.InfrastructureConfiguration\\InventoryManagement.InfrastructureConfiguration.csproj": {
+              "projectPath": "D:\\Project\\Code\\Lampshade\\InventoryManagement.InfrastructureConfiguration\\InventoryManagement.InfrastructureConfiguration.csproj"
+            },
+            "D:\\Project\\Code\\Lampshade\\ShopManagement.Configuration\\ShopManagement.Configuration.csproj": {
+              "projectPath": "D:\\Project\\Code\\Lampshade\\ShopManagement.Configuration\\ShopManagement.Configuration.csproj"
             }
           }
         }

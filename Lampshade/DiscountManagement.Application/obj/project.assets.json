@@ -926,11 +926,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\آموزش\\رزومه\\Code\\Lampshade\\DiscountManagement.Application\\DiscountManagement.Application.csproj",
+      "projectUniqueName": "D:\\Project\\Code\\Lampshade\\DiscountManagement.Application\\DiscountManagement.Application.csproj",
       "projectName": "DiscountManagement.Application",
-      "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\DiscountManagement.Application\\DiscountManagement.Application.csproj",
+      "projectPath": "D:\\Project\\Code\\Lampshade\\DiscountManagement.Application\\DiscountManagement.Application.csproj",
       "packagesPath": "C:\\Users\\r\\.nuget\\packages\\",
-      "outputPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\DiscountManagement.Application\\obj\\",
+      "outputPath": "D:\\Project\\Code\\Lampshade\\DiscountManagement.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\r\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -947,11 +947,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\آموزش\\رزومه\\Code\\Lampshade\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj": {
-              "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj"
+            "D:\\Project\\Code\\Lampshade\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj": {
+              "projectPath": "D:\\Project\\Code\\Lampshade\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj"
             },
-            "D:\\آموزش\\رزومه\\Code\\Lampshade\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj": {
-              "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj"
+            "D:\\Project\\Code\\Lampshade\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj": {
+              "projectPath": "D:\\Project\\Code\\Lampshade\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj"
             }
           }
         }

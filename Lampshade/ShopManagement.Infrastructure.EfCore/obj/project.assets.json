@@ -6369,11 +6369,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj",
+      "projectUniqueName": "D:\\Project\\Code\\Lampshade\\ShopManagement.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj",
       "projectName": "ShopManagement.Infrastructure.EfCore",
-      "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj",
+      "projectPath": "D:\\Project\\Code\\Lampshade\\ShopManagement.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj",
       "packagesPath": "C:\\Users\\r\\.nuget\\packages\\",
-      "outputPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Infrastructure.EfCore\\obj\\",
+      "outputPath": "D:\\Project\\Code\\Lampshade\\ShopManagement.Infrastructure.EfCore\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\r\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6390,8 +6390,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
-              "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj"
+            "D:\\Project\\Code\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
+              "projectPath": "D:\\Project\\Code\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj"
             }
           }
         }

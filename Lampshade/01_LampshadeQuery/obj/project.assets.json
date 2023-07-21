@@ -6404,11 +6404,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\آموزش\\رزومه\\Code\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj",
+      "projectUniqueName": "D:\\Project\\Code\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj",
       "projectName": "01_LampshadeQuery",
-      "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj",
+      "projectPath": "D:\\Project\\Code\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj",
       "packagesPath": "C:\\Users\\r\\.nuget\\packages\\",
-      "outputPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\01_LampshadeQuery\\obj\\",
+      "outputPath": "D:\\Project\\Code\\Lampshade\\01_LampshadeQuery\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\r\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6425,14 +6425,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\آموزش\\رزومه\\Code\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj": {
-              "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj"
+            "D:\\Project\\Code\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj": {
+              "projectPath": "D:\\Project\\Code\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj"
             },
-            "D:\\آموزش\\رزومه\\Code\\Lampshade\\InventoryManagement.Infrastructure.EfCore\\InventoryManagement.Infrastructure.EfCore.csproj": {
-              "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\InventoryManagement.Infrastructure.EfCore\\InventoryManagement.Infrastructure.EfCore.csproj"
+            "D:\\Project\\Code\\Lampshade\\InventoryManagement.Infrastructure.EfCore\\InventoryManagement.Infrastructure.EfCore.csproj": {
+              "projectPath": "D:\\Project\\Code\\Lampshade\\InventoryManagement.Infrastructure.EfCore\\InventoryManagement.Infrastructure.EfCore.csproj"
             },
-            "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj": {
-              "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj"
+            "D:\\Project\\Code\\Lampshade\\ShopManagement.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj": {
+              "projectPath": "D:\\Project\\Code\\Lampshade\\ShopManagement.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj"
             }
           }
         }

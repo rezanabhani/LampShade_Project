@@ -6445,11 +6445,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Configuration\\ShopManagement.Configuration.csproj",
+      "projectUniqueName": "D:\\Project\\Code\\Lampshade\\ShopManagement.Configuration\\ShopManagement.Configuration.csproj",
       "projectName": "ShopManagement.Configuration",
-      "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Configuration\\ShopManagement.Configuration.csproj",
+      "projectPath": "D:\\Project\\Code\\Lampshade\\ShopManagement.Configuration\\ShopManagement.Configuration.csproj",
       "packagesPath": "C:\\Users\\r\\.nuget\\packages\\",
-      "outputPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Configuration\\obj\\",
+      "outputPath": "D:\\Project\\Code\\Lampshade\\ShopManagement.Configuration\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\r\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6466,17 +6466,17 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\آموزش\\رزومه\\Code\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj": {
-              "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj"
+            "D:\\Project\\Code\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj": {
+              "projectPath": "D:\\Project\\Code\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj"
             },
-            "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
-              "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
+            "D:\\Project\\Code\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
+              "projectPath": "D:\\Project\\Code\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
             },
-            "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Application\\ShopManagement.Application.csproj": {
-              "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Application\\ShopManagement.Application.csproj"
+            "D:\\Project\\Code\\Lampshade\\ShopManagement.Application\\ShopManagement.Application.csproj": {
+              "projectPath": "D:\\Project\\Code\\Lampshade\\ShopManagement.Application\\ShopManagement.Application.csproj"
             },
-            "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj": {
-              "projectPath": "D:\\آموزش\\رزومه\\Code\\Lampshade\\ShopManagement.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj"
+            "D:\\Project\\Code\\Lampshade\\ShopManagement.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj": {
+              "projectPath": "D:\\Project\\Code\\Lampshade\\ShopManagement.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj"
             }
           }
         }
