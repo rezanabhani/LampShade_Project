@@ -5216,6 +5216,118 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\ساعت-هومشند\بهترین-بازی-های-جهان-باز-کامپیوتر؛-اکشن،-نقش-آفرینی،-مسابقه-ای\2023-07-23-14-31-27-best_pc_open_world_games.jpg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\ساعت-هومشند\راهنمای-خرید-تلویزیون\2023-07-25-11-48-01-Buying-TV-1-284x180.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ServiceHost</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ServiceHost</BasePath>
+      <RelativePath>ProductPictures\ساعت-هومشند\راهنمای-خرید-تلویزیون\2023-07-25-11-48-01-Buying-TV-1-284x180.jpg</RelativePath>
+      <AssetKind></AssetKind>
+      <AssetMode></AssetMode>
+      <AssetRole></AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\ساعت-هومشند\راهنمای-خرید-تلویزیون\2023-07-25-11-48-01-Buying-TV-1-284x180.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\ساعت-هومشند\راهنمای-خرید-تلویزیون\2023-07-25-11-52-24-Buying-TV-1-284x180.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ServiceHost</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ServiceHost</BasePath>
+      <RelativePath>ProductPictures\ساعت-هومشند\راهنمای-خرید-تلویزیون\2023-07-25-11-52-24-Buying-TV-1-284x180.jpg</RelativePath>
+      <AssetKind></AssetKind>
+      <AssetMode></AssetMode>
+      <AssetRole></AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\ساعت-هومشند\راهنمای-خرید-تلویزیون\2023-07-25-11-52-24-Buying-TV-1-284x180.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\ساعت-هومشند\نسخه-ی-سوییچ-ea-sports-fc-24\2023-07-24-11-08-48-EA-Sports-FC-24-1-284x180.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ServiceHost</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ServiceHost</BasePath>
+      <RelativePath>ProductPictures\ساعت-هومشند\نسخه-ی-سوییچ-ea-sports-fc-24\2023-07-24-11-08-48-EA-Sports-FC-24-1-284x180.jpg</RelativePath>
+      <AssetKind></AssetKind>
+      <AssetMode></AssetMode>
+      <AssetRole></AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\ساعت-هومشند\نسخه-ی-سوییچ-ea-sports-fc-24\2023-07-24-11-08-48-EA-Sports-FC-24-1-284x180.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\ساعت-هومشند\۷-روش-کاربردی-برای-تایپ-سریع-تر-در-آیفون\2023-07-24-10-58-15-تایپ-آیفون-2-284x180.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ServiceHost</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ServiceHost</BasePath>
+      <RelativePath>ProductPictures\ساعت-هومشند\۷-روش-کاربردی-برای-تایپ-سریع-تر-در-آیفون\2023-07-24-10-58-15-تایپ-آیفون-2-284x180.jpg</RelativePath>
+      <AssetKind></AssetKind>
+      <AssetMode></AssetMode>
+      <AssetRole></AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\ساعت-هومشند\۷-روش-کاربردی-برای-تایپ-سریع-تر-در-آیفون\2023-07-24-10-58-15-تایپ-آیفون-2-284x180.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\ساعت-هومشند\۷-روش-کاربردی-برای-تایپ-سریع-تر-در-آیفون\2023-07-24-10-59-00-تایپ-آیفون-2-284x180.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ServiceHost</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ServiceHost</BasePath>
+      <RelativePath>ProductPictures\ساعت-هومشند\۷-روش-کاربردی-برای-تایپ-سریع-تر-در-آیفون\2023-07-24-10-59-00-تایپ-آیفون-2-284x180.jpg</RelativePath>
+      <AssetKind></AssetKind>
+      <AssetMode></AssetMode>
+      <AssetRole></AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\ساعت-هومشند\۷-روش-کاربردی-برای-تایپ-سریع-تر-در-آیفون\2023-07-24-10-59-00-تایپ-آیفون-2-284x180.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\ساعت-هومشند\۷-روش-کاربردی-برای-تایپ-سریع-تر-در-آیفون\2023-07-24-11-04-44-تایپ-آیفون-2-284x180.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ServiceHost</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ServiceHost</BasePath>
+      <RelativePath>ProductPictures\ساعت-هومشند\۷-روش-کاربردی-برای-تایپ-سریع-تر-در-آیفون\2023-07-24-11-04-44-تایپ-آیفون-2-284x180.jpg</RelativePath>
+      <AssetKind></AssetKind>
+      <AssetMode></AssetMode>
+      <AssetRole></AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\ساعت-هومشند\۷-روش-کاربردی-برای-تایپ-سریع-تر-در-آیفون\2023-07-24-11-04-44-تایپ-آیفون-2-284x180.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\ساعت-هومشند\۷-روش-کاربردی-برای-تایپ-سریع-تر-در-آیفون\2023-07-24-11-07-01-تایپ-آیفون-2-284x180.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ServiceHost</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ServiceHost</BasePath>
+      <RelativePath>ProductPictures\ساعت-هومشند\۷-روش-کاربردی-برای-تایپ-سریع-تر-در-آیفون\2023-07-24-11-07-01-تایپ-آیفون-2-284x180.jpg</RelativePath>
+      <AssetKind></AssetKind>
+      <AssetMode></AssetMode>
+      <AssetRole></AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\ساعت-هومشند\۷-روش-کاربردی-برای-تایپ-سریع-تر-در-آیفون\2023-07-24-11-07-01-تایپ-آیفون-2-284x180.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\لوستر-سقفی\2023-06-17-17-10-41-Screenshot_8.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>ServiceHost</SourceId>

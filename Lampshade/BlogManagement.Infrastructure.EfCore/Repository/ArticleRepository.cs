@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using _0_Framework.Application;
 using _0_Framework.Infrastructure;
@@ -53,7 +54,7 @@ namespace BlogManagement.Infrastructure.EfCore.Repository
                     Category = x.Category.Name,
                     Picture = x.Picture,
                     PublishDate = x.PublishDate.ToFarsi(),
-                    ShortDescription = x.ShortDescription,
+                    ShortDescription = x.ShortDescription.Substring(0,Math.Min(x.Description.Length,50)) + " ...",
                     Title = x.Title
                 });
 

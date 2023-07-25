@@ -72,3 +72,9 @@ D:\Project\Code\Lampshade\ShopManagement.Configuration\obj\Debug\net5.0\ShopMana
 D:\Project\Code\Lampshade\ShopManagement.Configuration\obj\Debug\net5.0\refint\ShopManagement.Configuration.dll
 D:\Project\Code\Lampshade\ShopManagement.Configuration\obj\Debug\net5.0\ShopManagement.Configuration.pdb
 D:\Project\Code\Lampshade\ShopManagement.Configuration\obj\Debug\net5.0\ref\ShopManagement.Configuration.dll
+D:\Project\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\BlogManagement.Application.Contracts.dll
+D:\Project\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\BlogManagement.Domain.dll
+D:\Project\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\BlogManagement.Infrastructure.EfCore.dll
+D:\Project\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\BlogManagement.Application.Contracts.pdb
+D:\Project\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\BlogManagement.Domain.pdb
+D:\Project\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\BlogManagement.Infrastructure.EfCore.pdb

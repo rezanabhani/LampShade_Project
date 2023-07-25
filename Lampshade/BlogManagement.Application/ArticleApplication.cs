@@ -32,10 +32,9 @@ namespace BlogManagement.Application
             var pictureName = _fileUploader.Upload(command.Picture, path);
             var publishDate = command.PublishDate.ToGeorgianDateTime();
 
-            var article = new Article(command.Title, command.ShortDescription, command.Description,
-                pictureName, command.PictureAlt, command.PictureTitle, publishDate,
-                slug, command.Keywords, command.MetaDescription, command.CanonicalAddress,
-                command.CategoryId);
+            var article = new Article(command.Title, command.ShortDescription, command.Description, pictureName,
+                command.PictureAlt, command.PictureTitle, publishDate, slug, command.Keywords, command.MetaDescription,
+                command.CanonicalAddress, command.CategoryId);
 
             _articleRepository.Create(article);
             _articleRepository.SaveChanges();
