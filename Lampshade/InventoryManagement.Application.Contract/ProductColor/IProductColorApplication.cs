@@ -9,5 +9,6 @@ namespace InventoryManagement.Application.Contract.ProductColor
         OperationResult Edit(EditColor command);
         EditColor GetDetails(long id);
         List<ProductColorViewModel> GetList();
+        List<ProductColorViewModel> GetListWithProduct();
     }
 }

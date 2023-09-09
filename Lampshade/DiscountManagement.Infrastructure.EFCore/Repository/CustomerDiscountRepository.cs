@@ -4,6 +4,8 @@ using _0_Framework.Application;
 using _0_Framework.Infrastructure;
 using DiscountManagement.Application.Contract.CustomerDiscount;
 using DiscountManagement.Domain.CustomerDiscountAgg;
+using InventoryManagement.Infrastructure.EfCore;
+using Microsoft.EntityFrameworkCore;
 using ShopManagement.Infrastructure.EfCore;
 
 namespace DiscountManagement.Infrastructure.EFCore.Repository
@@ -12,11 +14,13 @@ namespace DiscountManagement.Infrastructure.EFCore.Repository
     {
         private readonly DiscountContext _context;
         private readonly ShopContext _shopContext;
+        private readonly InventoryContext _inventoryContext;
 
-        public CustomerDiscountRepository(DiscountContext context,ShopContext shopContext) : base(context)
+        public CustomerDiscountRepository(DiscountContext context, ShopContext shopContext, InventoryContext inventoryContext) : base(context)
         {
             _context = context;
             _shopContext = shopContext;
+            _inventoryContext = inventoryContext;
         }
 
         public EditCustomerDiscount GetDetails(long id)
@@ -45,7 +49,7 @@ namespace DiscountManagement.Infrastructure.EFCore.Repository
                     EndDate = x.EndDate.ToFarsi(),
                     EndDateGr = x.EndDate,
                     ProductId = x.ProductId,
-                    Reason = x.Reason, 
+                    Reason = x.Reason,
                     CreationDate = x.CreationDate.ToFarsi()
                 });
 

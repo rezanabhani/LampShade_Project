@@ -60,7 +60,7 @@ namespace _01_LampshadeQuery.Query
                     PictureTitle = x.PictureTitle,
                     PublishDate = x.PublishDate.ToFarsi(),
                     ShortDescription = x.ShortDescription
-                }).ToList();
+                }).Take(6).ToList();
         }
     }
 }

@@ -1,7 +1,10 @@
+using System.Text;
 using _01_LampshadeQuery.Contracts.Product;
+using CommentManagement.Application.Contracts.Comment;
+using CommentManagement.Infrastructure.EfCore;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using ShopManagement.Application.Contracts.Comment;
+using Microsoft.Extensions.WebEncoders.Testing;
 
 namespace ServiceHost.Pages
 {
@@ -17,15 +20,31 @@ namespace ServiceHost.Pages
             _commentApplication = commentApplication;
         }
 
-        public void OnGet(string id)
+        public void OnGet(string id )
         {
-            Product = _productQuery.GetDetails(id);
+            Product = _productQuery.GetProductDetails(id);
+           
         }
 
         public IActionResult OnPost(AddComment command, string productSlug)
         {
+            command.Type = CommentType.Product;
            var result = _commentApplication.Add(command);
            return RedirectToPage("/Product", new { Id=productSlug });
         }
+
+        //public void OnGetUnitPriceColor(long ColorId,long productId,string id)
+        //{
+        //    Product = _productQuery.GetProductDetails(id);
+        //    //Price = Product.ProductColors;
+        //    //Price = _productQuery.GetUnitPrice(ColorId,productId);
+        //    if (Product.HasDiscount)
+        //    {
+        //        PriceWithDiscount = _productQuery.GetUnitPriceWithDisCount(ColorId, productId);
+        //    }
+        //}
+
+      
+
     }
 }

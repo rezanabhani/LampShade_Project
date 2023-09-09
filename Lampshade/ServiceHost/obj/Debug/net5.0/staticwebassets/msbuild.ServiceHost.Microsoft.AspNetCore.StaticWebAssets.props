@@ -5264,6 +5264,166 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\ساعت-هومشند\نسخه-ی-سوییچ-ea-sports-fc-24\2023-07-24-11-08-48-EA-Sports-FC-24-1-284x180.jpg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\ساعت-هومشند\نقد-و-بررسی-کلاسیک-گوشی-شیائومی-lite-13\2023-07-25-16-48-51-04.26-8-284x180.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ServiceHost</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ServiceHost</BasePath>
+      <RelativePath>ProductPictures\ساعت-هومشند\نقد-و-بررسی-کلاسیک-گوشی-شیائومی-lite-13\2023-07-25-16-48-51-04.26-8-284x180.jpg</RelativePath>
+      <AssetKind></AssetKind>
+      <AssetMode></AssetMode>
+      <AssetRole></AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\ساعت-هومشند\نقد-و-بررسی-کلاسیک-گوشی-شیائومی-lite-13\2023-07-25-16-48-51-04.26-8-284x180.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\ساعت-هومشند\نقد-و-بررسی-کلاسیک-گوشی-شیائومی-lite-13\2023-07-25-17-00-19-04.26-8-284x180.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ServiceHost</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ServiceHost</BasePath>
+      <RelativePath>ProductPictures\ساعت-هومشند\نقد-و-بررسی-کلاسیک-گوشی-شیائومی-lite-13\2023-07-25-17-00-19-04.26-8-284x180.jpg</RelativePath>
+      <AssetKind></AssetKind>
+      <AssetMode></AssetMode>
+      <AssetRole></AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\ساعت-هومشند\نقد-و-بررسی-کلاسیک-گوشی-شیائومی-lite-13\2023-07-25-17-00-19-04.26-8-284x180.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\ساعت-هومشند\۱۰-لپ-تاپ-محبوب\2023-07-25-15-43-43-DK-Mag-Popular-Laptops-Mordad-1402-284x180.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ServiceHost</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ServiceHost</BasePath>
+      <RelativePath>ProductPictures\ساعت-هومشند\۱۰-لپ-تاپ-محبوب\2023-07-25-15-43-43-DK-Mag-Popular-Laptops-Mordad-1402-284x180.jpg</RelativePath>
+      <AssetKind></AssetKind>
+      <AssetMode></AssetMode>
+      <AssetRole></AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\ساعت-هومشند\۱۰-لپ-تاپ-محبوب\2023-07-25-15-43-43-DK-Mag-Popular-Laptops-Mordad-1402-284x180.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\ساعت-هومشند\۱۰-لپ-تاپ-محبوب\2023-07-25-15-56-58-DK-Mag-Popular-Laptops-Mordad-1402-284x180.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ServiceHost</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ServiceHost</BasePath>
+      <RelativePath>ProductPictures\ساعت-هومشند\۱۰-لپ-تاپ-محبوب\2023-07-25-15-56-58-DK-Mag-Popular-Laptops-Mordad-1402-284x180.jpg</RelativePath>
+      <AssetKind></AssetKind>
+      <AssetMode></AssetMode>
+      <AssetRole></AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\ساعت-هومشند\۱۰-لپ-تاپ-محبوب\2023-07-25-15-56-58-DK-Mag-Popular-Laptops-Mordad-1402-284x180.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\ساعت-هومشند\۱۰-لپ-تاپ-محبوب\2023-07-25-15-58-40-DK-Mag-Popular-Laptops-Mordad-1402-284x180.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ServiceHost</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ServiceHost</BasePath>
+      <RelativePath>ProductPictures\ساعت-هومشند\۱۰-لپ-تاپ-محبوب\2023-07-25-15-58-40-DK-Mag-Popular-Laptops-Mordad-1402-284x180.jpg</RelativePath>
+      <AssetKind></AssetKind>
+      <AssetMode></AssetMode>
+      <AssetRole></AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\ساعت-هومشند\۱۰-لپ-تاپ-محبوب\2023-07-25-15-58-40-DK-Mag-Popular-Laptops-Mordad-1402-284x180.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\ساعت-هومشند\۱۰-لپ-تاپ-محبوب\2023-07-25-16-00-19-DK-Mag-Popular-Laptops-Mordad-1402-284x180.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ServiceHost</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ServiceHost</BasePath>
+      <RelativePath>ProductPictures\ساعت-هومشند\۱۰-لپ-تاپ-محبوب\2023-07-25-16-00-19-DK-Mag-Popular-Laptops-Mordad-1402-284x180.jpg</RelativePath>
+      <AssetKind></AssetKind>
+      <AssetMode></AssetMode>
+      <AssetRole></AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\ساعت-هومشند\۱۰-لپ-تاپ-محبوب\2023-07-25-16-00-19-DK-Mag-Popular-Laptops-Mordad-1402-284x180.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\ساعت-هومشند\۱۰-لپ-تاپ-محبوب\2023-07-25-16-03-42-DK-Mag-Popular-Laptops-Mordad-1402-284x180.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ServiceHost</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ServiceHost</BasePath>
+      <RelativePath>ProductPictures\ساعت-هومشند\۱۰-لپ-تاپ-محبوب\2023-07-25-16-03-42-DK-Mag-Popular-Laptops-Mordad-1402-284x180.jpg</RelativePath>
+      <AssetKind></AssetKind>
+      <AssetMode></AssetMode>
+      <AssetRole></AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\ساعت-هومشند\۱۰-لپ-تاپ-محبوب\2023-07-25-16-03-42-DK-Mag-Popular-Laptops-Mordad-1402-284x180.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\ساعت-هومشند\۱۰۰-سالگی-دیزنی\2023-07-25-16-24-55-toy-story-3-scaled-1.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ServiceHost</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ServiceHost</BasePath>
+      <RelativePath>ProductPictures\ساعت-هومشند\۱۰۰-سالگی-دیزنی\2023-07-25-16-24-55-toy-story-3-scaled-1.jpg</RelativePath>
+      <AssetKind></AssetKind>
+      <AssetMode></AssetMode>
+      <AssetRole></AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\ساعت-هومشند\۱۰۰-سالگی-دیزنی\2023-07-25-16-24-55-toy-story-3-scaled-1.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\ساعت-هومشند\۱۰۰-سالگی-دیزنی\2023-07-25-16-29-14-toy-story-3-scaled-1.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ServiceHost</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ServiceHost</BasePath>
+      <RelativePath>ProductPictures\ساعت-هومشند\۱۰۰-سالگی-دیزنی\2023-07-25-16-29-14-toy-story-3-scaled-1.jpg</RelativePath>
+      <AssetKind></AssetKind>
+      <AssetMode></AssetMode>
+      <AssetRole></AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\ساعت-هومشند\۱۰۰-سالگی-دیزنی\2023-07-25-16-29-14-toy-story-3-scaled-1.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\ساعت-هومشند\۱۰۰-سالگی-دیزنی\2023-07-25-16-31-12-toy-story-3-scaled-1.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ServiceHost</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ServiceHost</BasePath>
+      <RelativePath>ProductPictures\ساعت-هومشند\۱۰۰-سالگی-دیزنی\2023-07-25-16-31-12-toy-story-3-scaled-1.jpg</RelativePath>
+      <AssetKind></AssetKind>
+      <AssetMode></AssetMode>
+      <AssetRole></AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\ساعت-هومشند\۱۰۰-سالگی-دیزنی\2023-07-25-16-31-12-toy-story-3-scaled-1.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\ساعت-هومشند\۷-روش-کاربردی-برای-تایپ-سریع-تر-در-آیفون\2023-07-24-10-58-15-تایپ-آیفون-2-284x180.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>ServiceHost</SourceId>

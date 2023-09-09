@@ -19,8 +19,10 @@ D:\Project\Code\Lampshade\DiscountManagement.Application.Contract\bin\Debug\net5
 D:\Project\Code\Lampshade\DiscountManagement.Application.Contract\bin\Debug\net5.0\DiscountManagement.Application.Contract.dll
 D:\Project\Code\Lampshade\DiscountManagement.Application.Contract\bin\Debug\net5.0\DiscountManagement.Application.Contract.pdb
 D:\Project\Code\Lampshade\DiscountManagement.Application.Contract\bin\Debug\net5.0\0_Framework.dll
+D:\Project\Code\Lampshade\DiscountManagement.Application.Contract\bin\Debug\net5.0\InventoryManagement.Application.Contract.dll
 D:\Project\Code\Lampshade\DiscountManagement.Application.Contract\bin\Debug\net5.0\ShopManagement.Application.Contracts.dll
 D:\Project\Code\Lampshade\DiscountManagement.Application.Contract\bin\Debug\net5.0\0_Framework.pdb
+D:\Project\Code\Lampshade\DiscountManagement.Application.Contract\bin\Debug\net5.0\InventoryManagement.Application.Contract.pdb
 D:\Project\Code\Lampshade\DiscountManagement.Application.Contract\bin\Debug\net5.0\ShopManagement.Application.Contracts.pdb
 D:\Project\Code\Lampshade\DiscountManagement.Application.Contract\obj\Debug\net5.0\DiscountManagement.Application.Contract.csproj.AssemblyReference.cache
 D:\Project\Code\Lampshade\DiscountManagement.Application.Contract\obj\Debug\net5.0\DiscountManagement.Application.Contract.GeneratedMSBuildEditorConfig.editorconfig

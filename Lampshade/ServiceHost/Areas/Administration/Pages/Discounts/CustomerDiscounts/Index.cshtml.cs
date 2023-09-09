@@ -15,15 +15,14 @@ namespace ServiceHost.Areas.Administration.Pages.Discounts.CustomerDiscounts
         public List<CustomerDiscountViewModel> CustomerDiscounts;
         public SelectList Products;
 
-        private readonly ICustomerDiscountApplication _customerDiscountApplication;
         private readonly IProductApplication _productApplication;
+        private readonly ICustomerDiscountApplication _customerDiscountApplication;
 
-        public IndexModel(ICustomerDiscountApplication customerDiscountApplication, IProductApplication productApplication)
+        public IndexModel(IProductApplication ProductApplication, ICustomerDiscountApplication customerDiscountApplication)
         {
+            _productApplication = ProductApplication;
             _customerDiscountApplication = customerDiscountApplication;
-            _productApplication = productApplication;
         }
-
 
         public void OnGet(CustomerDiscountSearchModel searchModel)
         {
@@ -33,12 +32,11 @@ namespace ServiceHost.Areas.Administration.Pages.Discounts.CustomerDiscounts
 
         public IActionResult OnGetCreate()
         {
-            var command = new DefineCustomerDiscount()
+            var command = new DefineCustomerDiscount
             {
                 Products = _productApplication.GetProducts()
             };
-
-            return Partial("./Create",command);
+            return Partial("./Create", command);
         }
 
         public JsonResult OnPostCreate(DefineCustomerDiscount command)
@@ -49,9 +47,9 @@ namespace ServiceHost.Areas.Administration.Pages.Discounts.CustomerDiscounts
 
         public IActionResult OnGetEdit(long id)
         {
-            var customerDiscount= _customerDiscountApplication.GetDetails(id);
+            var customerDiscount = _customerDiscountApplication.GetDetails(id);
             customerDiscount.Products = _productApplication.GetProducts();
-            return Partial("./Edit", customerDiscount);
+            return Partial("Edit", customerDiscount);
         }
 
         public JsonResult OnPostEdit(EditCustomerDiscount command)
@@ -59,6 +57,5 @@ namespace ServiceHost.Areas.Administration.Pages.Discounts.CustomerDiscounts
             var result = _customerDiscountApplication.Edit(command);
             return new JsonResult(result);
         }
-
     }
 }

@@ -214,6 +214,7 @@
       "DiscountManagement.Application.Contract/1.0.0": {
         "dependencies": {
           "0_Framework": "1.0.0",
+          "InventoryManagement.Application.Contract": "1.0.0",
           "ShopManagement.Application.Contracts": "1.0.0"
         },
         "runtime": {
@@ -227,6 +228,15 @@
         },
         "runtime": {
           "DiscountManagement.Domain.dll": {}
+        }
+      },
+      "InventoryManagement.Application.Contract/1.0.0": {
+        "dependencies": {
+          "0_Framework": "1.0.0",
+          "ShopManagement.Application.Contracts": "1.0.0"
+        },
+        "runtime": {
+          "InventoryManagement.Application.Contract.dll": {}
         }
       },
       "ShopManagement.Application.Contracts/1.0.0": {
@@ -411,6 +421,11 @@
       "sha512": ""
     },
     "DiscountManagement.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "InventoryManagement.Application.Contract/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

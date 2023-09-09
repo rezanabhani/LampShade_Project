@@ -1,5 +1,8 @@
 ﻿@page
-@model IndexModel
+@model Areas.Administration.Pages.Discounts.CustomerDiscounts.IndexModel
+@{
+}
+
 @{
     Layout = "Shared/_AdminLayout";
     ViewData["title"] = "مدیریت تخفیفات مشتریان";
@@ -24,7 +27,7 @@
                 <form class="form-inline" role="form" method="get">
                     <div class="form-group">
                         <label class="sr-only" asp-for="SearchModel.StartDate"></label>
-                        <input class="form-control persianDateInput" asp-for="SearchModel.StartDate" />
+                        <input class="form-control persianDateInput" asp-for="SearchModel.StartDate">
                     </div>
                     <div class="form-group">
                         <label class="sr-only" asp-for="SearchModel.EndDate"></label>
@@ -33,7 +36,7 @@
                     <div class="form-group">
                         <label class="sr-only" asp-for="SearchModel.ProductId"></label>
                         <select class="form-control" asp-for="SearchModel.ProductId" asp-items="Model.Products">
-                            <option value="0">انتخاب محصول   ....</option>
+                            <option value="0">انتخاب محصول ...</option>
                         </select>
                     </div>
                     <button type="submit" class="btn btn-success waves-effect waves-light m-l-10">جستجو</button>
@@ -48,7 +51,7 @@
     <div class="col-md-12">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title">لیست تخفیفات مشتریان(@Model.CustomerDiscounts.Count)</h3>
+                <h3 class="panel-title">لیست تخفیفات مشتریان (@Model.CustomerDiscounts.Count)</h3>
             </div>
             <div class="panel-body">
                 <div class="row">
@@ -59,7 +62,7 @@
                                     <th>#</th>
                                     <th>محصول</th>
                                     <th>درصد تخفیف</th>
-                                    <th>تاریخ شورع</th>
+                                    <th>تاریخ شروع</th>
                                     <th>تاریخ پایان</th>
                                     <th>علت تخفیف</th>
                                     <th>تاریخ تولید</th>
@@ -71,16 +74,16 @@
                                 {
                                     <tr>
                                         <td>@item.Id</td>
-                                        <td> @item.Product</td>
-                                        <td> @item.DiscountRate</td>
-                                        <td> @item.StartDate</td>
-                                        <td> @item.EndDate</td>
-                                        <td> @item.Reason</td>
-                                        <td> @item.CreationDate</td>
+                                        <td>@item.Product</td>
+                                        <td>@item.DiscountRate%</td>
+                                        <td>@item.StartDate</td>
+                                        <td>@item.EndDate</td>
+                                        <td>@item.Reason</td>
+                                        <td>@item.CreationDate</td>
                                         <td>
-                                            <a class="btn btn-warning btn-custom waves-effect waves-light m-b-5"
-                                               href="#showmodal=@Url.Page("./Index", "Edit", new {id = item.Id})">
-                                                <i class="fa fa-edit"></i>ویرایش
+                                            <a class="btn btn-warning waves-effect waves-light m-b-5"
+                                           href="#showmodal=@Url.Page("./Index", "Edit", new { id = item.Id})">
+                                                <i class="fa fa-edit"></i> ویرایش
                                             </a>
                                         </td>
                                     </tr>

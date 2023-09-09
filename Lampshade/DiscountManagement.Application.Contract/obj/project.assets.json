@@ -347,6 +347,20 @@
           "bin/placeholder/0_Framework.dll": {}
         }
       },
+      "InventoryManagement.Application.Contract/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_Framework": "1.0.0",
+          "ShopManagement.Application.Contracts": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/InventoryManagement.Application.Contract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InventoryManagement.Application.Contract.dll": {}
+        }
+      },
       "ShopManagement.Application.Contracts/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -870,6 +884,11 @@
       "path": "../0_Framework/0_Framework.csproj",
       "msbuildProject": "../0_Framework/0_Framework.csproj"
     },
+    "InventoryManagement.Application.Contract/1.0.0": {
+      "type": "project",
+      "path": "../InventoryManagement.Application.Contract/InventoryManagement.Application.Contract.csproj",
+      "msbuildProject": "../InventoryManagement.Application.Contract/InventoryManagement.Application.Contract.csproj"
+    },
     "ShopManagement.Application.Contracts/1.0.0": {
       "type": "project",
       "path": "../ShopManagement.Application.Contracts/ShopManagement.Application.Contracts.csproj",
@@ -879,6 +898,7 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "0_Framework >= 1.0.0",
+      "InventoryManagement.Application.Contract >= 1.0.0",
       "ShopManagement.Application.Contracts >= 1.0.0"
     ]
   },
@@ -911,6 +931,9 @@
           "projectReferences": {
             "D:\\Project\\Code\\Lampshade\\0_Framework\\0_Framework.csproj": {
               "projectPath": "D:\\Project\\Code\\Lampshade\\0_Framework\\0_Framework.csproj"
+            },
+            "D:\\Project\\Code\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj": {
+              "projectPath": "D:\\Project\\Code\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj"
             },
             "D:\\Project\\Code\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
               "projectPath": "D:\\Project\\Code\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"

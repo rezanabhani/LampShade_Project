@@ -43,5 +43,10 @@ namespace InventoryManagement.Application
         {
             return _productRepository.GetList();
         }
+
+        public List<ProductColorViewModel> GetListWithProduct()
+        {
+            return _productRepository.GetList();
+        }
     }
 }

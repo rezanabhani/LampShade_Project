@@ -6,6 +6,7 @@ namespace _01_LampshadeQuery.Contracts.Product
     public class ProductQueryModel
     {
         public long Id { get; set; }
+        public long ProductColorId { get; set; }
         public string Picture { get; set; }
         public string PictureAlt { get; set; }
         public string PictureTitle { get; set; }
@@ -28,29 +29,6 @@ namespace _01_LampshadeQuery.Contracts.Product
         public bool HasColor { get; set; }
         public List<ProductPictureQueryModel> Pictures { get; set; }
         public List<CommentQueryModel> Comments { get; set; }
+        public List<ProductColorQueryModel> ProductColors { get; set; }
     }
-
-    public class ProductPictureQueryModel
-    {
-        public long ProductId { get; set; }
-        public string Picture { get; set; }
-        public string PictureAlt { get; set; }
-        public string PictureTitle { get; set; }
-        public bool IsRemoved { get; set; }
-    }
-
-    public class CommentQueryModel
-    {
-        public long Id { get; set; }
-        public string Name { get; set; }
-        public string Message { get; set; }
-    }
-
-    //public class ProductColorQueryModel
-    //{
-    //    public long ColorId { get; set; }
-    //    public string ColorName { get; set; }
-    //}
-
-
 }

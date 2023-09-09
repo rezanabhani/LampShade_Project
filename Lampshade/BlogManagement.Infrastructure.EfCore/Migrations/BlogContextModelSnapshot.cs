@@ -44,8 +44,8 @@ namespace BlogManagement.Infrastructure.EfCore.Migrations
                         .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("MetaDescription")
-                        .HasMaxLength(150)
-                        .HasColumnType("nvarchar(150)");
+                        .HasMaxLength(1000)
+                        .HasColumnType("nvarchar(1000)");
 
                     b.Property<string>("Picture")
                         .HasMaxLength(500)

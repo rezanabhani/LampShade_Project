@@ -36,7 +36,8 @@ namespace BlogManagement.Application.Contracts.Article
 
         public string CanonicalAddress { get; set; }
 
-        [Range(1,long.MaxValue,ErrorMessage = ValidationMessages.IsRequired)]
+        [Range(1, long.MaxValue, ErrorMessage = ValidationMessages.IsRequired)]
         public long CategoryId { get; set; }
     }
 }
+

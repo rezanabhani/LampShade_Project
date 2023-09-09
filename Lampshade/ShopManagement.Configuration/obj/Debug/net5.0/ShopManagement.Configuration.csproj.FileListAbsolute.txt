@@ -40,6 +40,12 @@ D:\Project\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\ShopMana
 D:\Project\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\ShopManagement.Configuration.pdb
 D:\Project\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\01_LampshadeQuery.dll
 D:\Project\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\0_Framework.dll
+D:\Project\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\BlogManagement.Application.Contracts.dll
+D:\Project\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\BlogManagement.Domain.dll
+D:\Project\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\BlogManagement.Infrastructure.EfCore.dll
+D:\Project\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\CommentManagement.Application.Contracts.dll
+D:\Project\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\CommentManagement.Domain.dll
+D:\Project\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\CommentManagement.Infrastructure.EfCore.dll
 D:\Project\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\DiscountManagement.Application.Contract.dll
 D:\Project\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\DiscountManagement.Domain.dll
 D:\Project\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\DiscountManagement.Infrastructure.EFCore.dll
@@ -55,6 +61,12 @@ D:\Project\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\ShopMana
 D:\Project\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\ShopManagement.Application.pdb
 D:\Project\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\ShopManagement.Infrastructure.EfCore.pdb
 D:\Project\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\0_Framework.pdb
+D:\Project\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\BlogManagement.Application.Contracts.pdb
+D:\Project\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\BlogManagement.Domain.pdb
+D:\Project\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\BlogManagement.Infrastructure.EfCore.pdb
+D:\Project\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\CommentManagement.Application.Contracts.pdb
+D:\Project\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\CommentManagement.Domain.pdb
+D:\Project\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\CommentManagement.Infrastructure.EfCore.pdb
 D:\Project\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\DiscountManagement.Application.Contract.pdb
 D:\Project\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\DiscountManagement.Domain.pdb
 D:\Project\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\DiscountManagement.Infrastructure.EFCore.pdb
@@ -72,9 +84,3 @@ D:\Project\Code\Lampshade\ShopManagement.Configuration\obj\Debug\net5.0\ShopMana
 D:\Project\Code\Lampshade\ShopManagement.Configuration\obj\Debug\net5.0\refint\ShopManagement.Configuration.dll
 D:\Project\Code\Lampshade\ShopManagement.Configuration\obj\Debug\net5.0\ShopManagement.Configuration.pdb
 D:\Project\Code\Lampshade\ShopManagement.Configuration\obj\Debug\net5.0\ref\ShopManagement.Configuration.dll
-D:\Project\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\BlogManagement.Application.Contracts.dll
-D:\Project\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\BlogManagement.Domain.dll
-D:\Project\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\BlogManagement.Infrastructure.EfCore.dll
-D:\Project\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\BlogManagement.Application.Contracts.pdb
-D:\Project\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\BlogManagement.Domain.pdb
-D:\Project\Code\Lampshade\ShopManagement.Configuration\bin\Debug\net5.0\BlogManagement.Infrastructure.EfCore.pdb

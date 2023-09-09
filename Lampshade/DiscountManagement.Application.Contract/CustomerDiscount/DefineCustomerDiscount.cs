@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using _0_Framework.Application;
 using System.ComponentModel.DataAnnotations;
+using InventoryManagement.Application.Contract.ProductColor;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using ShopManagement.Application.Contracts.Product;
 

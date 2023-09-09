@@ -8,6 +8,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using ShopManagement.Configuration;
+using System.Text.Encodings.Web;
+using System.Text.Unicode;
+using CommentManagement.Infrastructure.Configuration;
 
 namespace ServiceHost
 {
@@ -28,6 +31,9 @@ namespace ServiceHost
             DiscountManagementBootstrapper.Configure(services,connectionString);
             InventoryManagementBootstrapper.Configure(services, connectionString);
             BlogManagementBootstrapper.Configure(services,connectionString);
+            CommentManagementBootstrapper.Configure(services, connectionString);
+
+            services.AddSingleton(HtmlEncoder.Create(UnicodeRanges.BasicLatin, UnicodeRanges.Arabic));
 
             services.AddTransient<IFileUploader, FileUploader>();
             services.AddRazorPages();
