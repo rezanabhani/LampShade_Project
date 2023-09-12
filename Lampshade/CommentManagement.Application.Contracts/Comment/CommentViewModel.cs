@@ -12,6 +12,6 @@
         public int Type { get; set; }
         public bool IsConfirmed { get; set; }
         public bool IsCanceled { get; set; }
-        public string CreationDate { get; set; }
+        public string CommentDate { get; set; }
     }
 }

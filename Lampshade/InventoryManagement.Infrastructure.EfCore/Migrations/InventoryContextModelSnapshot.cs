@@ -32,6 +32,9 @@ namespace InventoryManagement.Infrastructure.EfCore.Migrations
                     b.Property<bool>("InStock")
                         .HasColumnType("bit");
 
+                    b.Property<bool>("IsRemoved")
+                        .HasColumnType("bit");
+
                     b.Property<long>("ProductColorId")
                         .HasColumnType("bigint");
 

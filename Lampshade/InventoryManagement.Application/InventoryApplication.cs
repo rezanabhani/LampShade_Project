@@ -44,6 +44,7 @@ namespace InventoryManagement.Application
             return operation.Succedded();
         }
 
+
         public EditInventory GetDetails(long id)
         {
             return _inventoryRepository.GetDetails(id);
@@ -84,6 +85,34 @@ namespace InventoryManagement.Application
                 var inventory = _inventoryRepository.GetBy(item.ProductId);
                 inventory.Reduce(item.Count,operationId,item.Description,item.OrderId);
             }
+            _inventoryRepository.SaveChanges();
+            return operation.Succedded();
+        }
+
+        public OperationResult Remove(long id)
+        {
+            var operation = new OperationResult();
+
+            var inventory = _inventoryRepository.Get(id);
+            if (inventory == null)
+                return operation.Failed(ApplicationMessage.RecordNotFound);
+
+
+            inventory.Remove();
+            _inventoryRepository.SaveChanges();
+            return operation.Succedded();
+        }
+
+        public OperationResult Restore(long id)
+        {
+            var operation = new OperationResult();
+
+            var inventory = _inventoryRepository.Get(id);
+            if (inventory == null)
+                return operation.Failed(ApplicationMessage.RecordNotFound);
+
+
+            inventory.Restore();
             _inventoryRepository.SaveChanges();
             return operation.Succedded();
         }

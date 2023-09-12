@@ -102,5 +102,25 @@ namespace ServiceHost.Areas.Administration.Pages.Store.Inventory
             return Partial("OperationLog", log);
         }
 
+        public IActionResult OnGetRemove(long id)
+        {
+            var result = _inventoryApplication.Remove(id);
+
+            if (result.IsSuccedded)
+                return RedirectToPage("./Index");
+            Message = result.Message;
+            return RedirectToPage("./Index");
+        }
+
+        public IActionResult OnGetRestore(long id)
+        {
+            var result = _inventoryApplication.Restore(id);
+            if (result.IsSuccedded)
+                return RedirectToPage("./Index");
+
+            Message = result.Message;
+            return RedirectToPage("./Index");
+        }
+
     }
 }

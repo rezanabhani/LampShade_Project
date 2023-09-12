@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using InventoryManagement.Domain.ProductColorAgg;
+using _01_LampshadeQuery.Contracts.Comment;
 
 namespace _01_LampshadeQuery.Contracts.Product
 {

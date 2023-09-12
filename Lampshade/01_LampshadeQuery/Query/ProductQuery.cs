@@ -5,13 +5,12 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.InteropServices;
+using _01_LampshadeQuery.Contracts.Comment;
 using CommentManagement.Infrastructure.EfCore;
 using InventoryManagement.Infrastructure.EfCore;
 using ShopManagement.Infrastructure.EfCore;
 using ProductQueryModel = _01_LampshadeQuery.Contracts.Product.ProductQueryModel;
 using ShopManagement.Domain.ProductPictureAgg;
-using ShopManagement.Domain.ProductAgg;
 
 namespace _01_LampshadeQuery.Query
 {
@@ -34,7 +33,7 @@ namespace _01_LampshadeQuery.Query
         public ProductQueryModel GetProductDetails(string slug)
         {
             var inventory = _inventoryContext.Inventory.Include(x => x.ProductColor).Select(x =>
-                new { x.Id, x.ProductId, x.UnitPrice, x.InStock, x.ProductColorId, x.ProductColor }).ToList();
+                new { x.Id, x.ProductId, x.UnitPrice, x.InStock, x.ProductColorId, x.ProductColor , x.IsRemoved}).ToList();
             var discounts = _discountContext.CustomerDiscounts
                 .Where(x => x.StartDate < DateTime.Now && x.EndDate > DateTime.Now)
                 .Select(x => new { x.DiscountRate, x.ProductId, x.EndDate }).ToList();
@@ -68,10 +67,6 @@ namespace _01_LampshadeQuery.Query
 
             //var productInventory = inventory.FirstOrDefault(x => x.ProductId == product.Id);
 
-            //var priceColor = _inventoryContext.Inventory
-            //    .Include(x => x.ProductColor)
-            //    .Select(x => new { x.ProductId, x.ProductColorId, x.UnitPrice })
-            //    .FirstOrDefault(x => x.ProductId == product.Id & x.ProductColorId == product.ProductColorId).UnitPrice;
 
             //if (productInventory != null)
             //{
@@ -102,43 +97,51 @@ namespace _01_LampshadeQuery.Query
                 {
                     Id = x.Id,
                     Name = x.Name,
-                    Message = x.Message
+                    Message = x.Message,
+                    CreationDate = x.CreationDate.ToFarsi()
                 }).OrderByDescending(x => x.Id).ToList();
 
 
-            var discount2 = discounts.FirstOrDefault(x => x.ProductId == product.Id);
-            if (discount2 != null)
-            {
-                var discountRate = discount2.DiscountRate;
-                product.DiscountRate = discountRate;
-                product.DiscountExpireDate = discount2.EndDate.ToDiscountFormat();
-                product.HasDiscount = discountRate > 0;
 
-                product.ProductColors = _inventoryContext.Inventory
-                    .Where(x => product.Id == x.ProductId)
-                    .Include(x => x.ProductColor)
-                    .Select(x => new ProductColorQueryModel
-                    {
-                        ColorId = x.ProductColor.Id,
-                        ColorName = x.ProductColor.Color,
-                        Price = x.UnitPrice,
-                        PriceWithDiscount = Math.Round((x.UnitPrice * discount2.DiscountRate) / 100) - (x.UnitPrice)
-                    }).ToList();
-
-            }
-            else if (discount2 == null)
+            var productInventory = inventory.FirstOrDefault(x => x.ProductId == product.Id);
+            var discount = discounts.FirstOrDefault(x => x.ProductId == product.Id);
+            if (productInventory != null)
             {
-                product.ProductColors = _inventoryContext.Inventory
-                .Where(x => product.Id == x.ProductId)
-                .Include(x => x.ProductColor)
-                .Select(x => new ProductColorQueryModel
+                product.IsInStock = productInventory.InStock;
+                if (discount != null)
                 {
-                    ColorId = x.ProductColor.Id,
-                    ColorName = x.ProductColor.Color,
-                    Price = x.UnitPrice,
-                }).ToList();
-        }
+                    var discountRate = discount.DiscountRate;
+                    product.DiscountRate = discountRate;
+                    product.DiscountExpireDate = discount.EndDate.ToDiscountFormat();
+                    product.HasDiscount = discountRate > 0;
 
+                    product.ProductColors = _inventoryContext.Inventory
+                        .Where(x => !x.IsRemoved)
+                        .Where(x => product.Id == x.ProductId)
+                        .Include(x => x.ProductColor)
+                        .Select(x => new ProductColorQueryModel
+                        {
+                            ColorId = x.ProductColor.Id,
+                            ColorName = x.ProductColor.Color,
+                            Price = x.UnitPrice,
+                            PriceWithDiscount = Math.Round((x.UnitPrice * discount.DiscountRate) / 100) - (x.UnitPrice)
+                        }).ToList();
+
+                }
+                else if (discount == null)
+                {
+                    product.ProductColors = _inventoryContext.Inventory
+                        .Where(x => !x.IsRemoved)
+                        .Where(x => product.Id == x.ProductId)
+                        .Include(x => x.ProductColor)
+                        .Select(x => new ProductColorQueryModel
+                        {
+                            ColorId = x.ProductColor.Id,
+                            ColorName = x.ProductColor.Color,
+                            Price = x.UnitPrice,
+                        }).ToList();
+                }
+            }
 
             return product;
         }
@@ -163,7 +166,9 @@ namespace _01_LampshadeQuery.Query
             var discounts = _discountContext.CustomerDiscounts
                 .Where(x => x.StartDate < DateTime.Now && x.EndDate > DateTime.Now)
                 .Select(x => new { x.DiscountRate, x.ProductId }).ToList();
-            var products = _context.Products.Include(x => x.Category)
+
+            var products = _context.Products
+                .Include(x => x.Category)
                 .Select(product => new ProductQueryModel
                 {
                     Id = product.Id,
@@ -246,73 +251,6 @@ namespace _01_LampshadeQuery.Query
             }
 
             return products;
-        }
-
-        public string GetUnitPrice(long ColorId, long ProductId)
-        {
-            var priceColor = _inventoryContext.Inventory
-                .Select(x => new { x.ProductId, x.ProductColorId, x.UnitPrice })
-                .FirstOrDefault(x => x.ProductId == ProductId & x.ProductColorId == ColorId).UnitPrice;
-
-            return priceColor.ToMoney();
-
-        }
-
-        public string GetUnitPriceWithDisCount(long ColorId, long ProductId)
-        {
-            var inventory = _inventoryContext.Inventory.Include(x => x.ProductColor).Select(x =>
-                new { x.Id, x.ProductId, x.UnitPrice, x.InStock, x.ProductColorId, x.ProductColor }).ToList();
-            var discounts = _discountContext.CustomerDiscounts
-                .Where(x => x.StartDate < DateTime.Now && x.EndDate > DateTime.Now)
-                .Select(x => new { x.DiscountRate, x.ProductId, x.EndDate }).ToList();
-
-            var productInventory =
-                inventory.FirstOrDefault(x => x.ProductId == ProductId && x.ProductColorId == ColorId);
-
-            var product = _context.Products
-                .Include(x => x.Category)
-                .Include(x => x.ProductPictures)
-                .Select(x => new ProductQueryModel
-                {
-                    Id = x.Id,
-                    Category = x.Category.Name,
-                    Name = x.Name,
-                    Picture = x.Picture,
-                    PictureAlt = x.PictureAlt,
-                    PictureTitle = x.PictureTitle,
-                    Slug = x.Slug,
-                    CategorySlug = x.Category.Slug,
-                    Code = x.Code,
-                    Description = x.Description,
-                    Keywords = x.Keywords,
-                    MetaDescription = x.MetaDescription,
-                    ShortDescription = x.ShortDescription,
-                    Pictures = MapProductPictures(x.ProductPictures),
-                }).AsNoTracking().FirstOrDefault(x => x.Id == ProductId);
-
-
-            var priceColor = _inventoryContext.Inventory
-                .Select(x => new { x.ProductId, x.ProductColorId, x.UnitPrice })
-                .FirstOrDefault(x => x.ProductId == ProductId & x.ProductColorId == ColorId).UnitPrice;
-
-            //if (productInventory != null)
-            //{
-            var price = priceColor;
-            product.Price = price.ToMoney();
-            product.DoublePrice = price;
-            var discount = discounts.FirstOrDefault(x => x.ProductId == product.Id);
-            //if (discount != null)
-            //{
-            var discountRate = discount.DiscountRate;
-            product.DiscountRate = discountRate;
-            product.DiscountExpireDate = discount.EndDate.ToDiscountFormat();
-            product.HasDiscount = discountRate > 0;
-            var discountAmount = Math.Round((price * discountRate) / 100);
-            var priceWithDiscount = product.PriceWithDiscount = (price - discountAmount).ToMoney();
-
-            //}
-            //}
-            return priceWithDiscount;
         }
     }
 }

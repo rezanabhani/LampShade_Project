@@ -10,6 +10,7 @@ namespace CommentManagement.Infrastructure.EfCore.Repository
     public class CommentRepository : RepositoryBase<long, Comment>, ICommentRepository
     {
         private readonly CommentContext _context;
+
         public CommentRepository(CommentContext context) : base(context)
         {
             _context = context;
@@ -18,7 +19,7 @@ namespace CommentManagement.Infrastructure.EfCore.Repository
         public List<CommentViewModel> Search(CommentSearchModel searchModel)
         {
             var query = _context.Comments
-                .Select(x => new CommentViewModel()
+                .Select(x => new CommentViewModel
                 {
                     Id = x.Id,
                     Name = x.Name,
@@ -29,7 +30,7 @@ namespace CommentManagement.Infrastructure.EfCore.Repository
                     Type = x.Type,
                     IsCanceled = x.IsCanceled,
                     IsConfirmed = x.IsConfirmed,
-                    CreationDate = x.CreationDate.ToFarsi()
+                    CommentDate = x.CreationDate.ToFarsi()
                 });
 
             if (!string.IsNullOrWhiteSpace(searchModel.Name))
@@ -39,7 +40,6 @@ namespace CommentManagement.Infrastructure.EfCore.Repository
                 query = query.Where(x => x.Email.Contains(searchModel.Email));
 
             return query.OrderByDescending(x => x.Id).ToList();
-
         }
     }
 }

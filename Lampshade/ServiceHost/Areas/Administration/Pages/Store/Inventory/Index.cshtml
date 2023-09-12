@@ -87,6 +87,16 @@
                                                href="#showmodal=@Url.Page("./Index", "Edit", new {id = item.Id})">
                                                 <i class="fa fa-edit"></i>ویرایش
                                             </a>
+                                            @if (!@item.IsRemoved)
+                                            {
+                                                <a asp-page="./Index" asp-page-handler="Remove" asp-route-id="@item.Id"
+                                                   class="btn btn-danger btn-custom waves-effect waves-light m-b-5"> حذف !</a>
+                                            }
+                                            else
+                                            {
+                                                <a asp-page="./Index" asp-page-handler="Restore" asp-route-id="@item.Id"
+                                                   class="btn btn-success btn-custom waves-effect waves-light m-b-5"> فعال سازی ! </a>
+                                            }
                                             <a class="btn btn-success waves-effect waves-light m-b-5"
                                                href="#showmodal=@Url.Page("./Index", "Increase", new {id = item.Id})">
                                                 <i class="fa fa-plus"></i> افزایش موجودی

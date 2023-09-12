@@ -11,6 +11,7 @@ namespace InventoryManagement.Domain.InventoryAgg
         public long ProductColorId { get; private set; }
         public double UnitPrice { get; private set; }
         public bool InStock { get; private set; }
+        public bool IsRemoved { get; private set; }
         public List<InventoryOperation> Operations { get; private set; }
         public ProductColor ProductColor { get; private set; }
 
@@ -20,6 +21,7 @@ namespace InventoryManagement.Domain.InventoryAgg
             ProductColorId = productColorId;
             UnitPrice = unitPrice;
             InStock = false;
+            IsRemoved = false;
         }
 
         public void Edit(long productColorId, long productId, double unitPrice)
@@ -51,6 +53,16 @@ namespace InventoryManagement.Domain.InventoryAgg
             Operations.Add(operation);
             InStock = currentCount > 0;
         }
-      
+
+        public void Remove()
+        {
+            IsRemoved = true;
+        }
+
+        public void Restore()
+        {
+            IsRemoved = false;
+        }
+
     }
 }

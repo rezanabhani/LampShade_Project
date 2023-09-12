@@ -361,30 +361,22 @@
 
     <script type="text/javascript">
 
-        //const defaultPrice = document.getElementById('myPrice');
-        //const dataValue = defaultPrice.getAttribute('data-price');
-        //const outputPrice = document.getElementById('pricemain');
-        //outputPrice.textContent = dataValue;
+        document.addEventListener('DOMContentLoaded', function () {
+            const defaultPrice = document.getElementById('myPrice');
+            if (defaultPrice) {
+                const dataValue = defaultPrice.getAttribute('data-price');
+                const outputPrice = document.getElementById('pricemain');
+                if (outputPrice) {
+                    outputPrice.textContent = dataValue;
+                }
 
-        //let dataDiscountPrice = defaultPrice.getAttribute('data-discountpricemain');
-        //let outputDiscountPrice = document.getElementById('discountmain');
-        //outputDiscountPrice.textContent = dataDiscountPrice;
-    document.addEventListener('DOMContentLoaded', function() {
-    const defaultPrice = document.getElementById('myPrice');
-    if (defaultPrice) {
-        const dataValue = defaultPrice.getAttribute('data-price');
-        const outputPrice = document.getElementById('pricemain');
-        if (outputPrice) {
-            outputPrice.textContent = dataValue;
-        }
-
-        const dataDiscountPrice = defaultPrice.getAttribute('data-discountpricemain');
-        const outputDiscountPrice = document.getElementById('discountmain');
-        if (outputDiscountPrice) {
-            outputDiscountPrice.textContent = dataDiscountPrice;
-        }
-    }
-    });
+                const dataDiscountPrice = defaultPrice.getAttribute('data-discountpricemain');
+                const outputDiscountPrice = document.getElementById('discountmain');
+                if (outputDiscountPrice) {
+                    outputDiscountPrice.textContent = dataDiscountPrice;
+                }
+            }
+        });
 
         let price = document.getElementById('parent-list');
         price.addEventListener('click', function (e) {

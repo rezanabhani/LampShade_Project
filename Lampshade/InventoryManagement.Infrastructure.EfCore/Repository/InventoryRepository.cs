@@ -53,7 +53,8 @@ namespace InventoryManagement.Infrastructure.EfCore.Repository
                 UnitPrice = x.UnitPrice,
                 InStock = x.InStock,
                 CurrentCount = x.CalculateCurrentCount(),
-                CreationDate = x.CreationDate.ToFarsi()
+                CreationDate = x.CreationDate.ToFarsi(),
+                IsRemoved = x.IsRemoved
             });
 
             if (searchModel.ProductId > 0)
