@@ -1,0 +1,137 @@
+﻿@page
+@model ServiceHost.Pages.AccountModel
+@{
+    ViewData["Title"] = "ورود و ثبت نام";
+}
+
+
+<div class="breadcrumb-area section-space--half">
+    <div class="container wide">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumb-wrapper breadcrumb-bg">
+                    <div class="breadcrumb-content">
+                        <h2 class="breadcrumb-content__title">ورود و ثبت نام </h2>
+                        <ul class="breadcrumb-content__page-map">
+                            <li><a asp-page="/Index">صفحه اصلی</a></li>
+                            <li class="active">ورود - ثبت نام</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="page-content-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="page-wrapper">
+                    <div class="page-content-wrapper">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 col-xs-12 col-lg-6">
+                                @if (!string.IsNullOrWhiteSpace(Model.Message))
+                                {
+                                    <div class="alert alert-danger">@Model.Message</div>
+                                }
+                               
+                                <form method="post" asp-page-handler="Login">
+                                    <div class="login-form">
+                                        <h4 class="login-title">ورود</h4>
+                                        <div class="row">
+                                            @if (Model.IsMobile == false)
+                                            {
+                                                <div class="col-md-12 col-12">
+                                                    <label>موبایل</label>
+                                                    <input type="number" name="mobile"  placeholder="شماره موبایل">
+                                                </div>
+                                            }
+                                            else if (Model.IsMobile == true)
+                                            {
+                                                <div class="col-md-12 col-12">
+                                                    <label>موبایل</label>
+                                                    <input type="number" name="mobile" value="@Model.Mobile" placeholder="شماره موبایل">
+                                                </div>
+                                            }
+                                            @if (Model.ErrorVerify == true)
+                                            {
+                                               @* <div class="col-md-12 col-12">
+                                                    <label>موبایل</label>
+                                                    <input type="number" name="mobile" value="@Model.Mobile" placeholder="شماره موبایل">
+                                                </div>*@
+                                                <div class="col-md-12 col-12">
+                                                    <label>کد تایید</label>
+                                                    <input type="number" name="password" value="@Model.Pass" placeholder="کد تایید">
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <button class="register-button" name="verifyCode"asp-page-handler="Login">تایید کد</button>
+                                                </div>
+                                            }
+                                           
+
+
+                                            @*  <div class="col-sm-6 text-left text-sm-right">
+                                            <a href="#" class="forget-pass-link"> Forgotten pasward?</a>
+                                            </div>
+                                            *@
+                                            @if (Model.ErrorVerify == false)
+                                            {
+                                                <div class="col-md-12">
+                                                    <button class="register-button" asp-page-handler="SendCode" name="sendCode">دریافت کد</button>
+                                                </div>
+                                            }
+                                           
+                                            @if (Model.SendCode == true)
+                                            {
+                                                <div class="col-md-12 col-12">
+                                                    <label>کد تایید</label>
+                                                    <input type="number" name="password" placeholder="کد تایید">
+                                                </div>
+
+                                                <div class="col-md-12">
+                                                    <button class="register-button" name="verifyCode"asp-page-handler="Login">تایید کد</button>
+                                                </div>
+                                            }
+
+
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-6 col-xs-12">
+                                <form action="#">
+
+                                    <div class="login-form">
+                                        <h4 class="login-title">ثبت نام</h4>
+
+                                        <div class="row">
+                                            <div class="col-md-6 col-12 mb-20">
+                                                <label>نام کامل</label>
+                                                <input type="text" name="fullname" placeholder="نام کامل">
+                                            </div>
+                                            <div class="col-md-6 col-12 mb-20">
+                                                <label>نام کاربری</label>
+                                                <input type="text" name="username" placeholder="نام کاربری">
+                                            </div>
+                                            <div class="col-md-12 mb-20">
+                                                <label>موبایل</label>
+                                                <input type="number" name="mobile" placeholder="موبایل">
+                                            </div>
+                                            <div class="col-12">
+                                                <button class="register-button mt-0">ثبت نام</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
