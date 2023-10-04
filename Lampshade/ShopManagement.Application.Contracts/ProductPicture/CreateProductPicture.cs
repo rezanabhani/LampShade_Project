@@ -9,7 +9,7 @@ namespace ShopManagement.Application.Contracts.ProductPicture
 {
     public class CreateProductPicture
     {
-        [Range(1,10000,ErrorMessage = ValidationMessages.IsRequired)]
+        //[Range(1,10000,ErrorMessage = ValidationMessages.IsRequired)]
         public long ProductId { get; set; }
 
         [MaxFileSize(3 * 1024 * 1024, ErrorMessage = ValidationMessages.MaxFileSize)]

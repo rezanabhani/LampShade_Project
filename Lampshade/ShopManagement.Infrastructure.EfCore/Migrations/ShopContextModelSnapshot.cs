@@ -19,7 +19,7 @@ namespace ShopManagement.Infrastructure.EfCore.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("ProductVersion", "5.0.0");
 
-            modelBuilder.Entity("ShopManagement.Domain.CommentAgg.Comment", b =>
+            modelBuilder.Entity("ShopManagement.Domain.CategoryTypeAgg.CategoryType", b =>
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
@@ -29,29 +29,12 @@ namespace ShopManagement.Infrastructure.EfCore.Migrations
                     b.Property<DateTime>("CreationDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Email")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("IsCanceled")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("IsConfirmed")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("Message")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<long>("ProductId")
-                        .HasColumnType("bigint");
-
                     b.HasKey("Id");
 
-                    b.HasIndex("ProductId");
-
-                    b.ToTable("Comments");
+                    b.ToTable("CategoryTypes");
                 });
 
             modelBuilder.Entity("ShopManagement.Domain.ProductAgg.Product", b =>
@@ -111,6 +94,9 @@ namespace ShopManagement.Infrastructure.EfCore.Migrations
                         .HasColumnType("bigint")
                         .UseIdentityColumn();
 
+                    b.Property<long>("CategoryTypeId")
+                        .HasColumnType("bigint");
+
                     b.Property<DateTime>("CreationDate")
                         .HasColumnType("datetime2");
 
@@ -139,6 +125,8 @@ namespace ShopManagement.Infrastructure.EfCore.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("CategoryTypeId");
 
                     b.ToTable("ProductCategories");
                 });
@@ -217,17 +205,6 @@ namespace ShopManagement.Infrastructure.EfCore.Migrations
                     b.ToTable("Slides");
                 });
 
-            modelBuilder.Entity("ShopManagement.Domain.CommentAgg.Comment", b =>
-                {
-                    b.HasOne("ShopManagement.Domain.ProductAgg.Product", "Product")
-                        .WithMany("Comments")
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Product");
-                });
-
             modelBuilder.Entity("ShopManagement.Domain.ProductAgg.Product", b =>
                 {
                     b.HasOne("ShopManagement.Domain.ProductCategoryAgg.ProductCategory", "Category")
@@ -237,6 +214,17 @@ namespace ShopManagement.Infrastructure.EfCore.Migrations
                         .IsRequired();
 
                     b.Navigation("Category");
+                });
+
+            modelBuilder.Entity("ShopManagement.Domain.ProductCategoryAgg.ProductCategory", b =>
+                {
+                    b.HasOne("ShopManagement.Domain.CategoryTypeAgg.CategoryType", "CategoryType")
+                        .WithMany("ProductCategories")
+                        .HasForeignKey("CategoryTypeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("CategoryType");
                 });
 
             modelBuilder.Entity("ShopManagement.Domain.ProductPictureAgg.ProductPicture", b =>
@@ -250,10 +238,13 @@ namespace ShopManagement.Infrastructure.EfCore.Migrations
                     b.Navigation("Product");
                 });
 
+            modelBuilder.Entity("ShopManagement.Domain.CategoryTypeAgg.CategoryType", b =>
+                {
+                    b.Navigation("ProductCategories");
+                });
+
             modelBuilder.Entity("ShopManagement.Domain.ProductAgg.Product", b =>
                 {
-                    b.Navigation("Comments");
-
                     b.Navigation("ProductPictures");
                 });
 

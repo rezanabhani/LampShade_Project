@@ -1,6 +1,8 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using _0_Framework.Application;
 using Microsoft.AspNetCore.Http;
+using ShopManagement.Application.Contracts.CategoryType;
 
 namespace ShopManagement.Application.Contracts.ProductCategory
 {
@@ -26,5 +28,10 @@ namespace ShopManagement.Application.Contracts.ProductCategory
 
         [Required(ErrorMessage = ValidationMessages.IsRequired)]
         public string Slug { get; set; }
+
+        [Range(1, 100000, ErrorMessage = ValidationMessages.IsRequired)]
+        public long CategoryTypeId { get; set; }
+
+        public List<CategoryTypeViewModel> CategoryTypes { get; set; }
     }
 }

@@ -1,6 +1,6 @@
 ﻿@model List<_01_LampshadeQuery.Contracts.ProductCategory.ProductCategoryQueryModel>
 
-<div class="category-area section-space">
+@*<div class="category-area section-space">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -30,5 +30,42 @@
                 </div>
             </div>
         </div>
+    </div>
+</div>*@
+<style>
+
+</style>
+
+<div class="container-one">
+   
+    <p>نوشیدنی ساز</p>
+    <div class="category">
+        @foreach (var category in Model)
+        {
+            @if (category.CategoryTypeId == 1)
+            {
+                <div class="item">
+                    <a asp-page="/ProductCategory" asp-route-id="@category.Slug">
+                        <img src="~/ProductPictures/@category.Picture" alt="">
+                    </a>
+                </div>
+            }
+        }
+
+    </div>
+    <p> لوازم آماده سازی غذا</p>
+    <div class="category">
+    @foreach (var category in Model)
+        {
+            @if (category.CategoryTypeId == 2)
+            {
+
+                <div class="item">
+                    <a asp-page="/ProductCategory" asp-route-id="@category.Slug">
+                        <img src="~/ProductPictures/@category.Picture" alt="">
+                    </a>
+                </div>
+            }
+        }
     </div>
 </div>

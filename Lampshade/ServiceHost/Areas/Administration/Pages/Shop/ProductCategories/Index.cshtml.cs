@@ -1,6 +1,8 @@
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using ShopManagement.Application.Contracts.CategoryType;
 using ShopManagement.Application.Contracts.ProductCategory;
 
 namespace ServiceHost.Areas.Administration.Pages.Shop.ProductCategories
@@ -9,22 +11,30 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.ProductCategories
     {
         public ProductCategorySearchModel SearchModel;
         public List<ProductCategoryViewModel> ProductCategories;
+        public SelectList CategoryTypes;
 
         private readonly IProductCategoryApplication _productCategoryApplication;
-
-        public IndexModel(IProductCategoryApplication productCategoryApplication)
+        private readonly ICategoryTypeApplication _categoryTypeApplication;
+        public IndexModel(IProductCategoryApplication productCategoryApplication,ICategoryTypeApplication categoryTypeApplication)
         {
             _productCategoryApplication = productCategoryApplication;
+            _categoryTypeApplication = categoryTypeApplication;
         }
 
         public void OnGet(ProductCategorySearchModel searchModel)
         {
+            CategoryTypes = new SelectList(_categoryTypeApplication.GetCategoryTypes(), "Id", "Name");
             ProductCategories = _productCategoryApplication.Search(searchModel);
         }
 
         public IActionResult OnGetCreate()
         {
-            return Partial("./Create", new CreateProductCategory());
+            var command = new CreateProductCategory()
+            {
+                CategoryTypes = _categoryTypeApplication.GetCategoryTypes()
+            };
+            ;
+            return Partial("./Create", command);
         }
 
         public JsonResult OnPostCreate(CreateProductCategory command)
@@ -36,6 +46,7 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.ProductCategories
         public IActionResult OnGetEdit(long id)
         {
             var productCategory = _productCategoryApplication.GetDetails(id);
+            productCategory.CategoryTypes = _categoryTypeApplication.GetCategoryTypes();
             return Partial("./Edit", productCategory);
         }
 

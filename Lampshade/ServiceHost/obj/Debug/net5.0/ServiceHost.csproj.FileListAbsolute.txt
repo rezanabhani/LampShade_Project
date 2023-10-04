@@ -516,3 +516,6 @@ D:\Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Account.cshtm
 D:\Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.Extensions.Configuration.Abstractions.dll
 D:\Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\SmsIrRestful.dll
 D:\Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
+D:\Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\CategoryTypes\Create.cshtml.g.cs
+D:\Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\CategoryTypes\Edit.cshtml.g.cs
+D:\Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\CategoryTypes\Index.cshtml.g.cs

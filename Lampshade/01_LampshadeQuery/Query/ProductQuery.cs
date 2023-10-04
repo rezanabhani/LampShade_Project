@@ -65,28 +65,6 @@ namespace _01_LampshadeQuery.Query
                 return new ProductQueryModel();
 
 
-            //var productInventory = inventory.FirstOrDefault(x => x.ProductId == product.Id);
-
-
-            //if (productInventory != null)
-            //{
-            //    product.IsInStock = productInventory.InStock;
-            //    var price = productInventory.UnitPrice;
-            //    product.Price = price.ToMoney();
-            //    product.DoublePrice = price;
-            //    var discount = discounts.FirstOrDefault(x => x.ProductId == product.Id);
-            //    if (discount != null)
-            //    {
-            //        var discountRate = discount.DiscountRate;
-            //        product.DiscountRate = discountRate;
-            //        product.DiscountExpireDate = discount.EndDate.ToDiscountFormat();
-            //        product.HasDiscount = discountRate > 0;
-            //        var discountAmount = Math.Round((price * discountRate) / 100); 
-            //       product.PriceWithDiscount = (price - discountAmount).ToMoney();
-
-
-            //    }
-            //}
 
             product.Comments = _commentContext.Comments
                 .Where(x => !x.IsCanceled)
@@ -123,7 +101,7 @@ namespace _01_LampshadeQuery.Query
                         {
                             ColorId = x.ProductColor.Id,
                             ColorName = x.ProductColor.Color,
-                            Price = x.UnitPrice,
+                            Price = x.UnitPrice.ToMoney(),
                             PriceWithDiscount = Math.Round((x.UnitPrice * discount.DiscountRate) / 100) - (x.UnitPrice)
                         }).ToList();
 
@@ -138,7 +116,7 @@ namespace _01_LampshadeQuery.Query
                         {
                             ColorId = x.ProductColor.Id,
                             ColorName = x.ProductColor.Color,
-                            Price = x.UnitPrice,
+                            Price = x.UnitPrice.ToMoney(),
                         }).ToList();
                 }
             }

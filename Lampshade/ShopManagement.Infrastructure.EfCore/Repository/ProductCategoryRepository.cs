@@ -2,6 +2,7 @@
 using System.Linq;
 using _0_Framework.Application;
 using _0_Framework.Infrastructure;
+using Microsoft.EntityFrameworkCore;
 using ShopManagement.Application.Contracts.ProductCategory;
 using ShopManagement.Domain.ProductCategoryAgg;
 
@@ -37,7 +38,8 @@ namespace ShopManagement.Infrastructure.EfCore.Repository
                 //Picture = x.Picture,
                 PictureAlt = x.PictureAlt,
                 PictureTitle = x.PictureTitle,
-                Slug = x.Slug
+                Slug = x.Slug,
+                CategoryTypeId = x.CategoryTypeId
             }).FirstOrDefault(x => x.Id == id);
         }
 
@@ -48,10 +50,14 @@ namespace ShopManagement.Infrastructure.EfCore.Repository
 
         public List<ProductCategoryViewModel> Search(ProductCategorySearchModel searchModel)
         {
-            var query = _context.ProductCategories.Select(x => new ProductCategoryViewModel
+            var query = _context.ProductCategories
+                .Include(x => x.CategoryType)
+                .Select(x => new ProductCategoryViewModel
             {
                 Id = x.Id,
                 Name = x.Name,
+                CategoryType = x.CategoryType.Name,
+                CategoryTypeId = x.CategoryTypeId,
                 Picture = x.Picture,
                 CreationDate = x.CreationDate.ToFarsi()
             });

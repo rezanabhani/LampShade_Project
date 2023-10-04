@@ -161,13 +161,16 @@
                                             }
                                         </p>
                                         <div id="parent-list">
-                                            @foreach (var colors in Model.Product.ProductColors)
+                                            @if (Model.Product.ProductColors != null)
                                             {
-                                                <svg height="100" width="100">
-                                                    <a class="circle">
-                                                        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" data-price="@colors.Price" data-discountpricemain="@colors.PriceWithDiscount" id="myPrice" fill="@colors.ColorName" />
-                                                    </a>
-                                                </svg>
+                                                @foreach (var colors in Model.Product.ProductColors)
+                                                {
+                                                    <svg height="100" width="100">
+                                                        <a class="circle">
+                                                            <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" data-price="@colors.Price" data-discountpricemain="@colors.PriceWithDiscount" id="myPrice" fill="@colors.ColorName"/>
+                                                        </a>
+                                                    </svg>
+                                                }
                                             }
                                         </div>
                                         <p class="product-description">

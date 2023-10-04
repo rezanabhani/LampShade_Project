@@ -27,14 +27,18 @@ namespace _01_LampshadeQuery.Query
 
         public List<ProductCategoryQueryModel> GetProductCategories()
         {
-            return _context.ProductCategories.Select(x => new ProductCategoryQueryModel()
+            return _context.ProductCategories
+                .Include(x => x.CategoryType)
+                .Select(x => new ProductCategoryQueryModel()
             {
                 Id = x.Id,
                 Name = x.Name,
                 Picture = x.Picture,
                 PictureAlt = x.PictureAlt,
                 PictureTitle = x.PictureTitle,
-                Slug = x.Slug
+                Slug = x.Slug,
+                CategoryType = x.CategoryType.Name,
+                CategoryTypeId = x.CategoryTypeId
             }).AsNoTracking().ToList();
         }
 

@@ -49,6 +49,7 @@
                                     <th>#</th>
                                     <th>عکس</th>
                                     <th>نام</th>
+                                    <th>نوع دسته بندی</th>
                                     <th>تاریخ تولید</th>
                                     <th>عملیات</th>
                                 </tr>
@@ -62,6 +63,7 @@
                                         <img src="~/ProductPictures/@item.Picture" style="width: 70px; height: 70px" />
                                     </td>
                                     <td> @item.Name</td>
+                                    <td> @item.CategoryType</td>
                                     <td> @item.CreationDate</td>
                                     <td>
                                             <a class="btn btn-warning pull-right m-r1-5" href="#showmodal=@Url.Page("./Index", "Edit", new {id = item.Id})">

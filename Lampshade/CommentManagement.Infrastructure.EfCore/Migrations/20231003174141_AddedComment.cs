@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace CommentManagement.Infrastructure.EfCore.Migrations
 {
-    public partial class NewCommentAdded : Migration
+    public partial class AddedComment : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

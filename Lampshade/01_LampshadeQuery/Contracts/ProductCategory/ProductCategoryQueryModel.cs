@@ -14,6 +14,8 @@ namespace _01_LampshadeQuery.Contracts.ProductCategory
         public string Keywords { get; set; }
         public string MetaDescription { get; set; }
         public string Description { get; set; }
+        public string CategoryType { get; set; }
+        public long CategoryTypeId { get; set; }
         public List<ProductQueryModel> Products { get; set; }
     }
 }
