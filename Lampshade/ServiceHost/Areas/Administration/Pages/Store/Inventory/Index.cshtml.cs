@@ -1,6 +1,8 @@
 using System.Collections.Generic;
+using _0_Framework.Infrastructure;
 using InventoryManagement.Application.Contract.Inventory;
 using InventoryManagement.Application.Contract.ProductColor;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -8,6 +10,7 @@ using ShopManagement.Application.Contracts.Product;
 
 namespace ServiceHost.Areas.Administration.Pages.Store.Inventory
 {
+    [Authorize(Roles = Roles.Administrator)]
     public class IndexModel : PageModel
     {
         [TempData]

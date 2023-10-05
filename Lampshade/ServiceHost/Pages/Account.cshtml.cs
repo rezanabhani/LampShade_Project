@@ -1,8 +1,8 @@
 ﻿using _0_Framework.Application;
+using AccountManagement.Application;
 using AccountManagement.Application.Contracts.Account;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace ServiceHost.Pages
 {
@@ -10,6 +10,12 @@ namespace ServiceHost.Pages
     {
         [TempData]
         public string Message { get; set; }
+
+        [TempData]
+        public string RegisterMessage { get; set; }
+
+        [TempData]
+        public string SuccessMessage { get; set; }
 
         [TempData]
         public string Mobile { get; set; }
@@ -24,7 +30,7 @@ namespace ServiceHost.Pages
         private readonly IAccountApplication _accountApplication;
         private readonly IPasswordHasher _passwordHasher;
 
-        public AccountModel(IAccountApplication accountApplication,IPasswordHasher passwordHasher)
+        public AccountModel(IAccountApplication accountApplication, IPasswordHasher passwordHasher)
         {
             _accountApplication = accountApplication;
             _passwordHasher = passwordHasher;
@@ -53,7 +59,7 @@ namespace ServiceHost.Pages
             if (result.IsSuccedded)
                 return RedirectToPage("/Index");
 
-           
+
             return RedirectToPage("/Account");
 
         }
@@ -61,20 +67,20 @@ namespace ServiceHost.Pages
         public IActionResult OnPostSendCode(Login command)
         {
             var operation = new OperationResult();
-           var result = _accountApplication.SendCode(command);
-           if (result.IsSuccedded)
-           {
-               Mobile = command.Mobile;
-               SendCode = true;
-               IsMobile = true;
+            var result = _accountApplication.SendCode(command);
+            if (result.IsSuccedded)
+            {
+                Mobile = command.Mobile;
+                SendCode = true;
+                IsMobile = true;
             }
 
-           if (!result.IsSuccedded)
-           {
-               Message = "کاربری با شماره وارد شده یافت نشد";
+            if (!result.IsSuccedded)
+            {
+                Message = "کاربری با شماره وارد شده یافت نشد";
             }
-           
-           return Page();
+
+            return Page();
         }
 
         public IActionResult OnGetLogout()
@@ -82,5 +88,22 @@ namespace ServiceHost.Pages
             _accountApplication.Logout();
             return RedirectToPage("/Index");
         }
+
+        public IActionResult OnPostRegister(RegisterAccount command)
+        {
+            var result = _accountApplication.Register(command);
+            if (result.IsSuccedded)
+            {
+                SuccessMessage = " ثبت نام شما با موفقیت انجام شد";
+            }
+
+            if (!result.IsSuccedded)
+            {
+                RegisterMessage = "کاربر با اطلاعات وارد شده قبلا در سایت ثبت نام شده است .";
+            }
+          
+            return Page();
+        }
+
     }
 }

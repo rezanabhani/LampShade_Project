@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq.Expressions;
-using System.Reflection;
-using System.Security.Cryptography;
+﻿using System.Collections.Generic;
 using _0_Framework.Application;
 using _0_Framework.Application.Sms;
 using AccountManagement.Application.Contracts.Account;
 using AccountManagement.Domain.AccountAgg;
-using AccountManagement.Domain.RoleAgg;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace AccountManagement.Application
 {
@@ -30,17 +24,18 @@ namespace AccountManagement.Application
             _authHelper = authHelper;
         }
 
-        public OperationResult Create(CreateAccount command)
+        public OperationResult Register(RegisterAccount command)
         {
             var operation = new OperationResult();
 
             if (_accountRepository.Exists(x => x.Username == command.Username || x.Mobile == command.Mobile))
                 return operation.Failed(ApplicationMessage.DuplicatedRecord);
 
-            var password = _passwordHasher.Hash(command.Password);
+            var randomNumberGenerator = new _0_Framework.Application.RandomNumberGenerator();
+            command.Password = randomNumberGenerator.GenerateRandomNumber().ToString();
             var path = $"profilePhotos";
             var picturePath = _fileUploader.Upload(command.ProfilePhoto, path);
-            var account = new Account(command.Fullname, command.Username, password, command.Mobile, command.RoleId,
+            var account = new Account(command.Fullname, command.Username, command.Password, command.Mobile, command.RoleId,
                 picturePath);
 
             _accountRepository.Create(account);
@@ -94,7 +89,7 @@ namespace AccountManagement.Application
 
             account.ChangePassword(command.Password);
             _accountRepository.SaveChanges();
-            _smsService.SendVerificationCodeAsync(command.Mobile, command.Password);
+            //_smsService.SendVerificationCodeAsync(command.Mobile, command.Password);
             
             return operation.Succedded();
         }

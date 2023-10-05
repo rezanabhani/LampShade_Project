@@ -61,15 +61,17 @@
             {"breakpoint":479, "settings": {"slidesToShow": 1, "arrows": false, "slidesToScroll": 1} }
         ]'>
 
-                                                <div class="single-image">
-                                                    <img src="~/ProductPictures/@Model.Product.Picture" class="img-fluid"
-                                                         alt="@Model.Product.Picture">
+                                                <div class="single-blog-post-media">
+                                                    <div class="image">
+                                                        <img src="~/ProductPictures/@Model.Product.Picture" class="img-fluid" alt="@Model.Product.PictureAlt" title="@Model.Product.Name">
+                                                    </div>
                                                 </div>
+
                                                 @foreach (var picture in Model.Product.Pictures)
                                                 {
                                                     <div class="single-image">
                                                         <img src="~/ProductPictures/@picture.Picture" class="img-fluid"
-                                                         alt="@picture.Picture" title="@picture.Picture">
+                                                         alt="@picture.PictureAlt" title="@picture.PictureTitle">
                                                     </div>
                                                 }
 
@@ -167,7 +169,7 @@
                                                 {
                                                     <svg height="100" width="100">
                                                         <a class="circle">
-                                                            <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" data-price="@colors.Price" data-discountpricemain="@colors.PriceWithDiscount" id="myPrice" fill="@colors.ColorName"/>
+                                                            <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" data-price="@colors.Price" data-discountpricemain="@colors.PriceWithDiscount" id="myPrice" fill="@colors.ColorName" />
                                                         </a>
                                                     </svg>
                                                 }
@@ -250,9 +252,10 @@
                                             <div class="tab-pane fade show active" id="product-description"
                                                  role="tabpanel" aria-labelledby="description-tab">
 
-                                                <div class="product-description">
-                                                    @Model.Product.Description
+                                                <div class="post-content">
+                                                    @Html.Raw(Model.Product.Description)
                                                 </div>
+
 
                                             </div>
                                             <div class="tab-pane fade" id="review" role="tabpanel"

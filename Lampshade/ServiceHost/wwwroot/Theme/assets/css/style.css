@@ -206,11 +206,12 @@ select {
 .slick-slide > div > div {
 	vertical-align: middle;
 }
-
+.slick-slide {
+    background-color: #fff;
+    border-radius: 10px;
+}
 /*----------  Sharp border tippyjs theme  ----------*/
-
 /* If `animateFill: true` (default) */
-
 .tippy-tooltip.roundborder-theme .tippy-backdrop {
 	font-weight: 400;
 	color: #fff;
@@ -2215,6 +2216,15 @@ select {
 	transition: .6s;
 }
 
+
+
+.single-grid-product {
+    -webkit-transition: .6s;
+    transition: .6s;
+    width: 100%; /* Set the desired width */
+    height: auto; /* Set the desired height or use 'auto' for dynamic height based on content */
+}
+
 .single-grid-product__label span {
 	line-height: 50px;
 	position: absolute;
@@ -2244,13 +2254,15 @@ select {
 	margin-bottom: 20px;
 }
 
-.single-grid-product__image > a {
-	display: block;
-	width: 100%;
+	.single-grid-product__image > a {
+		display: block;
+		width: 100%;
+        height: 100%;
 }
 
 .single-grid-product__image > a img {
 	width: 100%;
+    height: 100%;
 	-webkit-transition: .6s;
 	transition: .6s;
 }
@@ -8438,3 +8450,47 @@ a {
     }
 }
 
+
+/*Style 404 not found*/
+
+.page-conatiner {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.page-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.page-content > div {
+    text-align: right;
+}
+
+.page-content > div > p {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.page-content > div > span {
+    display: block;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.page-content > div > a {
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 9px;
+    font-size: 18px;
+}
+
+.page-content img {
+    width: 400px;
+    margin-left: 30px;
+}

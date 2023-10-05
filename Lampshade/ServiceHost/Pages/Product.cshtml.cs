@@ -18,7 +18,7 @@ namespace ServiceHost.Pages
             _commentApplication = commentApplication;
         }
 
-        public void OnGet(string id )
+        public void OnGet(string id)
         {
             Product = _productQuery.GetProductDetails(id);
            

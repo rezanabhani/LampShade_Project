@@ -4416,6 +4416,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\1.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ServiceHost</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ServiceHost</BasePath>
+      <RelativePath>img\1.jpg</RelativePath>
+      <AssetKind></AssetKind>
+      <AssetMode></AssetMode>
+      <AssetRole></AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\1.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\Screenshot_10.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>ServiceHost</SourceId>
@@ -5312,6 +5328,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\آب-مرکبات-گیری\آب-مرکبات-گيری-ناسا-الکتریک-مدل-ns-935\2023-10-03-21-06-52-a3.webp))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\آب-مرکبات-گیری\آب-مرکبات-گیر-براون-مدل-cj5050\2023-10-04-17-17-57-12.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>ServiceHost</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ServiceHost</BasePath>
+      <RelativePath>ProductPictures\آب-مرکبات-گیری\آب-مرکبات-گیر-براون-مدل-cj5050\2023-10-04-17-17-57-12.webp</RelativePath>
+      <AssetKind></AssetKind>
+      <AssetMode></AssetMode>
+      <AssetRole></AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\آب-مرکبات-گیری\آب-مرکبات-گیر-براون-مدل-cj5050\2023-10-04-17-17-57-12.webp))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\آب-میوه-گیری\2023-10-03-20-49-36-Screenshot_8.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>ServiceHost</SourceId>
@@ -5343,6 +5375,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\آب-میوه-گیری\آبميوه-گيری-تکنو-مدل-te-219\2023-10-04-10-48-25-b2.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\آب-میوه-گیری\آبمیوه-گیری-براون-مدل-j500\2023-10-04-18-06-15-2.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>ServiceHost</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ServiceHost</BasePath>
+      <RelativePath>ProductPictures\آب-میوه-گیری\آبمیوه-گیری-براون-مدل-j500\2023-10-04-18-06-15-2.webp</RelativePath>
+      <AssetKind></AssetKind>
+      <AssetMode></AssetMode>
+      <AssetRole></AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\آب-میوه-گیری\آبمیوه-گیری-براون-مدل-j500\2023-10-04-18-06-15-2.webp))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\آب-میوه-گیری\آبمیوه-گیری-میگل-مدل-gpj-800\2023-10-04-10-47-23-B1.webp))">
       <SourceType>Package</SourceType>
@@ -5600,6 +5648,38 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\اسپرسوساز\اسپرسو-ساز-دلونگی-مدل-bco431\2023-10-04-11-55-25-a3.jpg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\اسپرسوساز\اسپرسو-ساز-و-کاپوچینو-ساز-دسینی-مدل-222\2023-10-04-13-36-30-5.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>ServiceHost</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ServiceHost</BasePath>
+      <RelativePath>ProductPictures\اسپرسوساز\اسپرسو-ساز-و-کاپوچینو-ساز-دسینی-مدل-222\2023-10-04-13-36-30-5.webp</RelativePath>
+      <AssetKind></AssetKind>
+      <AssetMode></AssetMode>
+      <AssetRole></AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\اسپرسوساز\اسپرسو-ساز-و-کاپوچینو-ساز-دسینی-مدل-222\2023-10-04-13-36-30-5.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\اسپرسوساز\اسپرسو-ساز\2023-10-04-15-42-44-1.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ServiceHost</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ServiceHost</BasePath>
+      <RelativePath>ProductPictures\اسپرسوساز\اسپرسو-ساز\2023-10-04-15-42-44-1.jpg</RelativePath>
+      <AssetKind></AssetKind>
+      <AssetMode></AssetMode>
+      <AssetRole></AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\اسپرسوساز\اسپرسو-ساز\2023-10-04-15-42-44-1.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\اسپرسوساز\اسپرسوساز-بوش-مدل-tis65621rw\2023-10-04-11-50-40-2.webp))">
       <SourceType>Package</SourceType>
       <SourceId>ServiceHost</SourceId>
@@ -5695,6 +5775,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\اسپرسوساز\اسپرسوساز-دلونگی-مدل-bco420\2023-10-03-21-02-57-p6.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\اسپرسوساز\اسپرسوساز-نوا-مدل-nova-ncm-128exps\2023-10-04-13-35-31-4.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>ServiceHost</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ServiceHost</BasePath>
+      <RelativePath>ProductPictures\اسپرسوساز\اسپرسوساز-نوا-مدل-nova-ncm-128exps\2023-10-04-13-35-31-4.webp</RelativePath>
+      <AssetKind></AssetKind>
+      <AssetMode></AssetMode>
+      <AssetRole></AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\اسپرسوساز\اسپرسوساز-نوا-مدل-nova-ncm-128exps\2023-10-04-13-35-31-4.webp))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\تلویزیون\2023-10-03-11-51-47-tv.jpg))">
       <SourceType>Package</SourceType>
