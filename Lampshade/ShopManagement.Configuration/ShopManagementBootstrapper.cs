@@ -1,4 +1,5 @@
-﻿using _01_LampshadeQuery.Contracts.Product;
+﻿using _0_Framework.Infrastructure;
+using _01_LampshadeQuery.Contracts.Product;
 using _01_LampshadeQuery.Contracts.ProductCategory;
 using _01_LampshadeQuery.Contracts.Slide;
 using _01_LampshadeQuery.Query;
@@ -10,6 +11,7 @@ using ShopManagement.Application.Contracts.Product;
 using ShopManagement.Application.Contracts.ProductCategory;
 using ShopManagement.Application.Contracts.ProductPicture;
 using ShopManagement.Application.Contracts.Slide;
+using ShopManagement.Configuration.Permissions;
 using ShopManagement.Domain.CategoryTypeAgg;
 using ShopManagement.Domain.ProductAgg;
 using ShopManagement.Domain.ProductCategoryAgg;
@@ -42,6 +44,8 @@ namespace ShopManagement.Configuration
 
             services.AddTransient<ICategoryTypeApplication,CategoryTypeApplication>();
             services.AddTransient<ICategoryTypeRepository, CategoryTypeRepository>();
+
+            services.AddTransient<IPermissionsExposer, ShopPermissionExposer>();
 
             services.AddDbContext<ShopContext>(x => x.UseSqlServer(connectionString));
         }

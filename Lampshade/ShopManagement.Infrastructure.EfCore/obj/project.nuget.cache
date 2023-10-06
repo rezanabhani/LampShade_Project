@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "xSVE4tCm4J4aYplkS9B51hcw7yVQbtT8VgYbjHlLAkc10AOmO/WCpYvsJv/gyMVcjRxFIwklkdhDF2KYvJ56+Q==",
+  "dgSpecHash": "h+IhnSZ2XfL8HDM2CrcjK4nOUT3cm1WDfumJU4zRQa9NIZk5irv6T8VLwV/h3Msl7S3m8CWo2ZHkkKIgIZB6sw==",
   "success": true,
   "projectFilePath": "D:\\Project\\Code\\Lampshade\\ShopManagement.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj",
   "expectedPackageFiles": [
