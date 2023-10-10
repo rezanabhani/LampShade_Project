@@ -6,6 +6,7 @@ namespace InventoryManagement.Application.Contract.Inventory
     {
         public long Id { get; set; }
         public string Product { get; set; }
+        public string Slug { get; set; }
         public long ProductId { get; set; }
         public string ProductColor { get; set; }
         public long ProductColorId { get; set; }

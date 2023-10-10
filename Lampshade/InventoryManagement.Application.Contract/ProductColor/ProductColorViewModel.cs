@@ -7,5 +7,6 @@ namespace InventoryManagement.Application.Contract.ProductColor
         public long ProductId { get; set; }
         public long Id { get; set; }
         public string Color { get; set; }
+        public string ColorP { get; set; }
     }
 }

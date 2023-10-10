@@ -1,7 +1,9 @@
 using System.Collections.Generic;
+using _0_Framework.Infrastructure;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using ShopManagement.Application.Contracts.CategoryType;
+using ShopManagement.Configuration.Permissions;
 
 namespace ServiceHost.Areas.Administration.Pages.Shop.CategoryTypes
 {
@@ -20,6 +22,7 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.CategoryTypes
             _categoryTypeApplication = categoryTypeApplication;
         }
 
+        [NeedsPermission(ShopPermissions.ListCategoryTypes)]
         public void OnGet()
         {
             Categories = _categoryTypeApplication.GetCategories();
@@ -32,6 +35,7 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.CategoryTypes
             return Partial("./Create", command);
         }
 
+        [NeedsPermission(ShopPermissions.CreateCategoryType)]
         public JsonResult OnPostCreate(CreateCategoryType command)
         {
             var result = _categoryTypeApplication.Create(command);
@@ -44,6 +48,7 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.CategoryTypes
             return Partial("./Edit", categoryType);
         }
 
+        [NeedsPermission(ShopPermissions.EditCategoryType)]
         public JsonResult OnPostEdit(EditCategoryType command)
         {
             var result = _categoryTypeApplication.Edit(command);

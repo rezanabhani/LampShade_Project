@@ -13,7 +13,7 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.Products
     using global::Microsoft.AspNetCore.Mvc.Rendering;
     using global::Microsoft.AspNetCore.Mvc.ViewFeatures;
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA256", @"4d7d95937e38384d428db9e22fb14ff1738e1a9b70b07350de95086e35e5c5ed", @"/Areas/Administration/Pages/Shop/Products/Create.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA256", @"d6bbb620bad1f698eaf3bbe72a64261c1e7dae1ef86951915c904aee5bdabb02", @"/Areas/Administration/Pages/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA256", @"4e128e413e640fcff302de4da4560ffe7647658218a0c70ddc07ba038f526bc4", @"/Areas/Administration/Pages/_ViewImports.cshtml")]
     #nullable restore
     public class Areas_Administration_Pages_Shop_Products_Create : global::Microsoft.AspNetCore.Mvc.RazorPages.Page
     #nullable disable

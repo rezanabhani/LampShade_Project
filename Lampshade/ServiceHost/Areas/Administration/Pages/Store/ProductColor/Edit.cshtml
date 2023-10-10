@@ -17,9 +17,18 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="form-group">
-                    <label asp-for="Color" class="control-label">رنگ</label>
+                    <label asp-for="Color" class="control-label">نام رنگ به انگلیسی</label>
                     <input type="text" class="form-control" asp-for="Color">
                     <span asp-validation-for="Color" class="error"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label asp-for="ColorP" class="control-label">نام رنگ به فارسی</label>
+                    <input type="text" class="form-control" asp-for="ColorP">
+                    <span asp-validation-for="ColorP" class="error"></span>
                 </div>
             </div>
         </div>

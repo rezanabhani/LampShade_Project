@@ -63,6 +63,11 @@ namespace InventoryManagement.Infrastructure.EfCore.Migrations
                         .HasMaxLength(700)
                         .HasColumnType("nvarchar(700)");
 
+                    b.Property<string>("ColorP")
+                        .IsRequired()
+                        .HasMaxLength(700)
+                        .HasColumnType("nvarchar(700)");
+
                     b.Property<DateTime>("CreationDate")
                         .HasColumnType("datetime2");
 

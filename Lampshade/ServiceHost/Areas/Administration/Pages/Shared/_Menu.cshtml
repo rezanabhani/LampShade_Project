@@ -1,4 +1,10 @@
-﻿@inject _0_Framework.Application.IAuthHelper AuthHelper;
+﻿@using AccountManagement.Configuration.Permissions
+@using BlogManagement.Infrastructure.Configuration.Permissions
+@using CommentManagement.Infrastructure.Configuration.Permissions
+@using DiscountManagement.Configuration.Permissions
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@using ShopManagement.Configuration.Permissions
+@inject _0_Framework.Application.IAuthHelper AuthHelper;
 @{
     var currentAccount = AuthHelper.CurrentAccountInfo();
 }
@@ -30,7 +36,7 @@
                 </li>
 
                 <li>
-                    <a asp-page="/Comments/Index" class="waves-effect"><i class="md md-home"></i><span> کامنت ها </span></a>
+                    <a permission="@CommentPermissions.ShowCommentManagement" asp-page="/Comments/Index" class="waves-effect"><i class="md md-home"></i><span> کامنت ها </span></a>
                 </li>
                 
                 @if (AuthHelper.CurrentAccountRole() == "1")
@@ -42,39 +48,39 @@
                             <li><a asp-page="/Store/Inventory/Index">انبارداری</a></li> 
                         </ul>
                     </li>
-                    <li class="has_sub">
-                        <a class="waves-effect"><i class="md md-mail"></i><span> فروشگاه </span><span class="pull-right"><i class="md md-add"></i></span></a>
+                    <li class="has_sub" permission="@ShopPermissions.ShowShopManagement">
+                        <a  class="waves-effect"><i class="md md-mail"></i><span> فروشگاه </span><span class="pull-right"><i class="md md-add"></i></span></a>
                         <ul class="list-unstyled">
-                            <li><a asp-page="/Shop/Slides/Index">اسلایدر</a></li>
-                            <li><a asp-page="/Shop/ProductCategories/Index">گروه محصولات</a></li>
-                            <li><a asp-page="/Shop/CategoryTypes/Index">تایپ گروه محصولات</a></li>
-                            <li><a asp-page="/Shop/Products/Index">محصولات</a></li>
-                            <li><a asp-page="/Shop/ProductPictures/Index">عکس محصولات</a></li>
+                            <li><a permission="@ShopPermissions.ShowSlideManagement" asp-page="/Shop/Slides/Index">اسلایدر</a></li>
+                            <li><a permission="@ShopPermissions.ShowProductCategoryManagement" asp-page="/Shop/ProductCategories/Index">گروه محصولات</a></li>
+                            <li><a permission="@ShopPermissions.ShowCategoryTypeManagement" asp-page="/Shop/CategoryTypes/Index">تایپ گروه محصولات</a></li>
+                            <li><a permission="@ShopPermissions.ShowProductManagement" asp-page="/Shop/Products/Index">محصولات</a></li>
+                            <li><a permission="@ShopPermissions.ShowProductPictureManagement" asp-page="/Shop/ProductPictures/Index">عکس محصولات</a></li>
                         </ul>
                     </li>
 
-                <li class="has_sub">
+                    <li class="has_sub" permission="@DiscountPermissions.ShowDiscountManagement">
                     <a class="waves-effect"><i class="md md-mail"></i><span> سیستم تخفیفات </span><span class="pull-right"><i class="md md-add"></i></span></a>
                     <ul class="list-unstyled">
-                        <li><a asp-page="/Discounts/CustomerDiscounts/Index">تخفیف مشتری</a></li>
-                        <li><a asp-page="/Discounts/ColleagueDiscounts/Index">تخفیف همکاری</a></li>
+                            <li><a permission="@DiscountPermissions.ShowCustomerDiscountManagement" asp-page="/Discounts/CustomerDiscounts/Index">تخفیف مشتری</a></li>
+                            <li><a permission="@DiscountPermissions.ShowColleagueDiscountManagement" asp-page="/Discounts/ColleagueDiscounts/Index">تخفیف همکاری</a></li>
                     </ul>
                 </li>
 
-                <li class="has_sub">
+                <li class="has_sub" >
                     <a class="waves-effect"><i class="md md-mail"></i><span> سیستم کاربران </span><span class="pull-right"><i class="md md-add"></i></span></a>
                     <ul class="list-unstyled">
-                        <li><a asp-page="/Accounts/Account/Index"> کاربران</a></li>
-                        <li><a asp-page="/Accounts/Role/Index"> نقش ها </a></li>
+                            <li><a permission="@AccountPermissions.ShowAccountManagement" asp-page="/Accounts/Account/Index"> کاربران</a></li>
+                            <li><a permission="@AccountPermissions.ShowRoleManagement" asp-page="/Accounts/Role/Index"> نقش ها </a></li>
                     </ul>
                 </li>
             }
 
-                <li class="has_sub">
-                    <a class="waves-effect"><i class="md md-mail"></i><span> سیستم بلاگینگ </span><span class="pull-right"><i class="md md-add"></i></span></a>
+                <li class="has_sub" permission="@BlogPermissions.ShowBlogManagement">
+                    <a permission="@BlogPermissions.ShowBlogManagement" class="waves-effect"><i class="md md-mail"></i><span> سیستم بلاگینگ </span><span class="pull-right"><i class="md md-add"></i></span></a>
                     <ul class="list-unstyled">
-                        <li><a asp-page="/Blog/Articles/Index"> مقالات</a></li>
-                        <li><a asp-page="/Blog/ArticleCategories/Index">گروه مقالات</a></li>
+                        <li><a permission="@BlogPermissions.ShowArticleManagement" asp-page="/Blog/Articles/Index"> مقالات</a></li>
+                        <li><a permission="@BlogPermissions.ShowArticleCategoryManagement" asp-page="/Blog/ArticleCategories/Index">گروه مقالات</a></li>
                     </ul>
                 </li>
 

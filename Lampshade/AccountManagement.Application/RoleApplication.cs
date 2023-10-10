@@ -37,8 +37,11 @@ namespace AccountManagement.Application
                 return operation.Failed(ApplicationMessage.DuplicatedRecord);
 
             var permissions = new List<Permission>();
-            command.Permissions.ForEach(code => permissions.Add(new Permission(code)));
-           
+            if (command.Permissions != null)
+            {
+                command.Permissions.ForEach(code => permissions.Add(new Permission(code)));
+            }
+
             role.Edit(command.Name, permissions);
             _roleRepository.SaveChanges();
             return operation.Succedded();

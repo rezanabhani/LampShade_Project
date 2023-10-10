@@ -1,4 +1,5 @@
 ﻿@page
+@using InventoryManagement.InfrastructureConfiguration.Permissions
 @model IndexModel
 @{
     Layout = "Shared/_AdminLayout";
@@ -9,13 +10,13 @@
     <div class="col-sm-12">
         <h4 class="page-title pull-right">@ViewData["title"]</h4>
         <p class="pull-left">
-            <a class="btn btn-success btn-lg" href="#showmodal=@Url.Page("./Index", "Create")">ایجاد رنگ جدید</a>
+            <a permission="@InventoryPermissions.CreateProductColor" class="btn btn-success btn-lg" href="#showmodal=@Url.Page("./Index", "Create")">ایجاد رنگ جدید</a>
         </p>
     </div>
 </div>
 
 
-<div class="row">
+<div class="row" permission="@InventoryPermissions.ListProductColor">
     <div class="col-md-12">
         <div class="panel panel-default">
             <div class="panel-heading">
@@ -28,7 +29,8 @@
                             <thead>
                                 <tr>
                                     <th>#</th>
-                                    <th>رنگ</th>
+                                    <th>نام رنگ به انگلیسی</th>
+                                    <th>نام رنگ به فارسی</th>
                                     <th>عملیات</th>
                                 </tr>
                             </thead>
@@ -38,10 +40,10 @@
                                 <tr>
                                     <td>@item.Id</td>
                                     <td> @item.Color</td>
-                                 
-                                    
+                                    <td> @item.ColorP</td>
+
                                     <td>
-                                        <a class="btn btn-warning btn-custom waves-effect waves-light m-b-5"
+                                            <a permission="@InventoryPermissions.EditProductColor" class="btn btn-warning btn-custom waves-effect waves-light m-b-5"
                                            href="#showmodal=@Url.Page("./Index", "Edit", new {id = item.Id})">
                                             <i class="fa fa-edit"></i>ویرایش
                                         </a>

@@ -1,4 +1,5 @@
 ﻿@page
+@using ShopManagement.Configuration.Permissions
 @model ServiceHost.Areas.Administration.Pages.Shop.Products.IndexModel
 @{
     Layout = "Shared/_AdminLayout";
@@ -9,20 +10,20 @@
     <div class="col-sm-12">
         <h4 class="page-title pull-right">@ViewData["title"]</h4>
         <p class="pull-left">
-            <a class="btn btn-success btn-lg" asp-page="./Create">ایجاد محصول جدید</a>
+            <a permission="@ShopPermissions.CreateProduct" class="btn btn-success btn-lg" asp-page="./Create">ایجاد محصول جدید</a>
            @* <a class="btn btn-success btn-lg" href="#showmodal=@Url.Page("./Index", "Create")">ایجاد محصول جدید</a>*@
         </p>
     </div>
 </div>
 
-<div class="row">
+<div class="row" >
     <div class="col-md-12">
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h3 class="panel-title">جستجو در محصولات</h3>
             </div>
             <div class="panel-body">
-                <form class="form-inline" role="form" method="get">
+                <form class="form-inline" role="form" method="get" permission="@ShopPermissions.SearchProducts">
                     <div class="form-group">
                         <label class="sr-only" asp-for="SearchModel.Name"></label>
                         <input class="form-control" asp-for="SearchModel.Name" placeholder="نام محصول">
@@ -45,7 +46,7 @@
     </div>
 </div>
 
-<div class="row" id="ProductCategoriesDiv">
+<div class="row" permission="@ShopPermissions.ListProducts">
     <div class="col-md-12">
         <div class="panel panel-default">
             <div class="panel-heading">
@@ -79,7 +80,7 @@
                                     <td> @item.Category</td>
                                     <td> @item.CreationDate</td>
                                     <td>
-                                        <a class="btn btn-warning pull-right m-r1-5" asp-page="./Edit" asp-route-id="@item.Id">
+                                            <a permission="@ShopPermissions.EditProduct" class="btn btn-warning pull-right m-r1-5" asp-page="./Edit" asp-route-id="@item.Id">
                                             <i class="fa fa-edit"></i>ویرایش
                                         </a>
                                       @*  <a class="btn btn-warning btn-custom waves-effect waves-light m-b-5"

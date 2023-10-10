@@ -13,7 +13,7 @@ namespace ServiceHost.Areas.Administration.Pages
     using global::Microsoft.AspNetCore.Mvc.Rendering;
     using global::Microsoft.AspNetCore.Mvc.ViewFeatures;
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA256", @"41f9c5de776d568e10ffde5f59aae99e1cad65aea6aef7557d0b0b10d9bde238", @"/Areas/Administration/Pages/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA256", @"d6bbb620bad1f698eaf3bbe72a64261c1e7dae1ef86951915c904aee5bdabb02", @"/Areas/Administration/Pages/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA256", @"4e128e413e640fcff302de4da4560ffe7647658218a0c70ddc07ba038f526bc4", @"/Areas/Administration/Pages/_ViewImports.cshtml")]
     #nullable restore
     public class Areas_Administration_Pages_Index : global::Microsoft.AspNetCore.Mvc.RazorPages.Page
     #nullable disable

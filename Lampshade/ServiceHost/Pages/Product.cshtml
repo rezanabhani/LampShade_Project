@@ -71,7 +71,7 @@
                                                 {
                                                     <div class="single-image">
                                                         <img src="~/ProductPictures/@picture.Picture" class="img-fluid"
-                                                         alt="@picture.PictureAlt" title="@picture.PictureTitle">
+                                                             alt="@picture.PictureAlt" title="@picture.PictureTitle">
                                                     </div>
                                                 }
 
@@ -109,7 +109,7 @@
                                             {
                                                 <div class="single-image">
                                                     <img src="~/ProductPictures/@picture.Picture" class="img-fluid"
-                                                     alt="@picture.Picture" title="@picture.Picture">
+                                                         alt="@picture.Picture" title="@picture.Picture">
                                                 </div>
                                             }
                                         </div>
@@ -167,11 +167,14 @@
                                             {
                                                 @foreach (var colors in Model.Product.ProductColors)
                                                 {
-                                                    <svg height="100" width="100">
-                                                        <a class="circle">
-                                                            <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" data-price="@colors.Price" data-discountpricemain="@colors.PriceWithDiscount" id="myPrice" fill="@colors.ColorName" />
-                                                        </a>
-                                                    </svg>
+                                                    @if (colors.CurrentCount > 0)
+                                                    {
+                                                        <svg height="100" width="100">
+                                                            <a class="circle">
+                                                                <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" data-price="@colors.Price" data-discountpricemain="@colors.PriceWithDiscount" data-fill="@colors.ColorPName" id="myPrice" fill="@colors.ColorName" />
+                                                            </a>
+                                                        </svg>
+                                                    }
                                                 }
                                             }
                                         </div>
@@ -187,15 +190,16 @@
                                         <div class="product-actions">
                                             <div class="quantity-selection">
                                                 <label>تعداد</label>
-                                                <input type="number" value="1" min="1">
+                                                <input type="number" value="1" min="1" id="productCount">
                                             </div>
-
                                             <div class="product-buttons">
-                                                <a class="cart-btn" href="#">
+                                                <a class="cart-btn"
+                                                   data-price=""
+                                                   data-colorname=""
+                                                   onclick="addToCart('@Model.Product.Id','@Model.Product.Name','@Model.Product.Picture', this.getAttribute('data-price'), this.getAttribute('data-colorname'))">
                                                     <i class="ion-bag"></i> افزودن به سبد خرید
                                                 </a>
                                             </div>
-
                                         </div>
 
                                         <div class="social-share-buttons mt-20">
@@ -252,7 +256,7 @@
                                             <div class="tab-pane fade show active" id="product-description"
                                                  role="tabpanel" aria-labelledby="description-tab">
 
-                                                <div class="post-content">
+                                                <div class="post-content" style="direction: rtl">
                                                     @Html.Raw(Model.Product.Description)
                                                 </div>
 
@@ -382,17 +386,42 @@
                     outputDiscountPrice.textContent = dataDiscountPrice;
                 }
             }
+        
         });
+
+        // let price = document.getElementById('parent-list');
+        // price.addEventListener('click', function (e) {
+        //     if (event.target.tagName === 'circle') {
+        //         let result;
+        //         result = e.target.getAttribute('data-price');
+        //         let pricemain = document.getElementById("pricemain").textContent = result;
+        //         let result2;
+        //         result2 = e.target.getAttribute('data-discountpricemain');
+        //         let discount = document.getElementById("discountmain").textContent = result2;
+
+        //         event.preventDefault();
+        //     }
+        // });
 
         let price = document.getElementById('parent-list');
         price.addEventListener('click', function (e) {
-            if (event.target.tagName === 'circle') {
-                let result;
-                result = e.target.getAttribute('data-price');
-                let pricemain = document.getElementById("pricemain").textContent = result;
-                let result2;
-                result2 = e.target.getAttribute('data-discountpricemain');
-                let discount = document.getElementById("discountmain").textContent = result2;
+            if (e.target.tagName === 'circle') {
+                const dataPrice = e.target.getAttribute('data-price');
+                const dataColorName = e.target.getAttribute('data-fill');
+
+                // Update the data attributes of the "افزودن به سبد خرید" button
+                const cartButton = document.querySelector('.cart-btn');
+                cartButton.setAttribute('data-price', dataPrice);
+                cartButton.setAttribute('data-colorname', dataColorName);
+
+
+                // Update the displayed price and discount if needed
+                let pricemain = document.getElementById("pricemain");
+                let discountmain = document.getElementById("discountmain");
+                if (dataPrice) {
+                    pricemain.textContent = dataPrice;
+                    discountmain.textContent = dataDiscountPrice; // You'll need to retrieve this value from your data source.
+                }
 
                 event.preventDefault();
             }

@@ -12,18 +12,23 @@ namespace InventoryManagement.InfrastructureConfiguration.Permissions
                 {
                     "Inventory", new List<PermissionsDto>
                     {
-                        new PermissionsDto(50,"ListInventory"),
-                        new PermissionsDto(51,"SearchInventory"),
-                        new PermissionsDto(52,"CreateInventory"),
-                        new PermissionsDto(53,"EditInventory"),
+                        new PermissionsDto(InventoryPermissions.ListInventory,"ListInventory"),
+                        new PermissionsDto(InventoryPermissions.SearchInventory,"SearchInventory"),
+                        new PermissionsDto(InventoryPermissions.CreateInventory,"CreateInventory"), 
+                        new PermissionsDto(InventoryPermissions.EditInventory,"EditInventory"),
+                        new PermissionsDto(InventoryPermissions.Increase,"Increase"),
+                        new PermissionsDto(InventoryPermissions.Reduce,"Reduce"),
+                        new PermissionsDto(InventoryPermissions.OperationLog,"OperationLog"),
+                        new PermissionsDto(InventoryPermissions.Remove,"Remove"),
+                        new PermissionsDto(InventoryPermissions.Restore,"Restore"),
                     }
                 },
                 {
                     "ProductColor", new List<PermissionsDto>
                     {
-                        new PermissionsDto(54,"ListProductColor"),
-                        new PermissionsDto(55,"CreateProductColor"),
-                        new PermissionsDto(56,"EditProductColor"),
+                        new PermissionsDto(InventoryPermissions.ListProductColor,"ListProductColor"),
+                        new PermissionsDto(InventoryPermissions.CreateProductColor,"CreateProductColor"),
+                        new PermissionsDto(InventoryPermissions.EditProductColor,"EditProductColor"),
                     }
                 }
             };

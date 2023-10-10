@@ -24,7 +24,8 @@ namespace InventoryManagement.Infrastructure.EfCore.Repository
             return _context.ProductColors.Select(x => new EditColor()
             {
                 Id = x.Id,
-                Color = x.Color
+                Color = x.Color,
+                ColorP = x.ColorP
             }).FirstOrDefault(x => x.Id == id);
         }
 
@@ -33,32 +34,9 @@ namespace InventoryManagement.Infrastructure.EfCore.Repository
             return _context.ProductColors.Select(x => new ProductColorViewModel()
             {
                 Id = x.Id,
-                Color = x.Color
+                Color = x.Color,
+                ColorP = x.ColorP
             }).OrderByDescending(x => x.Id).ToList();
         }
-
-
-
-
-        public List<ProductColorViewModel> GetListWithProduct()
-        {
-            throw new System.NotImplementedException();
-
-            //var product = _shopContext.Products.Select(x => new { x.Id }).ToList();
-            //var inventory = _context.Inventory.Select(x => new { x.ProductId }).ToList();
-
-            //var productInventory = product.FirstOrDefault(x => x.Id == inventory.)
-
-            //return  _context.Inventory
-            //    .Include(x => x.ProductColor)
-            //    .Where(x => x.ProductId == product.Id)
-            //    .Select(x => new ProductColorViewModel()
-            //    {
-            //        Id = x.Id,
-            //        Color = x.ProductColor.Color
-            //    }).ToList();
-        }
-
-
     }
 }

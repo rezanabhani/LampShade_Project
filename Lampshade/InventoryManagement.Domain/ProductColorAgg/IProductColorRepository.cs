@@ -8,6 +8,5 @@ namespace InventoryManagement.Domain.ProductColorAgg
     {
         EditColor GetDetails(long id);
         List<ProductColorViewModel> GetList();
-        List<ProductColorViewModel> GetListWithProduct();
     }
 }

@@ -490,6 +490,7 @@ D:\Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administratio
 D:\Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Store\ProductColor\Index.cshtml.g.cs
 D:\Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\_ViewImports.cshtml.g.cs
 D:\Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\_ViewStart.cshtml.g.cs
+D:\Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\AccessDenied.cshtml.g.cs
 D:\Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Account.cshtml.g.cs
 D:\Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Article.cshtml.g.cs
 D:\Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\ArticleCategory.cshtml.g.cs
@@ -519,4 +520,3 @@ D:\Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\refint\ServiceHost.dll
 D:\Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\ServiceHost.pdb
 D:\Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\ServiceHost.genruntimeconfig.cache
 D:\Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\ref\ServiceHost.dll
-D:\Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\AccessDenied.cshtml.g.cs

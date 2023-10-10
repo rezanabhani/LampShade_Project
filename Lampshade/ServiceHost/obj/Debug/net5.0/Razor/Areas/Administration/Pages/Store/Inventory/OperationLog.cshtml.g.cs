@@ -13,7 +13,7 @@ namespace ServiceHost.Areas.Administration.Pages.Store.Inventory
     using global::Microsoft.AspNetCore.Mvc.Rendering;
     using global::Microsoft.AspNetCore.Mvc.ViewFeatures;
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA256", @"a9439717ebd0b3ab3d90d2850db4cfa8f33833a0a12ea8a2dcbf161d8098c8dd", @"/Areas/Administration/Pages/Store/Inventory/OperationLog.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA256", @"d6bbb620bad1f698eaf3bbe72a64261c1e7dae1ef86951915c904aee5bdabb02", @"/Areas/Administration/Pages/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA256", @"4e128e413e640fcff302de4da4560ffe7647658218a0c70ddc07ba038f526bc4", @"/Areas/Administration/Pages/_ViewImports.cshtml")]
     #nullable restore
     public class Areas_Administration_Pages_Store_Inventory_OperationLog : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<List<InventoryManagement.Application.Contract.Inventory.InventoryOperationViewModel>>
     #nullable disable

@@ -1,8 +1,10 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using _0_Framework.Application;
 using _0_Framework.Application.Sms;
 using AccountManagement.Application.Contracts.Account;
 using AccountManagement.Domain.AccountAgg;
+using AccountManagement.Domain.RoleAgg;
 
 namespace AccountManagement.Application
 {
@@ -13,15 +15,17 @@ namespace AccountManagement.Application
         private readonly IPasswordHasher _passwordHasher;
         private readonly ISmsService _smsService;
         private readonly IAuthHelper _authHelper;
+        private readonly IRoleRepository _roleRepository;
 
 
-        public AccountApplication(IFileUploader fileUploader, IAccountRepository accountRepository, IPasswordHasher passwordHasher, ISmsService smsService, IAuthHelper authHelper)
+        public AccountApplication(IFileUploader fileUploader, IAccountRepository accountRepository, IPasswordHasher passwordHasher, ISmsService smsService, IAuthHelper authHelper, IRoleRepository roleRepository)
         {
             _fileUploader = fileUploader;
             _accountRepository = accountRepository;
             _passwordHasher = passwordHasher;
             _smsService = smsService;
             _authHelper = authHelper;
+            _roleRepository = roleRepository;
         }
 
         public OperationResult Register(RegisterAccount command)
@@ -108,7 +112,13 @@ namespace AccountManagement.Application
 
             //_smsService.SendVerificationCodeAsync(command.Mobile, command.Password);
 
-            var authViewModel = new AuthViewModel(account.Id,account.RoleId,account.Fullname,account.Username,account.Mobile);
+            var permissions = _roleRepository.Get(account.RoleId)
+                .Permissions
+                .Select(x => x.Code)
+                .ToList();
+
+            var authViewModel = new AuthViewModel(account.Id,account.RoleId,account.Fullname,account.Username,
+                account.Mobile, permissions);
             _authHelper.Signin(authViewModel);
             return operation.Succedded();
 

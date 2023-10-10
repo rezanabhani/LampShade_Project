@@ -18,7 +18,7 @@ namespace InventoryManagement.Application
         {
             var operationResult = new OperationResult();
 
-            var productColor = new ProductColor(command.Color);
+            var productColor = new ProductColor(command.Color,command.ColorP);
             _productRepository.Create(productColor);
             _productRepository.SaveChanges();
             return operationResult.Succedded();
@@ -28,7 +28,7 @@ namespace InventoryManagement.Application
         {
             var operationResult = new OperationResult();
             var productColor = _productRepository.Get(command.Id);
-            productColor.Edit(command.Color);
+            productColor.Edit(command.Color, command.ColorP);
             _productRepository.SaveChanges();
 
             return operationResult.Succedded();
@@ -44,9 +44,5 @@ namespace InventoryManagement.Application
             return _productRepository.GetList();
         }
 
-        public List<ProductColorViewModel> GetListWithProduct()
-        {
-            return _productRepository.GetList();
-        }
     }
 }

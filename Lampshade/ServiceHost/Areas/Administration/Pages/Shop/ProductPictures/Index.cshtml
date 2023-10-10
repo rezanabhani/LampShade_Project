@@ -1,4 +1,6 @@
 ﻿@page
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@using ShopManagement.Configuration.Permissions
 @model IndexModel
 @{
     Layout = "Shared/_AdminLayout";
@@ -9,19 +11,19 @@
     <div class="col-sm-12">
         <h4 class="page-title pull-right">@ViewData["title"]</h4>
         <p class="pull-left">
-            <a class="btn btn-success btn-lg" href="#showmodal=@Url.Page("./Index", "Create")">ایجاد عکس جدید</a>
+            <a permission="@ShopPermissions.CreateProductPicture" class="btn btn-success btn-lg" href="#showmodal=@Url.Page("./Index", "Create")">ایجاد عکس جدید</a>
         </p>
     </div>
 </div>
 
-<div class="row">
+<div class="row" >
     <div class="col-md-12">
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h3 class="panel-title">جستجو در عکس محصولات</h3>
             </div>
             <div class="panel-body">
-                <form class="form-inline" role="form" method="get">
+                <form class="form-inline" role="form" method="get" permission="@ShopPermissions.SearchProductPictures">
                     <div class="form-group">
                         <label class="sr-only" asp-for="SearchModel.ProductId"></label>
                         <select class="form-control" asp-for="SearchModel.ProductId" asp-items="Model.Products"> 
@@ -36,7 +38,7 @@
     </div>
 </div>
 
-<div class="row" id="ProductCategoriesDiv">
+<div class="row" permission="@ShopPermissions.ListProductPictures">
     <div class="col-md-12">
         <div class="panel panel-default">
             <div class="panel-heading">
@@ -77,7 +79,7 @@
                                     </td>
                                     <td> @item.CreationDate</td>
                                     <td>
-                                        <a class="btn btn-warning btn-custom waves-effect waves-light m-b-5"
+                                            <a permission="@ShopPermissions.EditProductPicture" class="btn btn-warning btn-custom waves-effect waves-light m-b-5"
                                            href="#showmodal=@Url.Page("./Index", "Edit", new {id = item.Id})">
                                             <i class="fa fa-edit"></i>ویرایش
                                         </a>

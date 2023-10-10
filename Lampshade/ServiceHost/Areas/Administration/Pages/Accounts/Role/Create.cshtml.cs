@@ -1,4 +1,6 @@
+using _0_Framework.Infrastructure;
 using AccountManagement.Application.Contracts.Role;
+using AccountManagement.Configuration.Permissions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -19,6 +21,7 @@ namespace ServiceHost.Areas.Administration.Pages.Accounts.Role
         {
         }
 
+        [NeedsPermission(AccountPermissions.CreateRole)]
         public IActionResult OnPost(CreateRole command)
         {
             var result = _roleApplication.Create(command);

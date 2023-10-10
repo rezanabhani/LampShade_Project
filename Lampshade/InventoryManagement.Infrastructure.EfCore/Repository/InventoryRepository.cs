@@ -91,5 +91,7 @@ namespace InventoryManagement.Infrastructure.EfCore.Repository
                 OrderId = x.OrderId
             }).OrderByDescending(x => x.Id).ToList();
         }
+
+      
     }
 }
