@@ -103,7 +103,9 @@ namespace _01_LampshadeQuery.Query
                             ColorName = x.ProductColor.Color,
                             ColorPName = x.ProductColor.ColorP,
                             Price = x.UnitPrice.ToMoney(),
-                            PriceWithDiscount = Math.Round((x.UnitPrice * discount.DiscountRate) / 100) - (x.UnitPrice),
+                            DoublePrice = x.UnitPrice,
+                            //PriceWithDiscount = Math.Round((x.UnitPrice * discount.DiscountRate) / 100) - (x.UnitPrice),
+                            PriceWithDiscount = Math.Round((x.UnitPrice * discount.DiscountRate) / 100 - (x.UnitPrice)).ToMoney(),
                             CurrentCount = x.CalculateCurrentCount()
                         }).ToList();
 
@@ -120,6 +122,7 @@ namespace _01_LampshadeQuery.Query
                             ColorName = x.ProductColor.Color,
                             ColorPName = x.ProductColor.ColorP,
                             Price = x.UnitPrice.ToMoney(),
+                            DoublePrice = x.UnitPrice,
                             CurrentCount = x.CalculateCurrentCount()
                         }).ToList();
                 }

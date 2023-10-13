@@ -1,6 +1,6 @@
 ﻿const cookieName = "cart-items";
 
-function addToCart(id, name, picture, dataPrice, dataColorName) {
+function addToCart(id, name, picture, UnitPrice, ProductColor) {
     console.log('addToCart function called');
     debugger;
     let products = $.cookie(cookieName);
@@ -11,7 +11,7 @@ function addToCart(id, name, picture, dataPrice, dataColorName) {
     }
 
     const count = $("#productCount").val();
-    const currentProduct = products.find(x => x.id === id);
+    const currentProduct = products.find(x => x.id === id && x.ProductColor === ProductColor);
     if (currentProduct !== undefined) {
         products.find(x => x.id === id).count = parseInt(currentProduct.count) + parseInt(count);
     } else {
@@ -19,8 +19,8 @@ function addToCart(id, name, picture, dataPrice, dataColorName) {
             id,
             name,
             picture,
-            dataPrice,
-            dataColorName,
+            UnitPrice,
+            ProductColor,
             count
         }
 
@@ -53,8 +53,8 @@ function updateCart() {
                                     <a href="single-product.html">محصول: ${x.name}</a>
                                 </p>
                                 <p class="count">تعداد: ${x.count}</p>
-                                <p class="count">قیمت واحد: ${x.dataPrice}</p>
-                                <p class="count">رنگ محصول: ${x.dataColorName}</p>
+                                <p class="count">قیمت واحد: ${x.UnitPrice}</p>
+                                <p class="count">رنگ محصول: ${x.ProductColor}</p>
                             </div>
                         </div>`;
 

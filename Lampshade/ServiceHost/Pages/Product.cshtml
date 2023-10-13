@@ -1,4 +1,5 @@
 ﻿@page "{id}"
+@using _0_Framework.Application
 @model ServiceHost.Pages.ProductModel
 @{
     ViewData["Title"] = Model.Product.Name;
@@ -140,12 +141,14 @@
                                             @if (Model.Product.HasDiscount)
                                             {
                                                 <span id="pricemain" class="main-price discounted"> تومان</span>
+                                                <span> تومان</span>
                                                 <span id="discountmain" class="discounted-price">  تومان</span>
+                                                <span> تومان</span>
                                             }
                                             else
                                             {
                                                 <span id="pricemain" class="main-price"> تومان</span>
-
+                                                <span> تومان</span>
                                             }
 
                                         </p>
@@ -171,7 +174,7 @@
                                                     {
                                                         <svg height="100" width="100">
                                                             <a class="circle">
-                                                                <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" data-price="@colors.Price" data-discountpricemain="@colors.PriceWithDiscount" data-fill="@colors.ColorPName" id="myPrice" fill="@colors.ColorName" />
+                                                                <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" data-price="@colors.DoublePrice" data-pricetomoney="@colors.Price"  data-discountpricemain ="@colors.PriceWithDiscount" data-fill="@colors.ColorPName" id="myPrice" fill="@colors.ColorName" />
                                                             </a>
                                                         </svg>
                                                     }
@@ -374,7 +377,7 @@
         document.addEventListener('DOMContentLoaded', function () {
             const defaultPrice = document.getElementById('myPrice');
             if (defaultPrice) {
-                const dataValue = defaultPrice.getAttribute('data-price');
+                const dataValue = defaultPrice.getAttribute('data-pricetomoney');
                 const outputPrice = document.getElementById('pricemain');
                 if (outputPrice) {
                     outputPrice.textContent = dataValue;
@@ -386,46 +389,36 @@
                     outputDiscountPrice.textContent = dataDiscountPrice;
                 }
             }
-        
         });
 
-        // let price = document.getElementById('parent-list');
-        // price.addEventListener('click', function (e) {
-        //     if (event.target.tagName === 'circle') {
-        //         let result;
-        //         result = e.target.getAttribute('data-price');
-        //         let pricemain = document.getElementById("pricemain").textContent = result;
-        //         let result2;
-        //         result2 = e.target.getAttribute('data-discountpricemain');
-        //         let discount = document.getElementById("discountmain").textContent = result2;
 
-        //         event.preventDefault();
-        //     }
-        // });
 
         let price = document.getElementById('parent-list');
         price.addEventListener('click', function (e) {
             if (e.target.tagName === 'circle') {
-                const dataPrice = e.target.getAttribute('data-price');
-                const dataColorName = e.target.getAttribute('data-fill');
+                const UnitPrice = e.target.getAttribute('data-price');
+                const UnitPriceToMoney = e.target.getAttribute('data-pricetomoney');
+                const ProductColor = e.target.getAttribute('data-fill');
 
                 // Update the data attributes of the "افزودن به سبد خرید" button
                 const cartButton = document.querySelector('.cart-btn');
-                cartButton.setAttribute('data-price', dataPrice);
-                cartButton.setAttribute('data-colorname', dataColorName);
+                cartButton.setAttribute('data-price', UnitPrice);
+                cartButton.setAttribute('data-colorname', ProductColor);
 
 
                 // Update the displayed price and discount if needed
                 let pricemain = document.getElementById("pricemain");
                 let discountmain = document.getElementById("discountmain");
-                if (dataPrice) {
-                    pricemain.textContent = dataPrice;
+                if (UnitPriceToMoney) {
+                    pricemain.textContent = UnitPriceToMoney;
                     discountmain.textContent = dataDiscountPrice; // You'll need to retrieve this value from your data source.
                 }
 
                 event.preventDefault();
             }
         });
+
+
 
     </script>
 

@@ -520,3 +520,8 @@ D:\Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\refint\ServiceHost.dll
 D:\Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\ServiceHost.pdb
 D:\Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\ServiceHost.genruntimeconfig.cache
 D:\Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\ref\ServiceHost.dll
+D:\Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Cart.cshtml.g.cs
+D:\Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
+D:\Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+D:\Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.Extensions.PlatformAbstractions.dll
+D:\Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Nancy.dll
