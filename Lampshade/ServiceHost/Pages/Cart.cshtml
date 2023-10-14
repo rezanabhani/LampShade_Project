@@ -31,64 +31,67 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="page-wrapper">
+                    @foreach (var item in Model.CartItems.Where(x => !x.IsInStock))
+                    {
+                        <div class="alert alert-warning"><i class="fa fa-warning">کالای <strong>@item.Name</strong> در انبار کمتر از تعداد درخواستی موجود است .</i></div>
+                    }
                     <div class="page-content-wrapper">
-                        <form action="#">
-                            <div class="cart-table table-responsive">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th class="pro-thumbnail">عکس</th>
-                                            <th class="pro-title">محصول</th>
-                                            <th class="pro-price">قیمت واحد</th>
-                                            <th class="pro-title">رنگ محصول</th>
-                                            <th class="pro-quantity">تعداد</th>
-                                            <th class="pro-subtotal">قیمت کل</th>
-                                            <th class="pro-remove">حذف</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                    @foreach (var item in Model.CartItems)
-                                    {
-                                        <tr>
-                                            <td class="pro-thumbnail">
-                                                <a href="single-product.html">
-                                                    <img src="~/ProductPictures/@item.Picture" class="img-fluid" alt="@item.Name">
-                                                </a>
-                                            </td>
-                                            <td class="pro-title">
-                                                <a href="single-product.html">@item.Name</a>
-                                            </td>
-                                            <td class="pro-price">
-                                                    <span>@item.UnitPrice.ToMoney()</span>
-                                            </td>
-                                            <td class="pro-title">
-                                                    <a href="single-product.html">@item.ProductColor</a>
-                                            </td>
-                                            <td class="pro-quantity">
-                                                <div class="quantity-selection">
-                                                        <input type="number" value="@item.Count" min="1" name="count">
-                                                </div>
-                                            </td>
-                                            <td class="pro-subtotal">
-                                                <span>@item.TotalItemPrice.ToMoney()</span>
-                                            </td>
-                                            <td class="pro-remove">
-                                                <a asp-page-handler="RemoveFromCart" asp-route-id="@item.Id" asp-route-id="@item.Count">
-                                                    <i class="fa fa-trash-o"></i>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                    }
-                                    </tbody>
-                                </table>
-                            </div>
-                        </form>
-
+                        <div class="cart-table table-responsive">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th class="pro-thumbnail">عکس</th>
+                                    <th class="pro-title">محصول</th>
+                                    <th class="pro-price">قیمت واحد</th>
+                                    <th class="pro-title">رنگ محصول</th>
+                                    <th class="pro-quantity">تعداد</th>
+                                    <th class="pro-subtotal">قیمت کل</th>
+                                    <th class="pro-remove">حذف</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                @foreach (var item in Model.CartItems)
+                                {
+                                    <tr>
+                                        <td class="pro-thumbnail">
+                                            <a href="single-product.html">
+                                                <img src="~/ProductPictures/@item.Picture" class="img-fluid" alt="@item.Name">
+                                            </a>
+                                        </td>
+                                        <td class="pro-title">
+                                            <a href="single-product.html">@item.Name</a>
+                                        </td>
+                                        <td class="pro-price">
+                                            <span>@item.UnitPrice.ToMoney()</span>
+                                        </td>
+                                        <td class="pro-title">
+                                            <a href="single-product.html">@item.ProductColor</a>
+                                        </td>
+                                        <td class="pro-quantity">
+                                        <div class="quantity-selection">
+                                            <input type="number" value="@item.Count" min="1" onchange="changeCartItemCount('@item.Id', 'totalItemPrice-@item.Id', this.value)">
+                                        </div>
+                                        <td class="pro-subtotal">
+                                            <span id="totalItemPrice-@item.Id">@item.TotalItemPrice.ToMoney()</span>
+                                        </td>
+                                        <td class="pro-remove">
+                                            <a asp-page-handler="RemoveFromCart" asp-route-id="@item.Id">
+                                                <i class="fa fa-trash-o"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                }
+                                </tbody>
+                            </table>
+                        </div>
                         <div class="row">
                             <div class="col-lg-6 col-12 d-flex">
                                 <div class="cart-summary">
                                     <div class="cart-summary-button">
-                                        <button class="checkout-btn">تکمیل فرآیند خرید</button>
+                                        <a class="checkout-btn" asp-page-handler="GoToCheckOut">تکمیل فرآیند خرید</a>
+                                    </div>
+                                    <div class="cart-summary-button">
+                                        <a class="checkout-btn">افزودن آدرس جدید</a>
                                     </div>
                                 </div>
                             </div>

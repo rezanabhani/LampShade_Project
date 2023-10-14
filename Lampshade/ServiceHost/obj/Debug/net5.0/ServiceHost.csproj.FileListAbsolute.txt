@@ -525,3 +525,4 @@ D:\Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.DotNet.Platform
 D:\Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
 D:\Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.Extensions.PlatformAbstractions.dll
 D:\Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Nancy.dll
+D:\Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Checkout.cshtml.g.cs

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
+using _01_LampshadeQuery.Contracts.Product;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -15,21 +16,23 @@ namespace ServiceHost.Pages
     {
         public List<CartItem> CartItems;
         public const string CookieName = "cart-items";
+        private readonly IProductQuery _productQuery;
 
-        public CartModel()
+        public CartModel(IProductQuery productQuery)
         {
             CartItems = new List<CartItem>();
+            _productQuery = productQuery;
         }
 
         public void OnGet()
         {
             var serializer = new JavaScriptSerializer();
             var value = Request.Cookies[CookieName];
-            CartItems = serializer.Deserialize<List<CartItem>>(value);
-            foreach (var item in CartItems)
-            {
-                item.TotalItemPrice = item.UnitPrice * item.Count;
-            }
+            var cartItems = serializer.Deserialize<List<CartItem>>(value);
+            foreach (var item in cartItems)
+                item.CalculateTotalItemPrice();
+
+            CartItems = _productQuery.CheckInventoryStatus(cartItems);
         }
 
         public IActionResult OnGetRemoveFromCart(long id)
@@ -44,5 +47,21 @@ namespace ServiceHost.Pages
             Response.Cookies.Append(CookieName, serializer.Serialize(cartItems), options);
             return RedirectToPage("/Cart");
         }
+
+        public IActionResult OnGetGoToCheckOut()
+        {
+            var serializer = new JavaScriptSerializer();
+            var value = Request.Cookies[CookieName];
+            var cartItems = serializer.Deserialize<List<CartItem>>(value);
+            foreach (var item in cartItems)
+                item.CalculateTotalItemPrice();
+
+            CartItems = _productQuery.CheckInventoryStatus(cartItems);
+            //if(CartItems.Any(x => !x.IsInStock))
+            //    RedirectToPage("/Cart");
+
+           return RedirectToPage(CartItems.Any(x => !x.IsInStock) ? "/Cart" : "/CheckOut");
+        }
+
     }
     }
