@@ -20,5 +20,9 @@
         public const int SearchRoles = 242;
         public const int CreateRole = 243;
         public const int EditRole = 244;
+
+        //AccountAddress
+        public const int ShowAccountAddress = 250;
+        public const int ListAccountAddress = 251;
     }
 }

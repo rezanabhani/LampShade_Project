@@ -21,6 +21,7 @@ namespace AccountManagement.Infrastructure.EFCore.Mappings
                 .HasOne(x => x.Role)
                 .WithMany(x => x.Accounts)
                 .HasForeignKey(x => x.RoleId);
+
         }
     }
 }

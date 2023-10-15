@@ -37,6 +37,13 @@ namespace AccountManagement.Configuration.Permissions
                         new PermissionsDto(AccountPermissions.EditRole, "EditRole"),
                     }
                 },
+                {
+                    "AccountAddressManagement", new List<PermissionsDto>
+                    {
+                        new PermissionsDto(AccountPermissions.ShowAccountAddress, "ShowAccountAddress"),
+                        new PermissionsDto(AccountPermissions.ListAccountAddress, "ListAccountAddress"),
+                    }
+                    }
             };
         }
     }

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
+using _0_Framework.Application;
 using _01_LampshadeQuery.Contracts.Product;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -17,11 +18,12 @@ namespace ServiceHost.Pages
         public List<CartItem> CartItems;
         public const string CookieName = "cart-items";
         private readonly IProductQuery _productQuery;
-
-        public CartModel(IProductQuery productQuery)
+        private readonly IAuthHelper _authHelper;
+        public CartModel(IProductQuery productQuery, IAuthHelper authHelper)
         {
             CartItems = new List<CartItem>();
             _productQuery = productQuery;
+            _authHelper = authHelper;
         }
 
         public void OnGet()
@@ -57,11 +59,12 @@ namespace ServiceHost.Pages
                 item.CalculateTotalItemPrice();
 
             CartItems = _productQuery.CheckInventoryStatus(cartItems);
-            //if(CartItems.Any(x => !x.IsInStock))
-            //    RedirectToPage("/Cart");
 
-           return RedirectToPage(CartItems.Any(x => !x.IsInStock) ? "/Cart" : "/CheckOut");
+            if (!_authHelper.IsAuthenticated())
+                return RedirectToPage("/Account");
+
+            return RedirectToPage(CartItems.Any(x => !x.IsInStock) ? "/Cart" : "/CheckOut");
         }
 
     }
-    }
+}

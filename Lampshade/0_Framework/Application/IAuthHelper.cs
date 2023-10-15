@@ -8,6 +8,7 @@ namespace _0_Framework.Application
         void Signin(AuthViewModel account);
         bool IsAuthenticated();
         string CurrentAccountRole();
+        long CurrentAccountId();
         AuthViewModel CurrentAccountInfo();
         List<int> GetPermissions();
     }
