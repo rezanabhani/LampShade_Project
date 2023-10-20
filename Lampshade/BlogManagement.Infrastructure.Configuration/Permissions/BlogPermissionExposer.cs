@@ -10,6 +10,12 @@ namespace BlogManagement.Infrastructure.Configuration.Permissions
             return new Dictionary<string, List<PermissionsDto>>
             {
                 {
+                    "ShowBlogManagement", new List<PermissionsDto>
+                    {
+                        new PermissionsDto(BlogPermissions.ShowBlogManagement, "ShowBlogManagement"),
+                    }
+                },
+                {
                     "ArticleManagement", new List<PermissionsDto>
                     {
                         new PermissionsDto(BlogPermissions.ShowArticleManagement, "ShowArticleManagement"),

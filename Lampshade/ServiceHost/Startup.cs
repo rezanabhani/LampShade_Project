@@ -12,6 +12,7 @@ using ShopManagement.Configuration;
 using System.Text.Encodings.Web;
 using System.Text.Unicode;
 using _0_Framework.Application.Sms;
+using _0_Framework.Application.ZarinPal;
 using _0_Framework.Infrastructure;
 using AccountManagement.Configuration;
 using CommentManagement.Infrastructure.Configuration;
@@ -47,6 +48,7 @@ namespace ServiceHost
             services.AddTransient<IFileUploader, FileUploader>();
             services.AddTransient<IAuthHelper, AuthHelper>();
             services.AddTransient<ISmsService, SmsService>();
+            services.AddTransient<IZarinPalFactory,ZarinPalFactory>();
 
             services.Configure<CookiePolicyOptions>(options =>
             {

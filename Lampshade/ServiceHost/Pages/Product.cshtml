@@ -7,6 +7,17 @@
     ViewData["metaDescription"] = Model.Product.MetaDescription;
 }
 
+@section Styles
+    {
+    <style>
+        .blue-border {
+            stroke: blue;
+            stroke-width: 3;
+        }
+    </style>
+
+}
+
 <div class="breadcrumb-area section-space--half">
     <div class="container wide">
         <div class="row">
@@ -172,9 +183,9 @@
                                                 {
                                                     @if (colors.CurrentCount > 0)
                                                     {
-                                                        <svg height="100" width="100">
+                                                        <svg height="100" width="80">
                                                             <a class="circle">
-                                                                <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" data-price="@colors.DoublePrice" data-pricetomoney="@colors.Price" data-discountpricemain="@colors.PriceWithDiscount" data-fill="@colors.ColorPName" id="myPrice" fill="@colors.ColorName" />
+                                                                <circle cx="50" cy="50" r="29" stroke="black" stroke-width="3" data-price="@colors.DoublePrice" data-pricetomoney="@colors.Price" data-discountpricemain="@colors.PriceWithDiscount" data-fill="@colors.ColorPName" id="myPrice" fill="@colors.ColorName"/>
                                                             </a>
                                                         </svg>
                                                     }
@@ -374,6 +385,8 @@
 
     <script type="text/javascript">
 
+
+        const circles = document.querySelectorAll('.circle circle');
         document.addEventListener('DOMContentLoaded', function () {
             const defaultPrice = document.getElementById('myPrice');
             if (defaultPrice) {
@@ -388,6 +401,23 @@
                 if (outputDiscountPrice) {
                     outputDiscountPrice.textContent = dataDiscountPrice;
                 }
+
+
+                // Set the blue border on the first circle by default
+                if (circles.length > 0) {
+                    circles[0].classList.add('blue-border');
+                }
+
+
+                circles.forEach(circle => {
+                    circle.addEventListener('click', function () {
+                        // Remove the blue border from all circles
+                        circles.forEach(c => c.classList.remove('blue-border'));
+
+                        // Add the blue border to the clicked circle
+                        this.classList.add('blue-border');
+                    });
+                });
             }
         });
 

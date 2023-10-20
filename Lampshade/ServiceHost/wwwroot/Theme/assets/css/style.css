@@ -66,7 +66,7 @@ body {
 	position: relative;
 	visibility: visible;
 	color: #707070;
-	background-color: #fff;
+	background-color: #F9F9FE;
 }
 
 body.grey-bg {
@@ -207,7 +207,7 @@ select {
 	vertical-align: middle;
 }
 .slick-slide {
-    background-color: #fff;
+   
     border-radius: 10px;
 }
 /*----------  Sharp border tippyjs theme  ----------*/
@@ -2214,15 +2214,23 @@ select {
 .single-grid-product {
 	-webkit-transition: .6s;
 	transition: .6s;
+    background-color: #fff;
+    border-radius: 15px;
 }
 
 
 
 .single-grid-product {
-    -webkit-transition: .6s;
-    transition: .6s;
-    width: 100%; /* Set the desired width */
-    height: auto; /* Set the desired height or use 'auto' for dynamic height based on content */
+	-webkit-transition: .6s;
+	transition: .6s;
+	width: 100%; /* Set the desired width */
+	height: 390px; /* Set the desired height or use 'auto' for dynamic height based on content */
+	margin: 0 15px;
+    background: lightgray;
+}
+.single-grid-product-pr {
+    padding: 0 ;
+    padding-right: 15px;
 }
 
 .single-grid-product__label span {
@@ -2265,6 +2273,7 @@ select {
     height: 100%;
 	-webkit-transition: .6s;
 	transition: .6s;
+    border-radius: 15px 15px 0 0;
 }
 
 .single-grid-product__image > a img:nth-child(1) {
@@ -2368,7 +2377,8 @@ select {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 22px;
-	color: #929292;
+	/*color: #929292;*/
+    color: darkgreen;
 }
 
 .single-grid-product__price .main-price.discounted {
@@ -2394,7 +2404,9 @@ select {
 	-ms-flex-align: center;
 	align-items: center;
 }
-
+.single-grid-product__content {
+    padding-right: 15px;
+}
 .single-grid-product--widget-mode__image {
 	-webkit-flex-basis: 100px;
 	-ms-flex-preferred-size: 100px;
@@ -2586,11 +2598,12 @@ select {
 	margin-left: -15px !important;
 }
 
-.single-row-slider-wrapper .slick-list .slick-active .single-grid-product,
-.double-row-slider-wrapper .slick-list .slick-active .single-grid-product {
-	-webkit-animation: customZoomIn 500ms ease-in-out;
-	animation: customZoomIn 500ms ease-in-out;
-}
+	.single-row-slider-wrapper .slick-list .slick-active .single-grid-product,
+	.double-row-slider-wrapper .slick-list .slick-active .single-grid-product {
+		-webkit-animation: customZoomIn 500ms ease-in-out;
+		animation: customZoomIn 500ms ease-in-out;
+        background: lightgray;
+	}
 
 .double-row-slider-wrapper {
 	margin-bottom: -55px;
@@ -2735,6 +2748,7 @@ select {
 	line-height: 18px;
 	margin-top: 20px;
 	margin-bottom: 15px;
+    padding-right: 15px;
 }
 
 .single-slider-post__content .title a:hover {
@@ -2765,20 +2779,25 @@ select {
 	margin-top: 30px;
 	color: #292929;
 	border-bottom: 2px solid #e8e8e8;
+    margin-right: 15px;
 }
 
 .single-slider-post__content .blog-post-link:hover {
 	color: #e33;
 }
-
+.single-slider-post {
+	background-color: #fff;
+    box-shadow: 0 5px 17px gray;
+    border-radius: 15px;
+    width: 100%;
+    height: 340px;
+    margin-bottom: 30px;
+}
 /*----------  custom zoom in animation  ----------*/
-
 /*=====  End of slider  ======*/
-
 /*=============================================
 =            banner            =
 =============================================*/
-
 .banner-hover-area--no-gutter {
 	overflow: hidden;
 }
@@ -4752,7 +4771,6 @@ select {
 
 .cart-summary .cart-summary-wrap {
 	margin-bottom: 20px;
-	padding: 45px 50px;
 	background-color: #f2f2f2;
 }
 
@@ -5368,6 +5386,7 @@ select {
 }
 
 .login-form label {
+    margin: 10px;
 	font-size: 14px;
 	font-weight: 500;
 	display: block;
@@ -5490,7 +5509,6 @@ select {
 	font-weight: 400;
 	line-height: 24px;
 	display: block;
-	float: left;
 	width: 140px;
 	height: 36px;
 	margin-top: 20px;
@@ -6841,7 +6859,8 @@ h3.comment-counter {
 }
 
 .double-row-slider-wrapper .single-grid-product {
-	min-height: 390px;
+	max-height: 390px;
+  
 }
 
 .single-hover-banner__content .big-text {
@@ -8193,6 +8212,7 @@ h3.contact-page-title {
 .single-slider-post__date-sticker {
 	width: 50px;
 	height: 60px;
+  
 }
 
 .single-slider-post__date-sticker span.month {
@@ -8500,3 +8520,30 @@ a {
 .selected-color {
     border: 2px solid blue;
 }
+
+
+
+
+
+.main-box-2 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+    background-color: #f2f2f2;
+    align-items: center;
+    padding: 15px;
+}
+.form-group > input {
+    width: 100%;
+}
+.form-left {
+    border-right: 2px solid #444;
+    padding: 20px;
+}
+.main-box-align {
+    text-align: center;
+
+}
+
+
+
+

@@ -15,10 +15,11 @@ namespace ServiceHost.Pages
 {
     public class CartModel : PageModel
     {
-        public List<CartItem> CartItems;
         public const string CookieName = "cart-items";
         private readonly IProductQuery _productQuery;
         private readonly IAuthHelper _authHelper;
+        public List<CartItem> CartItems;
+
         public CartModel(IProductQuery productQuery, IAuthHelper authHelper)
         {
             CartItems = new List<CartItem>();
@@ -49,6 +50,7 @@ namespace ServiceHost.Pages
             Response.Cookies.Append(CookieName, serializer.Serialize(cartItems), options);
             return RedirectToPage("/Cart");
         }
+
 
         public IActionResult OnGetGoToCheckOut()
         {

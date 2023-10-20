@@ -62,15 +62,19 @@ namespace _0_Framework.Application
 
         public long CurrentAccountId()
         {
-            long roleId = 0;
+            //long roleId = 0;
 
-            if (IsAuthenticated())
-            {
-                var claims = _contextAccessor.HttpContext.User.Claims.ToList();
-                roleId = long.Parse(claims.FirstOrDefault(x => x.Type == "AccountId").Value);
-            }
+            //if (IsAuthenticated())
+            //{
+            //    var claims = _contextAccessor.HttpContext.User.Claims.ToList();
+            //    roleId = long.Parse(claims.FirstOrDefault(x => x.Type == "AccountId").Value);
+            //}
 
-            return roleId;
+            //return roleId;
+            return IsAuthenticated()
+                ? long.Parse(_contextAccessor.HttpContext.User.Claims.First(x => x.Type == "AccountId")?.Value)
+                : 0;
+
         }
 
         public AuthViewModel CurrentAccountInfo()

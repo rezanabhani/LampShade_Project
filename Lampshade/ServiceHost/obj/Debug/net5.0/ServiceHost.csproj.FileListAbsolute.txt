@@ -257,12 +257,15 @@ D:\Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.CodeAnalysis.CS
 D:\Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.CodeAnalysis.Razor.dll
 D:\Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.CodeAnalysis.Workspaces.dll
 D:\Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+D:\Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
 D:\Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
 D:\Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 D:\Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
 D:\Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
 D:\Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 D:\Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+D:\Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.Extensions.PlatformAbstractions.dll
 D:\Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
 D:\Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.Identity.Client.dll
 D:\Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
@@ -278,7 +281,9 @@ D:\Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.VisualStudio.We
 D:\Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
 D:\Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
 D:\Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Nancy.dll
 D:\Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\RestSharp.dll
 D:\Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\SmsIrRestful.dll
 D:\Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\System.Composition.AttributedModel.dll
 D:\Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\System.Composition.Convention.dll
@@ -291,6 +296,8 @@ D:\Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\System.IO.Pipelines.dll
 D:\Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\System.Runtime.Caching.dll
 D:\Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
 D:\Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+D:\Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\System.Text.Encodings.Web.dll
+D:\Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\System.Text.Json.dll
 D:\Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.resources.dll
 D:\Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.resources.dll
 D:\Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.resources.dll
@@ -440,6 +447,7 @@ D:\Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\staticwebassets\msbuild.b
 D:\Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\ServiceHost.TagHelpers.input.cache
 D:\Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\ServiceHost.TagHelpers.output.cache
 D:\Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\ServiceHost.RazorCoreGenerate.cache
+D:\Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Accounts\AccountAddress\Index.cshtml.g.cs
 D:\Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Accounts\Account\ChangePassword.cshtml.g.cs
 D:\Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Accounts\Account\Create.cshtml.g.cs
 D:\Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Accounts\Account\Edit.cshtml.g.cs
@@ -494,6 +502,8 @@ D:\Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\AccessDenied.
 D:\Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Account.cshtml.g.cs
 D:\Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Article.cshtml.g.cs
 D:\Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\ArticleCategory.cshtml.g.cs
+D:\Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Cart.cshtml.g.cs
+D:\Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Checkout.cshtml.g.cs
 D:\Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
 D:\Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Index.cshtml.g.cs
 D:\Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Privacy.cshtml.g.cs
@@ -520,10 +530,3 @@ D:\Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\refint\ServiceHost.dll
 D:\Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\ServiceHost.pdb
 D:\Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\ServiceHost.genruntimeconfig.cache
 D:\Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\ref\ServiceHost.dll
-D:\Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Cart.cshtml.g.cs
-D:\Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
-D:\Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
-D:\Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Microsoft.Extensions.PlatformAbstractions.dll
-D:\Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\Nancy.dll
-D:\Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Checkout.cshtml.g.cs
-D:\Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Accounts\AccountAddress\Index.cshtml.g.cs

@@ -54,7 +54,7 @@ namespace BlogManagement.Infrastructure.EfCore.Repository
                     Category = x.Category.Name,
                     Picture = x.Picture,
                     PublishDate = x.PublishDate.ToFarsi(),
-                    ShortDescription = x.ShortDescription.Substring(0,Math.Min(x.Description.Length,50)) + " ...",
+                    ShortDescription = x.ShortDescription,
                     Title = x.Title
                 });
 

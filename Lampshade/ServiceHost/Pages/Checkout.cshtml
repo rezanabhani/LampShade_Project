@@ -89,9 +89,9 @@
                                 </table>
                             </div>
                         </form>
-
-                        <div class="row">
-                            <div class="col-lg-6 col-12 d-flex">
+                        <div class="main-box-2">
+                        <div class="main-box-align" >
+                            <div class="">
                                 <div class="cart-summary">
                                     <div class="cart-summary-wrap">
                                         <h4>خلاصه وضعیت فاکتور</h4>
@@ -102,7 +102,7 @@
                                     @if (Model.HasAccountAddress == true)
                                     {
                                         <div class="cart-summary-button">
-                                            <a asp-page-handler="Pay" class="checkout-btn">پرداخت</a>
+                                            <a asp-page-handler="Pay">پرداخت</a>
                                         </div>
                                     }
                                 </div>
@@ -114,31 +114,31 @@
 
 
                             <form method="post" asp-page-handler="AddAddress">
-                                <div class="row">
-                                    <div class="col-lg-6 col-12 d-flex">
+                                <div class="">
+                                    <div class="form-left">
                                         <input type="hidden" asp-for="command.AccountId" value="@Model.accountId" />
-                                        <div class="col-md-6">
+                                        <div class="">
                                             <div class="form-group">
                                                 <label asp-for="command.State" class="control-label">استان</label>
                                                 <input type="text" class="form-control" asp-for="command.State">
                                                 <span asp-validation-for="command.State" class="error"></span>
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="">
                                             <div class="form-group">
                                                 <label asp-for="command.City" class="control-label">شهر</label>
                                                 <input type="text" class="form-control" asp-for="command.City">
                                                 <span asp-validation-for="command.City" class="error"></span>
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="">
                                             <div class="form-group">
                                                 <label asp-for="command.PostalCode" class="control-label"> کد پستی </label>
                                                 <input type="text" class="form-control" asp-for="command.PostalCode">
                                                 <span asp-validation-for="command.PostalCode" class="error"></span>
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="">
                                             <div class="form-group">
                                                 <label asp-for="command.CompleteAddress" class="control-label"> آدرس کامل </label>
                                                 <input type="text" class="form-control" asp-for="command.CompleteAddress">
@@ -152,6 +152,7 @@
                                 </div>
                             </form>
                         }
+                        </div>
                     </div>
                 </div>
             </div>
