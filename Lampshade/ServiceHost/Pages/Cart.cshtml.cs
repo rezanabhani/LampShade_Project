@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Nancy.Json;
+using Newtonsoft.Json;
 using ShopManagement.Application.Contracts.Order;
 
 
@@ -38,19 +39,24 @@ namespace ServiceHost.Pages
             CartItems = _productQuery.CheckInventoryStatus(cartItems);
         }
 
-        public IActionResult OnGetRemoveFromCart(long id)
+        public IActionResult OnGetRemoveFromCart(int id)
         {
-            var serializer = new JavaScriptSerializer();
-            var value = Request.Cookies[CookieName];
-            Response.Cookies.Delete(CookieName);
-            var cartItems = serializer.Deserialize<List<CartItem>>(value);
-            var itemToRemove = cartItems.FirstOrDefault(x => x.Id == id);
-            cartItems.Remove(itemToRemove);
-            var options = new CookieOptions { Expires = DateTime.Now.AddDays(2) };
-            Response.Cookies.Append(CookieName, serializer.Serialize(cartItems), options);
+            var cart = HttpContext.Request.Cookies["cart-items"];
+            var items = JsonConvert.DeserializeObject<List<CartItem>>(cart) ?? new List<CartItem>();
+
+            // Find the item to remove from the cart
+            var itemToRemove = items.FirstOrDefault(x => x.Id == id);
+            if (itemToRemove != null)
+            {
+                items.Remove(itemToRemove);
+
+                // Update the cart cookie
+                HttpContext.Response.Cookies.Append("cart-items", JsonConvert.SerializeObject(items));
+            }
+
             return RedirectToPage("/Cart");
         }
-
+        
 
         public IActionResult OnGetGoToCheckOut()
         {

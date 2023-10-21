@@ -1,4 +1,4 @@
-using _01_LampshadeQuery.Contracts.Product;
+﻿using _01_LampshadeQuery.Contracts.Product;
 using CommentManagement.Application.Contracts.Comment;
 using CommentManagement.Infrastructure.EfCore;
 using InventoryManagement.Application.Contract.Inventory;
@@ -9,6 +9,8 @@ namespace ServiceHost.Pages
 {
     public class ProductModel : PageModel
     {
+        [TempData] 
+        public string SuccessMessage { get; set; }
         public ProductQueryModel Product;
         private readonly IProductQuery _productQuery;
         private readonly ICommentApplication _commentApplication;
@@ -27,8 +29,15 @@ namespace ServiceHost.Pages
         public IActionResult OnPost(AddComment command, string productSlug)
         {
             command.Type = CommentType.Product;
-           var result = _commentApplication.Add(command);
-           return RedirectToPage("/Product", new { Id=productSlug });
+            var result = _commentApplication.Add(command);
+
+            if (result.IsSuccedded)
+            {
+                // Set a success message in TempData
+                SuccessMessage = "Comment registered successfully!";
+            }
+
+            return RedirectToPage("/Product", new { Id = productSlug });
         }
 
     }

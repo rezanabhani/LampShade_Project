@@ -133,6 +133,7 @@
                                         <p class="single-info">
                                             <a asp-page="/ProductCategory" asp-route-id="@Model.Product.CategorySlug">@Model.Product.Category</a>
                                         </p>
+
                                         <h2 class="product-title">@Model.Product.Name</h2>
                                         <div class="product-rating">
                                             <span class="rating">
@@ -153,7 +154,7 @@
                                             {
                                                 <span id="pricemain" class="main-price discounted"> تومان</span>
                                                 <span> تومان</span>
-                                                <span id="discountmain" class="discounted-price">  تومان</span>
+                                                <span id="discountmain" class="discounted-price"> تومان</span>
                                                 <span> تومان</span>
                                             }
                                             else
@@ -163,6 +164,12 @@
                                             }
 
                                         </p>
+                                        
+                                        @if (!string.IsNullOrWhiteSpace(Model.SuccessMessage))
+                                        {
+                                            <p>@Model.SuccessMessage</p>
+                                        }
+                                       
 
                                         <p id="myParagraph"></p>
                                         <p class="single-info">کد محصول: <span class="value">@Model.Product.Code</span> </p>
@@ -186,7 +193,7 @@
                                                     {
                                                         <svg height="100" width="80">
                                                             <a class="circle">
-                                                                <circle cx="50" cy="50" r="29" stroke="black" stroke-width="3" data-price="@colors.DoublePrice" data-pricetomoney="@colors.Price" data-discountpricemain="@colors.PriceWithDiscount" data-fill="@colors.ColorPName" id="myPrice" fill="@colors.ColorName"/>
+                                                                <circle cx="50" cy="50" r="29" stroke="black" stroke-width="3" data-price="@colors.DoublePrice" data-pricetomoney="@colors.Price" data-discountpricemain="@colors.PriceWithDiscount" data-fill="@colors.ColorPName" id="myPrice" fill="@colors.ColorName" />
                                                             </a>
                                                         </svg>
                                                     }
@@ -328,8 +335,10 @@
                                                     {
                                                         <div class="sin-ratings">
                                                             <div class="rating-author">
-                                                                <h3>@comment.Name</h3>
-                                                                @* <div class="rating-star">
+                                                                <img src="~/Theme/assets/img/26263d3127afcbc9393ba1d98bb510f7.png" />
+                                                                <div class="rating-author-title">
+                                                                    <h3>@comment.Name</h3>
+                                                                    @* <div class="rating-star">
                                                             <i class="fa fa-star"></i>
                                                             <i class="fa fa-star"></i>
                                                             <i class="fa fa-star"></i>
@@ -337,8 +346,11 @@
                                                             <i class="fa fa-star"></i>
                                                             <span>(5)</span>
                                                             </div>*@
-                                                            </div>
-                                                            <p>@comment.Message</p>
+                                                                    <p>@comment.Message</p>
+
+                                                                </div>
+                                                                </div>
+                                                           
                                                         </div>
                                                     }
 
@@ -386,7 +398,6 @@
 
     <script type="text/javascript">
 
-
         const circles = document.querySelectorAll('.circle circle');
         const colorField = document.getElementById('color-field');
         let selectedColor = null;
@@ -432,12 +443,13 @@
         function updateCartButton(circle) {
             if (circle) {
                 const unitPrice = circle.getAttribute('data-price');
+                const unitPriceToMoney = circle.getAttribute('data-pricetomoney');
                 const productColor = circle.getAttribute('data-fill');
 
                 // Update the displayed price
                 const pricemain = document.getElementById('pricemain');
-                if (unitPrice) {
-                    pricemain.textContent = unitPrice;
+                if (unitPriceToMoney) {
+                    pricemain.textContent = unitPriceToMoney;
                 }
 
                 // Update the "افزودن به سبد خرید" button

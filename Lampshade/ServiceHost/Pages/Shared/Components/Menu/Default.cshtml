@@ -207,23 +207,23 @@
                     <li class="menu-item-has-children">
                         <a href="#">محصولات</a>
                         <ul class="sub-menu">
-                            <li>
-                                <a href="blog-left-sidebar.html">دکوری</a>
-                            </li>
-                            <li>
-                                <a href="blog-right-sidebar.html">نگهدارنده</a>
-                            </li>
+                            @foreach (var category in Model.ProductCategories)
+                            {
+                                <li>
+                                    <a asp-page="./ProductCategory" asp-route-id="@category.Slug">@category.Name</a>
+                                </li>
+                            }
                         </ul>
                     </li>
                     <li class="menu-item-has-children">
                         <a href="#">مقالات</a>
                         <ul class="sub-menu">
-                            <li>
-                                <a href="blog-left-sidebar.html">گروه 1</a>
-                            </li>
-                            <li>
-                                <a href="blog-right-sidebar.html">گروه 2</a>
-                            </li>
+                            @foreach (var category in Model.ArticlesCategories)
+                            {
+                                <li>
+                                    <a asp-page="./ArticleCategory" asp-route-id="@category.Slug">@category.Name</a>
+                                </li>
+                            }
                         </ul>
                     </li>
                     <li class="">
@@ -239,10 +239,10 @@
                             <a href="#"> پروفایل من</a>
                             <ul class="sub-menu">
                                 <li>
-                                    <a href="login-register.html">ثبت نام</a>
+                                    <a asp-page="./Account">ثبت نام</a>
                                 </li>
                                 <li>
-                                    <a href="login-register.html">ورود</a>
+                                    <a asp-page="./Account">ورود</a>
                                 </li>
                             </ul>
                         </li>
@@ -261,7 +261,7 @@
                                 </a>
                             </li>
                             <li>
-                                <i class="ion-android-mail"></i> <a href="mailto:info@yourdomain.com">Rezanabhani387@gmail.com</a>
+                                <i class="ion-android-mail"></i> <a href="mailto:info@yourdomain.com">khanelavazemkhanegi@gmail.com</a>
                             </li>
                         </ul>
                     </div>
