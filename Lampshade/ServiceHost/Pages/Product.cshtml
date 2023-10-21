@@ -176,6 +176,7 @@
                                                 <span class="text-danger">محصول ناموجود</span>
                                             }
                                         </p>
+                                        <p><strong class="parent-color">رنگ :</strong><span id="color-field"></span></p>
                                         <div id="parent-list">
                                             @if (Model.Product.ProductColors != null)
                                             {
@@ -387,6 +388,8 @@
 
 
         const circles = document.querySelectorAll('.circle circle');
+        const colorField = document.getElementById('color-field');
+        let selectedColor = null;
         document.addEventListener('DOMContentLoaded', function () {
             const defaultPrice = document.getElementById('myPrice');
             if (defaultPrice) {
@@ -406,6 +409,7 @@
                 // Set the blue border on the first circle by default
                 if (circles.length > 0) {
                     circles[0].classList.add('blue-border');
+                    updateCartButton(circles[0]);
                 }
 
 
@@ -416,11 +420,36 @@
 
                         // Add the blue border to the clicked circle
                         this.classList.add('blue-border');
+                        selectedColor = this;
+                        updateCartButton(this);
+                        const ProductColor = this.getAttribute('data-fill');
+                        colorField.textContent = ProductColor;
                     });
                 });
             }
         });
 
+        function updateCartButton(circle) {
+            if (circle) {
+                const unitPrice = circle.getAttribute('data-price');
+                const productColor = circle.getAttribute('data-fill');
+
+                // Update the displayed price
+                const pricemain = document.getElementById('pricemain');
+                if (unitPrice) {
+                    pricemain.textContent = unitPrice;
+                }
+
+                // Update the "افزودن به سبد خرید" button
+                const cartButton = document.querySelector('.cart-btn');
+                if (cartButton) {
+                    cartButton.setAttribute('data-price', unitPrice);
+                    cartButton.setAttribute('data-colorname', productColor);
+                }
+
+                colorField.textContent = productColor;
+            }
+        }
 
 
         let price = document.getElementById('parent-list');

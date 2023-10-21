@@ -6448,6 +6448,54 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\غذا-ساز\غذاساز-کنوود-مدل-fdm307ss\2023-10-04-11-30-03-g3.webp))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\لوازم-خانگی\بهترین-اسپرسوساز-خانگی-2023\2023-10-20-13-27-03-espresso-maker.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ServiceHost</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ServiceHost</BasePath>
+      <RelativePath>ProductPictures\لوازم-خانگی\بهترین-اسپرسوساز-خانگی-2023\2023-10-20-13-27-03-espresso-maker.jpg</RelativePath>
+      <AssetKind></AssetKind>
+      <AssetMode></AssetMode>
+      <AssetRole></AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\لوازم-خانگی\بهترین-اسپرسوساز-خانگی-2023\2023-10-20-13-27-03-espresso-maker.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\لوازم-خانگی\بهترین-مارک-آب-میوه-گیری-خارجی-و-ایرانی\2023-10-20-13-33-03-بهترین-مارک-آبمیوه-گیری-1536x864.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ServiceHost</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ServiceHost</BasePath>
+      <RelativePath>ProductPictures\لوازم-خانگی\بهترین-مارک-آب-میوه-گیری-خارجی-و-ایرانی\2023-10-20-13-33-03-بهترین-مارک-آبمیوه-گیری-1536x864.jpg</RelativePath>
+      <AssetKind></AssetKind>
+      <AssetMode></AssetMode>
+      <AssetRole></AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\لوازم-خانگی\بهترین-مارک-آب-میوه-گیری-خارجی-و-ایرانی\2023-10-20-13-33-03-بهترین-مارک-آبمیوه-گیری-1536x864.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\لوازم-خانگی\بهترین-مارک-غذاساز-در-سال-2023\2023-10-20-13-30-12-best-food-processor-1-763x470.jpg.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>ServiceHost</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ServiceHost</BasePath>
+      <RelativePath>ProductPictures\لوازم-خانگی\بهترین-مارک-غذاساز-در-سال-2023\2023-10-20-13-30-12-best-food-processor-1-763x470.jpg.webp</RelativePath>
+      <AssetKind></AssetKind>
+      <AssetMode></AssetMode>
+      <AssetRole></AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\لوازم-خانگی\بهترین-مارک-غذاساز-در-سال-2023\2023-10-20-13-30-12-best-food-processor-1-763x470.jpg.webp))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\لوازم-خانگی\همه-آنچه-باید-در-هنگام-خرید-ماشین-ظرفشویی-بدانیم\2023-10-19-18-25-16-Picsart_23-09-18_19-55-41-238-265x249.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>ServiceHost</SourceId>

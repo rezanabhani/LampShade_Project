@@ -93,7 +93,7 @@ namespace AccountManagement.Application
 
             account.ChangePassword(command.Password);
             _accountRepository.SaveChanges();
-            //_smsService.SendVerificationCodeAsync(command.Mobile, command.Password);
+           //_smsService.SendVerificationCodeAsync(command.Mobile, command.Password);
             
             return operation.Succedded();
         }

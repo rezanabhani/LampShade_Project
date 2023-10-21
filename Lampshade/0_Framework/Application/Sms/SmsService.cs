@@ -35,10 +35,10 @@ public class SmsService : ISmsService
         VerifySendModel model = new VerifySendModel()
         {
             Mobile = phoneNumber,
-            TemplateId = 100000,
+            TemplateId = 210098,
             Parameters = new VerifySendParameterModel[]
             {
-                new VerifySendParameterModel { Name = "CODE", Value = verificationCode }
+                new VerifySendParameterModel { Name = "Verifycode", Value = verificationCode }
             }
         };
 
