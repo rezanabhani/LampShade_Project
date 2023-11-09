@@ -6384,6 +6384,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\غذا-ساز\خرید-و-قیمت-غذاساز-نینجا-مدل-bn650-خرید-و-قیم\2023-10-04-11-29-13-g2.webp))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\غذا-ساز\خرید-و-قیمت-غذاساز-نینجا-مدل-bn650-خرید-و-قیم\2023-10-21-19-05-34-05.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ServiceHost</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ServiceHost</BasePath>
+      <RelativePath>ProductPictures\غذا-ساز\خرید-و-قیمت-غذاساز-نینجا-مدل-bn650-خرید-و-قیم\2023-10-21-19-05-34-05.jpg</RelativePath>
+      <AssetKind></AssetKind>
+      <AssetMode></AssetMode>
+      <AssetRole></AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\غذا-ساز\خرید-و-قیمت-غذاساز-نینجا-مدل-bn650-خرید-و-قیم\2023-10-21-19-05-34-05.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductPictures\غذا-ساز\غذاساز-شیائومی-مدل-smart-cooking-robot-mcc01m-1a\2023-10-04-11-18-34-g1.webp))">
       <SourceType>Package</SourceType>
       <SourceId>ServiceHost</SourceId>

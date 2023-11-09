@@ -93,8 +93,8 @@ namespace AccountManagement.Application
 
             account.ChangePassword(command.Password);
             _accountRepository.SaveChanges();
-           //_smsService.SendVerificationCodeAsync(command.Mobile, command.Password);
-            
+            //_smsService.SendVerificationCodeAsync(command.Mobile, command.Password);
+
             return operation.Succedded();
         }
 
@@ -117,7 +117,7 @@ namespace AccountManagement.Application
                 .Select(x => x.Code)
                 .ToList();
 
-            var authViewModel = new AuthViewModel(account.Id,account.RoleId,account.Fullname,account.Username,
+            var authViewModel = new AuthViewModel(account.Id, account.RoleId, account.Fullname, account.Username,
                 account.Mobile, permissions);
             _authHelper.Signin(authViewModel);
             return operation.Succedded();
@@ -133,7 +133,7 @@ namespace AccountManagement.Application
 
         public EditAccount GetDetails(long id)
         {
-          return _accountRepository.GetDetails(id);
+            return _accountRepository.GetDetails(id);
         }
 
         public List<AccountViewModel> Search(AccountSearchModel searchModel)

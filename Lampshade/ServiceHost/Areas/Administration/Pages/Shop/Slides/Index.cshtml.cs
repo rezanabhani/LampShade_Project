@@ -55,18 +55,18 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.Slides
             return new JsonResult(result);
         }
 
-        [NeedsPermission(ShopPermissions.RestoreSlide)]
+        [NeedsPermission(ShopPermissions.RemoveSlide)]
         public IActionResult OnGetRemove(long id)
         {
             var result = _slideApplication.Remove(id);
-
             if (result.IsSuccedded)
                 return RedirectToPage("./Index");
+
             Message = result.Message;
             return RedirectToPage("./Index");
         }
 
-        [NeedsPermission(ShopPermissions.RemoveSlide)]
+        [NeedsPermission(ShopPermissions.RestoreSlide)]
         public IActionResult OnGetRestore(long id)
         {
             var result = _slideApplication.Restore(id);

@@ -5,11 +5,11 @@ namespace _0_Framework.Application
     public interface IAuthHelper
     {
         void SignOut();
-        void Signin(AuthViewModel account);
         bool IsAuthenticated();
+        void Signin(AuthViewModel account);
         string CurrentAccountRole();
-        long CurrentAccountId();
         AuthViewModel CurrentAccountInfo();
         List<int> GetPermissions();
+        long CurrentAccountId();
     }
 }

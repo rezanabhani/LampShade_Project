@@ -10,9 +10,11 @@ using _01_LampshadeQuery.Contracts;
 using _01_LampshadeQuery.Contracts.Product;
 using AccountManagement.Application.Contracts.AccountAddress;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ServiceHost.Pages
 {
+    [Authorize]
     public class CheckoutModel : PageModel
     {
         public Cart Cart;
@@ -30,6 +32,7 @@ namespace ServiceHost.Pages
 
         public CheckoutModel(ICartService cartService, ICartCalculatorService cartCalculatorService, IZarinPalFactory zarinPalFactory, IProductQuery productQuery, IAccountAddressApplication accountAddressApplication, IAuthHelper authHelper, IOrderApplication orderApplication)
         {
+            Cart = new Cart();
             _cartService = cartService;
             _cartCalculatorService = cartCalculatorService;
             _zarinPalFactory = zarinPalFactory;
@@ -75,7 +78,21 @@ namespace ServiceHost.Pages
         public IActionResult OnGetCallBack([FromQuery] string authority, [FromQuery] string status,
             [FromQuery] long oId)
         {
-            return null;
+            var orderAmount = _orderApplication.GetAmountBy(oId);
+            var verificationResponse = _zarinPalFactory.CreateVerificationRequest(authority, orderAmount.ToString());
+
+            var result = new PaymentResult();
+            if (status == "OK" && verificationResponse.Status == 100)
+            {
+                var issueTrackingNo = _orderApplication.PaymentSucceeded(oId, verificationResponse.RefID);
+                Response.Cookies.Delete("cart-items");
+                result = result.Succeeded("پرداخت با موفقیت انجام شد .", issueTrackingNo);
+                return RedirectToPage("/PaymentResult", result);
+            }
+
+            result = result.Failed("پرداخت با موفقیت انجام نشد. در صورت کسر  وجه  از حساب  مبلغ  تا  24 ساعت  دیگر  به حساب  شما  بازگردانده  خواهد شد .");
+            return RedirectToPage("/PaymentResult", result);
+
         }
 
         public IActionResult OnPostAddAddress(CreateAddress command)

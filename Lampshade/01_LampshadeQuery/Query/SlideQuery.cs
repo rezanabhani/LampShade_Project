@@ -16,16 +16,19 @@ namespace _01_LampshadeQuery.Query
 
         public List<SlideQueryModel> GetSlides()
         {
-            return _context.Slides.Where(x => x.IsRemoved == false).Select(x => new SlideQueryModel()
-            {
-                Picture = x.Picture,
-                PictureAlt = x.PictureAlt,
-                PictureTitle = x.PictureTitle,
-                Heading = x.Heading,
-                Title = x.Title,
-                BtnText = x.BtnText,
-                Link = x.Link
-            }).ToList();
+            return _context.Slides
+                .Where(x => x.IsRemoved == false)
+                .Select(x => new SlideQueryModel
+                {
+                    Picture = x.Picture,
+                    PictureAlt = x.PictureAlt,
+                    PictureTitle = x.PictureTitle,
+                    BtnText = x.BtnText,
+                    Heading = x.Heading,
+                    Link = x.Link,
+                    Text = x.Text,
+                    Title = x.Title
+                }).ToList();
         }
     }
 }

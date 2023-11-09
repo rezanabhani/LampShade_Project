@@ -4,13 +4,21 @@
     ViewData["Title"] = "فروشگاه لوازم خانگی";
 }
 
+<cache expires-after="@TimeSpan.FromMinutes(5)">
 @await Component.InvokeAsync("Slide")
+</cache>
 
+<cache expires-after="@TimeSpan.FromHours(8)">
 @await Component.InvokeAsync("ProductCategory")
+</cache>
 
+<cache expires-after="@TimeSpan.FromMinutes(15)">
 @await Component.InvokeAsync("ProductCategoryWithProduct")
+</cache>
 
+<cache expires-after="@TimeSpan.FromMinutes(5)">
 @await Component.InvokeAsync("LatestArrivals")
+</cache>
 
 
 
@@ -126,6 +134,8 @@
 </div>
 <!--====================  End of feature logo area  ====================-->
 
+<cache expires-after="@TimeSpan.FromMinutes(30)">
 @await Component.InvokeAsync("LatestArticles")
+</cache>
 
 

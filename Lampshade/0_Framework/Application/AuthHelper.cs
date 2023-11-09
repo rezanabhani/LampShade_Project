@@ -28,12 +28,12 @@ namespace _0_Framework.Application
             var permissions = JsonConvert.SerializeObject(account.Permissions);
             var claims = new List<Claim>
             {
-                new Claim("AccountId", account.Id.ToString()),
-                new Claim(ClaimTypes.Name, account.Fullname),
-                new Claim(ClaimTypes.Role, account.RoleId.ToString()),
-                new Claim("Username", account.Username), // Or Use ClaimTypes.NameIdentifier
-                new Claim("Mobile", account.Mobile),
-                new Claim("permissions", permissions),
+                new("AccountId", account.Id.ToString()),
+                new(ClaimTypes.Name, account.Fullname),
+                new(ClaimTypes.Role, account.RoleId.ToString()),
+                new("Username", account.Username), // Or Use ClaimTypes.NameIdentifier
+                new("permissions", permissions),
+                new("Mobile", account.Mobile)
             };
 
             var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
@@ -56,25 +56,15 @@ namespace _0_Framework.Application
         public string CurrentAccountRole()
         {
             if (IsAuthenticated())
-                return _contextAccessor.HttpContext.User.Claims.FirstOrDefault(x => x.Type == ClaimTypes.Role).Value;
-            return null;    
+                return _contextAccessor.HttpContext.User.Claims.FirstOrDefault(x => x.Type == ClaimTypes.Role)?.Value;
+            return null;
         }
 
         public long CurrentAccountId()
         {
-            //long roleId = 0;
-
-            //if (IsAuthenticated())
-            //{
-            //    var claims = _contextAccessor.HttpContext.User.Claims.ToList();
-            //    roleId = long.Parse(claims.FirstOrDefault(x => x.Type == "AccountId").Value);
-            //}
-
-            //return roleId;
             return IsAuthenticated()
                 ? long.Parse(_contextAccessor.HttpContext.User.Claims.First(x => x.Type == "AccountId")?.Value)
                 : 0;
-
         }
 
         public AuthViewModel CurrentAccountInfo()

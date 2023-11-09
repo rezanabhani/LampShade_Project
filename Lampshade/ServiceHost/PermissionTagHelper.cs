@@ -1,8 +1,6 @@
 ﻿using System.Linq;
-using System.Runtime.CompilerServices;
 using _0_Framework.Application;
 using Microsoft.AspNetCore.Razor.TagHelpers;
-using Microsoft.AspNetCore.SignalR;
 
 namespace ServiceHost
 {

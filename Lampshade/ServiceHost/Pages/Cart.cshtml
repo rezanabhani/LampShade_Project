@@ -35,68 +35,91 @@
                     {
                         <div class="alert alert-warning"><i class="fa fa-warning">کالای <strong>@item.Name</strong> در انبار کمتر از تعداد درخواستی موجود است .</i></div>
                     }
-                    <div class="page-content-wrapper">
-                        <div class="cart-table table-responsive">
-                            <table class="table">
-                                <thead>
-                                <tr>
-                                    <th class="pro-thumbnail">عکس</th>
-                                    <th class="pro-title">محصول</th>
-                                    <th class="pro-price">قیمت واحد</th>
-                                    <th class="pro-title">رنگ محصول</th>
-                                    <th class="pro-quantity">تعداد</th>
-                                    <th class="pro-subtotal">قیمت کل</th>
-                                    <th class="pro-remove">حذف</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                @foreach (var item in Model.CartItems)
-                                {
-                                    <tr>
-                                        <td class="pro-thumbnail">
-                                            <a href="single-product.html">
-                                                <img src="~/ProductPictures/@item.Picture" class="img-fluid" alt="@item.Name">
-                                            </a>
-                                        </td>
-                                        <td class="pro-title">
-                                            <a href="single-product.html">@item.Name</a>
-                                        </td>
-                                        <td class="pro-price">
-                                            <span>@item.UnitPrice.ToMoney()</span>
-                                        </td>
-                                        <td class="pro-title">
-                                            <a href="single-product.html">@item.ProductColor</a>
-                                        </td>
-                                        <td class="pro-quantity">
-                                        <div class="quantity-selection">
-                                            <input type="number" value="@item.Count" min="1" onchange="changeCartItemCount('@item.Id', 'totalItemPrice-@item.Id', this.value)">
-                                        </div>
-                                        <td class="pro-subtotal">
-                                            <span id="totalItemPrice-@item.Id">@item.TotalItemPrice.ToMoney()</span>
-                                        </td>
-                                        <td class="pro-remove">
-                                            <a asp-page-handler="RemoveFromCart" asp-route-id="@item.Id">
-                                                <i class="fa fa-trash-o"></i>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                }
-                                </tbody>
-                            </table>
+                    @if (Model.CartItems.Count < 1)
+                    {
+                        <div class="empty-cart">
+                            <p>سبد خرید شما خالی می باشد</p>
+                            <p>با خرید از فروشگاه خانه لوازم خانگی در کمترین زمان ممکن سفارش خود را درب منزل تحویل بگیرید .</p>
+                            <a asp-page="/Index" class="empty-cart-link">نمایش محصولات</a>
                         </div>
-                        <div class="row">
-                            <div class="col-lg-6 col-12 d-flex">
-                                <div class="cart-summary">
-                                    <div class="cart-summary-button">
-                                        <a class="checkout-btn" asp-page-handler="GoToCheckOut">تکمیل فرآیند خرید</a>
+                    }
+
+                        <div class="page-content-wrapper">
+                            <div class="cart-table table-responsive">
+                                @if (Model.CartItems.Count > 0)
+                                {
+                                    <table class="table">
+                                        <thead>
+                                        <tr class="cart-table-item">
+                                            <th class="pro-thumbnail">عکس</th>
+                                            <th class="pro-title">محصول</th>
+                                            <th class="pro-price">قیمت واحد</th>
+                                            <th class="pro-title">رنگ محصول</th>
+                                            <th class="pro-quantity">تعداد</th>
+                                            <th class="pro-subtotal">قیمت کل</th>
+                                            <th class="pro-remove">حذف</th>
+                                        </tr>
+                                        </thead>
+
+
+                                        <tbody>
+                                        @foreach (var item in Model.CartItems)
+                                        {
+                                            <tr>
+                                                <td class="pro-thumbnail">
+                                                    <a href="single-product.html">
+                                                        <img src="~/ProductPictures/@item.Picture" class="img-fluid" alt="@item.Name">
+                                                    </a>
+                                                </td>
+
+                                                <td class="pro-title">
+                                                    <a href="single-product.html">@item.Name</a>
+                                                </td>
+
+                                                <td class="pro-price  ">
+                                                    <span class="display-1 d-md-none d-flex float-right">قیمت واحد :</span>
+                                                    <span>@item.UnitPrice.ToMoney()</span>
+                                                </td>
+                                                <td class="pro-title">
+                                                    <a href="single-product.html">@item.ProductColor</a>
+                                                </td>
+                                                <td class="pro-quantity">
+                                                <div class="quantity-selection">
+       
+                                                    <input type="number" value="@item.Count" min="1" onchange="changeCartItemCount('@item.Id', 'totalItemPrice-@item.Id', this.value)">
+                                                </div>
+                                                <td class="pro-subtotal ">
+                                                    <span class="d-md-none d-flex float-right">قیمت کل :</span>
+
+                                                    <span id="totalItemPrice-@item.Id">@item.TotalItemPrice.ToMoney()</span>
+                                                </td>
+                                               @*  <td class="pro-remove">
+                                                    <a asp-page-handler="RemoveFromCart" asp-route-id="@item.Id">
+                                                        <i class="fa fa-trash-o"></i>
+                                                    </a>
+                                                </td> *@
+                                            </tr>
+                                        }
+                                        </tbody>
+                                    </table>
+                                }
+                            </div>
+                            @if (Model.CartItems.Count > 0)
+                            {
+                                <div class="row">
+                                    <div class="col-lg-6 col-12 d-flex">
+                                        <div class="cart-summary">
+                                            <div class="cart-summary-button">
+                                                <a class="checkout-btn" asp-page-handler="GoToCheckOut">تکمیل فرآیند خرید</a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            }
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 

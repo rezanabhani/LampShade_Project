@@ -91,7 +91,7 @@
                         </form>
                         <div class="main-box-2">
                         <div class="main-box-align" >
-                            <div class="">
+                            
                                 <div class="cart-summary">
                                     <div class="cart-summary-wrap">
                                         <h4>خلاصه وضعیت فاکتور</h4>
@@ -106,15 +106,15 @@
                                         </div>
                                     }
                                 </div>
-                            </div>
+                           
                         </div>
 
                         @if (Model.HasAccountAddress == false)
                         {
 
 
-                            <form method="post" asp-page-handler="AddAddress">
-                                <div class="">
+                                <form method="post" asp-page-handler="AddAddress" class="form-address">
+                                <div>
                                     <div class="form-left">
                                         <input type="hidden" asp-for="command.AccountId" value="@Model.accountId" />
                                         <div class="">

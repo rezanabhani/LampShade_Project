@@ -22,7 +22,8 @@
     <link href="~/Theme/assets/css/style.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="~/Theme/assets/css/Custom.css" rel="stylesheet">
-    
+    <link rel="shortcut icon" type="image/x-icon" href="~/favicon.ico" />
+
     @RenderSection("Styles", false)
 </head>
 
@@ -60,6 +61,11 @@
     <script src="~/Theme/assets/js/active.js"></script>
     <script src="~/theme/assets/js/plugins.js"></script>
     <script src="~/theme/assets/js/custom.js"></script>
+    <script src="~/theme/assets/js/store.js"></script>
+
+    @RenderSection("Scripts", false)
+
+
 
     <script>
         $(document).ready(function () {
@@ -67,7 +73,7 @@
         });
     </script>
 
-    @RenderSection("Scripts", false)
+
 </body>
 
 </html>

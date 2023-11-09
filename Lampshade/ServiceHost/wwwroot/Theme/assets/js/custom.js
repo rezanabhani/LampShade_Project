@@ -1,6 +1,6 @@
 ﻿const cookieName = "cart-items";
 
-function addToCart(id, name, picture, UnitPrice, ProductColor) {
+function addToCart(id, name, picture, unitPrice, productColor) {
     console.log('addToCart function called');
     debugger;
     let products = $.cookie(cookieName);
@@ -10,8 +10,8 @@ function addToCart(id, name, picture, UnitPrice, ProductColor) {
         products = JSON.parse(products);
     }
 
-    const count = $("#productCount").val();
-    const currentProduct = products.find(x => x.id === id && x.ProductColor === ProductColor);
+    const count = parseInt($("#productCount").val());
+    const currentProduct = products.find(x => x.id === id && x.productColor === productColor);
     if (currentProduct !== undefined) {
         products.find(x => x.id === id).count = parseInt(currentProduct.count) + parseInt(count);
     } else {
@@ -19,8 +19,8 @@ function addToCart(id, name, picture, UnitPrice, ProductColor) {
             id,
             name,
             picture,
-            UnitPrice,
-            ProductColor,
+            unitPrice,
+            productColor,
             count
         }
 
@@ -28,10 +28,12 @@ function addToCart(id, name, picture, UnitPrice, ProductColor) {
     }
     $.cookie(cookieName, JSON.stringify(products), { expires: 2, path: "/" });
     updateCart();
+
 }
 
 
 function updateCart() {
+    debugger;
     let products = $.cookie(cookieName);
     products = JSON.parse(products);
     $("#cart_items_count").text(products.length);
@@ -53,14 +55,15 @@ function updateCart() {
                                     <a href="single-product.html">محصول: ${x.name}</a>
                                 </p>
                                 <p class="count">تعداد: ${x.count}</p>
-                                <p class="count">قیمت واحد: ${x.UnitPrice}</p>
-                                <p class="count">رنگ محصول: ${x.ProductColor}</p>
+                                <p class="count">قیمت واحد: ${x.unitPrice}</p>
+                                <p class="count">رنگ محصول: ${x.productColor}</p>
                             </div>
                         </div>`;
 
         cartItemsWrapper.append(product);
     });
 }
+
 
 function removeFromCart(id) {
     let products = $.cookie(cookieName);
@@ -72,14 +75,32 @@ function removeFromCart(id) {
 }
 
 function changeCartItemCount(id, totalId, count) {
+    debugger;
     var products = $.cookie(cookieName);
     products = JSON.parse(products);
     const productIndex = products.findIndex(x => x.id == id);
     products[productIndex].count = count;
     const product = products[productIndex];
-    const newPrice = parseInt(product.UnitPrice) * parseInt(count);
+    const newPrice = parseInt(product.unitPrice) * parseInt(count);
     $(`#${totalId}`).text(newPrice);
     //products[productIndex].totalPrice = newPrice;
     $.cookie(cookieName, JSON.stringify(products), { expires: 2, path: "/" });
     updateCart();
 }
+//function changeCartItemCount(id, totalId, count,unitPrice) {
+//    debugger;
+//    var products = $.cookie(cookieName);
+//    products = JSON.parse(products);
+//    const productIndex = products.findIndex(x => x.id == id);
+//    products[productIndex].count = count;
+//    const product = products[productIndex];
+//    let countProducts = count;
+//    let newPrice = parseInt(unitPrice) * parseInt(countProducts);
+//    $(`#${totalId}`).text(newPrice);
+//    products[productIndex].totalPrice = newPrice;
+//    $.cookie(cookieName, JSON.stringify(products), { expires: 2, path: "/" });
+//    updateCart();
+//}
+
+
+

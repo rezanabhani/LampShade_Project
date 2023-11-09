@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net;
-using _0_Framework.Application;
 using _01_LampshadeQuery.Contracts.Product;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -16,16 +14,14 @@ namespace ServiceHost.Pages
 {
     public class CartModel : PageModel
     {
+        public List<CartItem> CartItems;
         public const string CookieName = "cart-items";
         private readonly IProductQuery _productQuery;
-        private readonly IAuthHelper _authHelper;
-        public List<CartItem> CartItems;
 
-        public CartModel(IProductQuery productQuery, IAuthHelper authHelper)
+        public CartModel(IProductQuery productQuery)
         {
             CartItems = new List<CartItem>();
             _productQuery = productQuery;
-            _authHelper = authHelper;
         }
 
         public void OnGet()
@@ -39,24 +35,20 @@ namespace ServiceHost.Pages
             CartItems = _productQuery.CheckInventoryStatus(cartItems);
         }
 
-        public IActionResult OnGetRemoveFromCart(int id)
+        public IActionResult OnGetRemoveFromCart(long id)
         {
-            var cart = HttpContext.Request.Cookies["cart-items"];
-            var items = JsonConvert.DeserializeObject<List<CartItem>>(cart) ?? new List<CartItem>();
-
-            // Find the item to remove from the cart
-            var itemToRemove = items.FirstOrDefault(x => x.Id == id);
-            if (itemToRemove != null)
-            {
-                items.Remove(itemToRemove);
-
-                // Update the cart cookie
-                HttpContext.Response.Cookies.Append("cart-items", JsonConvert.SerializeObject(items));
-            }
-
+            var serializer = new JavaScriptSerializer();
+            var value = Request.Cookies[CookieName];
+            Response.Cookies.Delete(CookieName);
+            var cartItems = serializer.Deserialize<List<CartItem>>(value);
+            var itemToRemove = cartItems.FirstOrDefault(x => x.Id == id);
+            cartItems.Remove(itemToRemove);
+            var options = new CookieOptions { Expires = DateTime.Now.AddDays(2) };
+            Response.Cookies.Append(CookieName, serializer.Serialize(cartItems), options);
             return RedirectToPage("/Cart");
         }
-        
+
+
 
         public IActionResult OnGetGoToCheckOut()
         {
@@ -64,14 +56,17 @@ namespace ServiceHost.Pages
             var value = Request.Cookies[CookieName];
             var cartItems = serializer.Deserialize<List<CartItem>>(value);
             foreach (var item in cartItems)
-                item.CalculateTotalItemPrice();
+            {
+                item.TotalItemPrice = item.UnitPrice * item.Count;
+            }
 
             CartItems = _productQuery.CheckInventoryStatus(cartItems);
 
-            if (!_authHelper.IsAuthenticated())
-                return RedirectToPage("/Account");
+            //if (CartItems.Any(x => !x.IsInStock))
+            //    return RedirectToPage("/Cart");
+            //return RedirectToPage("/Checkout");
 
-            return RedirectToPage(CartItems.Any(x => !x.IsInStock) ? "/Cart" : "/CheckOut");
+            return RedirectToPage(CartItems.Any(x => !x.IsInStock) ? "/Cart" : "/Checkout");
         }
 
     }
