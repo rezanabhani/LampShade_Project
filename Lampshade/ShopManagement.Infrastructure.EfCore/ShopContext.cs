@@ -18,10 +18,9 @@ namespace ShopManagement.Infrastructure.EfCore
        public DbSet<Order> Orders { get; set; }
 
 
-        public ShopContext(DbContextOptions<ShopContext> options) : base(options)
-        {
-            
-        }
+       public ShopContext(DbContextOptions<ShopContext> options) : base(options)
+       {
+       }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

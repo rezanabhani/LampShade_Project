@@ -1,5 +1,7 @@
 ﻿@page
 @using _0_Framework.Application
+@using RestSharp
+@using ShopManagement.Application.Contracts
 @model ServiceHost.Pages.CheckoutModel
 @{
     ViewData["Title"] = "تایید سبد خرید و پرداخت";
@@ -66,97 +68,118 @@
                                                     <span>@item.ProductColor</span>
                                                 </td>
                                                 <td class="pro-price">
-                                                    <span>@item.UnitPrice.ToMoney() تومان</span>
+                                                    <span>@_0_Framework.Application.Tools.ToFarsiPrice(item.UnitPrice.ToMoney()) تومان</span>
                                                 </td>
                                                 <td class="pro-price">
                                                     <span>@item.Count عدد</span>
                                                 </td>
                                                 <td class="pro-subtotal">
-                                                    <span>@item.TotalItemPrice.ToMoney() تومان</span>
+                                                    <span>@_0_Framework.Application.Tools.ToFarsiPrice(item.TotalItemPrice.ToMoney()) تومان</span>
                                                 </td>
                                                 <td class="pro-subtotal">
-                                                    <span>@item.DiscountRate %</span>
+                                                    <span>@_0_Framework.Application.Tools.ToFarsiPrice(item.DiscountRate) %</span>
                                                 </td>
                                                 <td class="pro-subtotal">
-                                                    <span>@item.DiscountAmount.ToMoney() %</span>
+                                                    <span>@_0_Framework.Application.Tools.ToFarsiPrice(item.DiscountAmount.ToMoney()) %</span>
                                                 </td>
                                                 <td class="pro-subtotal">
-                                                    <span>@item.ItemPayAmount.ToMoney() تومان</span>
+                                                    <span>@_0_Framework.Application.Tools.ToFarsiPrice(item.ItemPayAmount.ToMoney()) تومان</span>
                                                 </td>
                                             </tr>
                                         }
                                     </tbody>
                                 </table>
                             </div>
-                        </form>
-                        <div class="main-box-2">
-                        <div class="main-box-align" >
-                            
+                       
+                        
+                        <div class="test2 mt-3" style="margin: 0 !important;">
+                                <div class="" style="padding: 0 !important;">
+                                <div class="checkout-payment-method">
+                                    <h4>نحوه پرداخت</h4>
+                                    @foreach (var method in PaymentMethod.GetList())
+                                    {
+                                        <div class="single-method">
+                                            <input type="radio" id="payment_@method.Id" name="paymentMethod" value="@method.Id" @(PaymentMethod.GetList().First().Id == method.Id ? "checked" : "")>
+                                            <label for="payment_@method.Id">@method.Name</label>
+                                            <p data-method="@method.Id" style="display:@(PaymentMethod.GetList().First().Id == method.Id ? "block" : "none")">@method.Description</p>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                      
+
+                         <div class="main-box-2">
+                            <div class="main-box-align">
                                 <div class="cart-summary">
                                     <div class="cart-summary-wrap">
                                         <h4>خلاصه وضعیت فاکتور</h4>
-                                        <p>مبلغ نهایی <span>@Model.Cart.TotalAmount.ToMoney() تومان</span></p>
-                                        <p>مبلغ تخفیف <span>@Model.Cart.DiscountAmount.ToMoney() تومان</span></p>
-                                        <h2>مبلغ قابل پرداخت <span>@Model.Cart.PayAmount.ToMoney() تومان</span></h2>
+                                        <p>مبلغ نهایی <span>@_0_Framework.Application.Tools.ToFarsiPrice(Model.Cart.TotalAmount.ToMoney()) تومان</span></p>
+                                        <p>مبلغ تخفیف <span>@_0_Framework.Application.Tools.ToFarsiPrice(Model.Cart.DiscountAmount.ToMoney()) تومان</span></p>
+                                        <h2>مبلغ قابل پرداخت <span>@_0_Framework.Application.Tools.ToFarsiPrice(Model.Cart.PayAmount.ToMoney()) تومان</span></h2>
                                     </div>
                                     @if (Model.HasAccountAddress == true)
                                     {
                                         <div class="cart-summary-button">
-                                            <a asp-page-handler="Pay">پرداخت</a>
+                                            <button asp-page-handler="Pay" class="checkout-btn">پرداخت</button>
                                         </div>
                                     }
                                 </div>
-                           
+                            </div>
                         </div>
-
-                        @if (Model.HasAccountAddress == false)
-                        {
+                        </div>
+                        </form>
+                            @if (Model.HasAccountAddress == false)
+                            {
 
 
                                 <form method="post" asp-page-handler="AddAddress" class="form-address">
-                                <div>
-                                    <div class="form-left">
-                                        <input type="hidden" asp-for="command.AccountId" value="@Model.accountId" />
-                                        <div class="">
-                                            <div class="form-group">
-                                                <label asp-for="command.State" class="control-label">استان</label>
-                                                <input type="text" class="form-control" asp-for="command.State">
-                                                <span asp-validation-for="command.State" class="error"></span>
+                                    <div>
+                                        <div class="form-left">
+                                            <input type="hidden" asp-for="command.AccountId" value="@Model.accountId" />
+                                            <div class="form-item">
+                                                
+                                                    <div class="form-group group-item">
+                                                        <label asp-for="command.State" class="control-label">استان</label>
+                                                        <input type="text" class="form-control" asp-for="command.State">
+                                                        <span asp-validation-for="command.State" class="error"></span>
+                                                    </div>
+
+
+                                            <div class="form-group group-item">
+                                                        <label asp-for="command.City" class="control-label">شهر</label>
+                                                        <input type="text" class="form-control" asp-for="command.City">
+                                                        <span asp-validation-for="command.City" class="error"></span>
+                                                    </div>
+                                                
                                             </div>
-                                        </div>
-                                        <div class="">
-                                            <div class="form-group">
-                                                <label asp-for="command.City" class="control-label">شهر</label>
-                                                <input type="text" class="form-control" asp-for="command.City">
-                                                <span asp-validation-for="command.City" class="error"></span>
+                                        <div class="form-item">
+
+                                            <div class="form-group group-item">
+                                                        <label asp-for="command.PostalCode" class="control-label"> کد پستی </label>
+                                                        <input type="text" class="form-control" asp-for="command.PostalCode">
+                                                        <span asp-validation-for="command.PostalCode" class="error"></span>
+                                                    </div>
+
+
+                                            <div class="form-group group-item">
+                                                        <label asp-for="command.CompleteAddress" class="control-label"> آدرس کامل </label>
+                                                        <input type="text" class="form-control" asp-for="command.CompleteAddress">
+                                                        <span asp-validation-for="command.CompleteAddress" class="error"></span>
+                                                    </div>
+                                               
                                             </div>
-                                        </div>
-                                        <div class="">
-                                            <div class="form-group">
-                                                <label asp-for="command.PostalCode" class="control-label"> کد پستی </label>
-                                                <input type="text" class="form-control" asp-for="command.PostalCode">
-                                                <span asp-validation-for="command.PostalCode" class="error"></span>
+                                            <div class="cart-summary-button">
+                                                <button class="register-button mt-0">افزودن آدرس</button>
                                             </div>
-                                        </div>
-                                        <div class="">
-                                            <div class="form-group">
-                                                <label asp-for="command.CompleteAddress" class="control-label"> آدرس کامل </label>
-                                                <input type="text" class="form-control" asp-for="command.CompleteAddress">
-                                                <span asp-validation-for="command.CompleteAddress" class="error"></span>
-                                            </div>
-                                        </div>
-                                        <div class="cart-summary-button">
-                                            <button class="register-button mt-0">افزودن آدرس</button>
                                         </div>
                                     </div>
-                                </div>
-                            </form>
-                        }
+                                </form>
+                            }
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+        
 </div>
 

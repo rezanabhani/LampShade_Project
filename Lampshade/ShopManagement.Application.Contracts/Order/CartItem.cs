@@ -23,6 +23,5 @@
         {
             TotalItemPrice = UnitPrice * Count;
         }
-
     }
 }

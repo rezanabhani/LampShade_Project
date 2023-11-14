@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using ShopManagement.Domain.OrderAgg;
 
-namespace ShopManagement.Infrastructure.EfCore.Mapping
+namespace ShopManagement.Infrastructure.EFCore.Mapping
 {
     public class OrderMapping : IEntityTypeConfiguration<Order>
     {

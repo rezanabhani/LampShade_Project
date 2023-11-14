@@ -17,6 +17,9 @@
     </style>
 
 }
+<div class="comment">
+
+</div>
 
 <div class="breadcrumb-area section-space--half">
     <div class="container wide">
@@ -165,10 +168,10 @@
 
                                         </p>
 
-                                        @if (!string.IsNullOrWhiteSpace(Model.SuccessMessage))
+                                      @*   @if (!string.IsNullOrWhiteSpace(Model.SuccessMessage))
                                         {
                                             <p>@Model.SuccessMessage</p>
-                                        }
+                                        } *@
 
 
                                         <p id="myParagraph"></p>
@@ -385,7 +388,7 @@
                                                             <input type="hidden" name="ownerRecordId" value="@Model.Product.Id" />
                                                             <input type="hidden" name="productSlug" value="@Model.Product.Slug" />
                                                             <div class="col-12">
-                                                                <input value="ارسال" type="submit">
+                                                                <input id="test" value="ارسال" type="submit">
                                                             </div>
                                                         </div>
                                                     </form>
@@ -460,12 +463,14 @@
                                                                                 <p class="single-grid-product__price">
                                                                                     @if (product.HasDiscount)
                                                                                     {
-                                                                                        <span class="discounted-price">@product.PriceWithDiscount تومان</span>
-                                                                                        <span class="main-price discounted">@product.Price تومان</span>
+
+                                                                                        <span class="discounted-price">@_0_Framework.Application.Tools.ToFarsiPrice(product.PriceWithDiscount) تومان</span>
+                                                                                        <span class="main-price discounted">@_0_Framework.Application.Tools.ToFarsiPrice(product.Price) تومان</span>
+                                                                                        
                                                                                     }
                                                                                     else
                                                                                     {
-                                                                                        <span class="main-price">@product.Price تومان</span>
+                                                                                        <span class="main-price">@_0_Framework.Application.Tools.ToFarsiPrice(product.Price) تومان</span>
                                                                                     }
                                                                                 </p>
                                                                             </div>
@@ -494,7 +499,6 @@
 @section Scripts {
 
     <script type="text/javascript">
-
 
         const circles = document.querySelectorAll('.circle circle');
         const colorField = document.getElementById('color-field');
@@ -585,6 +589,8 @@
                     event.preventDefault();
                 }
             });
+
+       
 
         </script>
 

@@ -206,3 +206,40 @@ body {
     border-radius: 30px;
            
 }
+.test2 {
+    display: flex;
+}
+.form-item {
+    display: flex;
+}
+.group-item {
+    width: 50%;
+    margin-right: 15px;
+}
+
+.preload {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.preload > img {
+        width: 150px;
+        height: 150px;
+    }
+@media screen and (max-width: 768px) {
+    .test2 {
+        flex-direction: column;
+    }
+    .group-item {
+        width: 100%;
+    }
+    .form-item {
+        flex-direction: column;
+    }
+}

@@ -28,11 +28,21 @@ namespace ServiceHost.Pages
         {
             var serializer = new JavaScriptSerializer();
             var value = Request.Cookies[CookieName];
-            var cartItems = serializer.Deserialize<List<CartItem>>(value);
-            foreach (var item in cartItems)
-                item.CalculateTotalItemPrice();
 
-            CartItems = _productQuery.CheckInventoryStatus(cartItems);
+            if (!string.IsNullOrEmpty(value))
+            {
+                var cartItems = serializer.Deserialize<List<CartItem>>(value);
+
+                if (cartItems != null && cartItems.Any())
+                {
+                    foreach (var item in cartItems)
+                    {
+                        item.CalculateTotalItemPrice();
+                    }
+
+                    CartItems = _productQuery.CheckInventoryStatus(cartItems);
+                }
+            }
         }
 
         public IActionResult OnGetRemoveFromCart(long id)

@@ -8,5 +8,6 @@ namespace AccountManagement.Application.Contracts.AccountAddress
         OperationResult Create(CreateAddress command);
         List<AccountAddressViewModel> GetAccountAddresses(AccountAddressSearchModel searchModel);
         bool HasAddress(long id);
+        List<AccountAddressViewModel> GetAccountAddress();
     }
 }

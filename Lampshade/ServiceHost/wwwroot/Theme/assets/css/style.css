@@ -8562,7 +8562,7 @@ a {
 
 .main-box-2 {
 	display: flex;
-	
+    width: 100%;
 }
 
 .form-group > input {
@@ -8576,7 +8576,7 @@ a {
 
 .main-box-align {
 	text-align: center;
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8593,19 +8593,19 @@ a {
     margin-left: 15px;
 }
 .form-address {
-    width: 50%;
+    width: 100%;
 }
 
 
 .btnstore {
-    border: none;
-    background-color: #fff;
-    box-shadow: 1px 2px 5px;
-    border-radius: 20px;
-    padding: 10px 15px;
-    cursor: pointer;
-    border: none;
-    background-color: transparent;
+	border: none;
+	background-color: #fff;
+	box-shadow: 1px 2px 5px;
+	border-radius: 20px;
+	padding: 10px 15px;
+	cursor: pointer;
+	border: none;
+	background-color: transparent;
 }
 
 	@media screen and (max-width: 478px) {
@@ -8645,6 +8645,7 @@ a {
 	.form-address {
         width: 100%!important;
 }
+  
 }
 @media screen and (max-width:992px) {
 	.navigation-menu-wrapper {

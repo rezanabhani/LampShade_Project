@@ -7,5 +7,6 @@ namespace AccountManagement.Domain.AccountAddressAgg
     public interface IAccountAddressRepository : IRepository<long,AccountAddress>
     {
         List<AccountAddressViewModel> GetAccountAddresses(AccountAddressSearchModel searchModel);
+        List<AccountAddressViewModel> GetAccountAddress();
     }
 }

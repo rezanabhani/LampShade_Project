@@ -40,5 +40,10 @@ namespace AccountManagement.Application
                 return true;
             return false;
         }
+
+        public List<AccountAddressViewModel> GetAccountAddress()
+        {
+            return _accountAddressRepository.GetAccountAddress();
+        }
     }
 }

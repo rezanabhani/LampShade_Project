@@ -18,3 +18,4 @@ click.addEventListener('touchend', () => {
     click.style.backgroundColor = "#fff";
     click.style.color = "#000";
 });
+

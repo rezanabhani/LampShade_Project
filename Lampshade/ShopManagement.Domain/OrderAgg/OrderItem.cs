@@ -18,11 +18,5 @@ namespace ShopManagement.Domain.OrderAgg
             UnitPrice = unitPrice;
             DiscountRate = discountRate;
         }
-
-        protected OrderItem()
-        {
-            
-        }
-
     }
 }

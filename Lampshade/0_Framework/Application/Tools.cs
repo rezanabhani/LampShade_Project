@@ -26,13 +26,36 @@ namespace _0_Framework.Application
             return "";
         }
 
+        public static string ToFarsiPrice<T>(this T price)
+        {
+            //string formattedNumber = price.ToString("N0");
+            // Assuming you want to format the price with Persian number format
+            string priceStr = price.ToString();
+
+            // Use your logic to replace digits with Persian digits
+            // For simplicity, this example just replaces 0-9 with the corresponding Persian digits
+            string persianizedPrice = priceStr
+                .Replace("0", "۰")
+                .Replace("1", "۱")
+                .Replace("2", "۲")
+                .Replace("3", "۳")
+                .Replace("4", "۴")
+                .Replace("5", "۵")
+                .Replace("6", "۶")
+                .Replace("7", "۷")
+                .Replace("8", "۸")
+                .Replace("9", "۹");
+
+            return persianizedPrice;
+        }
+
         public static string ToFarsi(this DateTime date)
         {
             if (date == new DateTime()) return "";
             var pc = new PersianCalendar();
             return $"{pc.GetYear(date)}/{pc.GetMonth(date):00}/{pc.GetDayOfMonth(date):00}";
         }
-        
+
         public static string ToDiscountFormat(this DateTime date)
         {
             if (date == new DateTime()) return "";

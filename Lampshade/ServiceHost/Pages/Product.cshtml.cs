@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using _0_Framework.Application;
 using _01_LampshadeQuery.Contracts.Product;
 using CommentManagement.Application.Contracts.Comment;
 using CommentManagement.Infrastructure.EfCore;
@@ -10,8 +11,7 @@ namespace ServiceHost.Pages
 {
     public class ProductModel : PageModel
     {
-        [TempData]
-        public string SuccessMessage { get; set; }
+        public OperationResult result;
 
         public ProductQueryModel Product;
         public List<ProductQueryModel> RelatedProducts;
@@ -35,7 +35,13 @@ namespace ServiceHost.Pages
         public IActionResult OnPost(AddComment command, string productSlug)
         {
             command.Type = CommentType.Product;
-            var result = _commentApplication.Add(command);
+            result = _commentApplication.Add(command);
+            result.Message = "jhkjhj";
+
+            if (result.IsSuccedded)
+            {
+               result.Message  = "نظر شما با موفقیت ثبت شد و بعد از تایید کارشناسان در سایت منتشر خواهد شد .";
+            }
 
             return RedirectToPage("/Product", new { Id = productSlug });
         }

@@ -27,6 +27,14 @@
                                 <div class="shop-page-content">
 
                                     <div class="row shop-product-wrap grid three-column">
+                                    @if (!@Model.Products.Any())
+                                    {
+                                        <div class="alert alert-warning">
+
+                                            <p class="text text-warning">@Model.Message</p>
+
+                                        </div>
+                                    }
                                         @foreach (var product in Model.Products)
                                         {
                                             <div class="col-12 col-lg-4 col-md-4 col-sm-6" style="margin-bottom: 20px;">
@@ -35,12 +43,12 @@
                                                         @if (product.HasDiscount)
                                                         {
                                                             <div class="single-grid-product__label">
-                                                                <span class="sale">-@product.DiscountRate%</span>
+                                                                <span class="sale">-@_0_Framework.Application.Tools.ToFarsiPrice(product.DiscountRate)%</span>
                                                             </div>
                                                         }
                                                         <a asp-page="/Product" asp-route-id="@product.Slug">
                                                             <img src="~/ProductPictures/@product.Picture" class="img-fluid"
-                                                             alt="@product.PictureAlt" title="@product.PictureTitle">
+                                                                 alt="@product.PictureAlt" title="@product.PictureTitle">
                                                         </a>
                                                     </div>
                                                     <div class="single-grid-product__content">
@@ -64,18 +72,18 @@
                                                             @if (product.HasDiscount)
                                                             {
 
-                                                                <span class="discounted-price">@product.PriceWithDiscount تومان</span>
-                                                                <span class="main-price discounted">@product.Price تومان</span>
+                                                                <span class="discounted-price">@_0_Framework.Application.Tools.ToFarsiPrice(product.PriceWithDiscount) تومان</span>
+                                                                <span class="main-price discounted">@_0_Framework.Application.Tools.ToFarsiPrice(product.Price) تومان</span>
 
                                                             }
                                                             else
                                                             {
-                                                                <span class="main-price">@product.Price تومان</span>
+                                                                <span class="main-price">@_0_Framework.Application.Tools.ToFarsiPrice(product.Price) تومان</span>
                                                             }
                                                         </p>
                                                         @if (product.HasDiscount)
                                                         {
-                                                            <div class="product-countdown" data-countdown="@product.DiscountExpireDate "></div>
+                                                            <div class="product-countdown" data-countdown="@_0_Framework.Application.Tools.ToFarsiPrice(product.DiscountExpireDate) "></div>
                                                         }
                                                     </div>
                                                 </div>
@@ -89,21 +97,7 @@
 
                                 </div>
 
-                                <div class="pagination-area">
-                                    <div class="pagination-area__left">
-                                        Showing 1 to 9 of 11 (2 Pages)
-                                    </div>
-                                    <div class="pagination-area__right">
-                                        <ul class="pagination-section">
-                                            <li>
-                                                <a class="active" href="#">1</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">2</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
+                      
                             </div>
                         </div>
                     </div>

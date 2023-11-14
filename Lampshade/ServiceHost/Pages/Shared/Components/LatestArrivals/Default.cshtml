@@ -43,7 +43,7 @@
                                         <div class="single-grid-product__label">
                                             @if (product.HasDiscount)
                                             {
-                                                <span class="sale">-@product.DiscountRate%</span>
+                                                <span class="sale">-@_0_Framework.Application.Tools.ToFarsiPrice(@product.DiscountRate)%</span>
                                             }
                                             <span class="new">جدید</span>
                                         </div>
@@ -69,12 +69,12 @@
                                         <p class="single-grid-product__price">
                                             @if (product.HasDiscount)
                                             {
-                                                <span class="discounted-price">@product.PriceWithDiscount تومان</span>
-                                                <span class="main-price discounted">@product.Price تومان</span>
+                                                <span class="discounted-price">@_0_Framework.Application.Tools.ToFarsiPrice(product.PriceWithDiscount) تومان</span>
+                                                <span class="main-price discounted">@_0_Framework.Application.Tools.ToFarsiPrice(product.Price) تومان</span>
                                             }
                                             else
                                             {
-                                                <span class="main-price">@product.Price تومان</span>
+                                                <span class="main-price">@_0_Framework.Application.Tools.ToFarsiPrice(product.Price) تومان</span>
                                             }
                                         </p>
                                     </div>

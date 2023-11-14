@@ -10,7 +10,7 @@ using ShopManagement.Infrastructure.EfCore;
 namespace ShopManagement.Infrastructure.EfCore.Migrations
 {
     [DbContext(typeof(ShopContext))]
-    [Migration("20231017102703_OrderAdded")]
+    [Migration("20231113155515_OrderAdded")]
     partial class OrderAdded
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -66,6 +66,9 @@ namespace ShopManagement.Infrastructure.EfCore.Migrations
 
                     b.Property<double>("PayAmount")
                         .HasColumnType("float");
+
+                    b.Property<int>("PaymentMethod")
+                        .HasColumnType("int");
 
                     b.Property<long>("RefId")
                         .HasColumnType("bigint");

@@ -1,4 +1,24 @@
-﻿const cookieName = "cart-items";
+﻿
+window.addEventListener('load', function () {
+    let preload = document.querySelector('.preload');
+    preload.style.display = "none";
+});
+
+
+//let comment = document.getElementById('test');
+//let div = document.querySelector('.comment');
+//let test = "نظر شما با موفقیت ثبت شد و بعد از تایید کارشناسان در سایت منتشر خواهد شد .";
+
+//div.innerHTML = test;
+//div.style.display = "none";
+
+//comment.addEventListener('click', function () {
+//    div.style.display = "block";
+
+//});
+
+
+const cookieName = "cart-items";
 
 function addToCart(id, name, picture, unitPrice, productColor) {
     console.log('addToCart function called');
@@ -74,19 +94,30 @@ function removeFromCart(id) {
     updateCart();
 }
 
+
 function changeCartItemCount(id, totalId, count) {
+    function convertToToman(number) {
+        let tomanValue = number / 1;
+
+        let formattedToman = tomanValue.toLocaleString('en-US', { style: 'decimal', minimumFractionDigits: 0, maximumFractionDigits: 0 });
+
+        return formattedToman;
+    }
     debugger;
     var products = $.cookie(cookieName);
     products = JSON.parse(products);
     const productIndex = products.findIndex(x => x.id == id);
     products[productIndex].count = count;
     const product = products[productIndex];
-    const newPrice = parseInt(product.unitPrice) * parseInt(count);
-    $(`#${totalId}`).text(newPrice);
+    const newPrice = product.unitPrice * count;
+    let tomanAmount = convertToToman(newPrice);
+    $(`#${totalId}`).text(tomanAmount);
     //products[productIndex].totalPrice = newPrice;
     $.cookie(cookieName, JSON.stringify(products), { expires: 2, path: "/" });
     updateCart();
 }
+
+
 //function changeCartItemCount(id, totalId, count,unitPrice) {
 //    debugger;
 //    var products = $.cookie(cookieName);

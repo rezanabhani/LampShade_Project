@@ -42,5 +42,14 @@ namespace AccountManagement.Infrastructure.EFCore.Repository
 
             return query.OrderByDescending(x => x.Id).ToList();
         }
+
+        public List<AccountAddressViewModel> GetAccountAddress()
+        {
+            return _context.AccountAddresses.Select(x => new AccountAddressViewModel()
+            {
+                Id = x.Id,
+                CompleteAddress = x.CompleteAddress
+            }).ToList();
+        }
     }
 }

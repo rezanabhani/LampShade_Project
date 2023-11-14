@@ -78,7 +78,7 @@
 
                                                 <td class="pro-price  ">
                                                     <span class="display-1 d-md-none d-flex float-right">قیمت واحد :</span>
-                                                    <span>@item.UnitPrice.ToMoney()</span>
+                                                    <span>@_0_Framework.Application.Tools.ToFarsiPrice(@item.UnitPrice.ToMoney())</span>
                                                 </td>
                                                 <td class="pro-title">
                                                     <a href="single-product.html">@item.ProductColor</a>

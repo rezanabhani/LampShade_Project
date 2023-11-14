@@ -1,5 +1,6 @@
 ﻿@model List<_01_LampshadeQuery.Contracts.ProductCategory.ProductCategoryQueryModel>
 
+
 <div class="single-row-slider-tab-area section-space">
     <div class="container">
         <div class="row">
@@ -57,7 +58,7 @@
                                                         @if (product.HasDiscount)
                                                         {
                                                             <div class="single-grid-product__label">
-                                                                <span class="sale">-@product.DiscountRate%</span>
+                                                                <span class="sale">-@_0_Framework.Application.Tools.ToFarsiPrice(@product.DiscountRate)</span>
                                                             </div>
                                                         }
                                                         <a asp-page="/Product" asp-route-id="@product.Slug" asp-route-productId="@product.ProductColorId">
@@ -87,12 +88,12 @@
                                                         <p class="single-grid-product__price">
                                                             @if (product.HasDiscount)
                                                             {
-                                                                <span class="discounted-price">@product.PriceWithDiscount تومان</span>
-                                                                <span class="main-price discounted">@product.Price تومان</span>
+                                                                <span class="discounted-price">@_0_Framework.Application.Tools.ToFarsiPrice(product.PriceWithDiscount) تومان</span>
+                                                                <span class="main-price discounted">@_0_Framework.Application.Tools.ToFarsiPrice(product.Price) تومان</span>
                                                             }
                                                             else
                                                             {
-                                                                <span class="main-price">@product.Price تومان</span>
+                                                                <span class="main-price">@_0_Framework.Application.Tools.ToFarsiPrice(product.Price) تومان</span>
                                                             }
                                                         </p>
                                                     </div>
