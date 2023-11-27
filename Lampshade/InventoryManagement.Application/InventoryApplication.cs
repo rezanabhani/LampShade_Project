@@ -2,6 +2,7 @@
 using _0_Framework.Application;
 using InventoryManagement.Application.Contract.Inventory;
 using InventoryManagement.Domain.InventoryAgg;
+using ShopManagement.Application.Contracts.Order;
 
 namespace InventoryManagement.Application
 {
@@ -127,6 +128,9 @@ namespace InventoryManagement.Application
             return _inventoryRepository.GetOperationLog(inventoryId);
         }
 
-
+        public List<OrderItemViewModel> GetOrdersItems(long orderId)
+        {
+            return _inventoryRepository.GetOrdersItems(orderId);
+        }
     }
 }

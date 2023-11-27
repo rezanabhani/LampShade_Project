@@ -19,6 +19,23 @@ window.addEventListener('load', function () {
 
 
 const cookieName = "cart-items";
+let davcounter = 1;
+
+let plus = document.getElementById('plus');
+let minus = document.getElementById('minus');
+plus.addEventListener('click', function () {
+    davcounter += 1;
+    document.getElementById('daveValue').innerHTML = davcounter;
+})
+minus.addEventListener('click', function () {
+    davcounter -= 1;
+    if (davcounter <= 0) {
+        davcounter = 1;
+        minus.removeEventListener('click');
+    }
+    document.getElementById('daveValue').innerHTML = davcounter;
+
+})
 
 function addToCart(id, name, picture, unitPrice, productColor) {
     console.log('addToCart function called');
@@ -30,7 +47,7 @@ function addToCart(id, name, picture, unitPrice, productColor) {
         products = JSON.parse(products);
     }
 
-    const count = parseInt($("#productCount").val());
+    const count = parseInt($("#daveValue").innerHTML = davcounter );
     const currentProduct = products.find(x => x.id === id && x.productColor === productColor);
     if (currentProduct !== undefined) {
         products.find(x => x.id === id).count = parseInt(currentProduct.count) + parseInt(count);
@@ -99,7 +116,8 @@ function changeCartItemCount(id, totalId, count) {
     function convertToToman(number) {
         let tomanValue = number / 1;
 
-        let formattedToman = tomanValue.toLocaleString('en-US', { style: 'decimal', minimumFractionDigits: 0, maximumFractionDigits: 0 });
+        // Use 'fa-IR' locale for Farsi (Persian)
+        let formattedToman = tomanValue.toLocaleString('fa-IR', { style: 'decimal', minimumFractionDigits: 0, maximumFractionDigits: 0 });
 
         return formattedToman;
     }
@@ -116,22 +134,6 @@ function changeCartItemCount(id, totalId, count) {
     $.cookie(cookieName, JSON.stringify(products), { expires: 2, path: "/" });
     updateCart();
 }
-
-
-//function changeCartItemCount(id, totalId, count,unitPrice) {
-//    debugger;
-//    var products = $.cookie(cookieName);
-//    products = JSON.parse(products);
-//    const productIndex = products.findIndex(x => x.id == id);
-//    products[productIndex].count = count;
-//    const product = products[productIndex];
-//    let countProducts = count;
-//    let newPrice = parseInt(unitPrice) * parseInt(countProducts);
-//    $(`#${totalId}`).text(newPrice);
-//    products[productIndex].totalPrice = newPrice;
-//    $.cookie(cookieName, JSON.stringify(products), { expires: 2, path: "/" });
-//    updateCart();
-//}
 
 
 

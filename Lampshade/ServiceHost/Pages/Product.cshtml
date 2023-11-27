@@ -17,8 +17,8 @@
     </style>
 
 }
-<div class="comment">
-
+<div class="col-12" id="successMessage" style="display:none;">
+    <p class="text-success">Form submitted successfully!</p>
 </div>
 
 <div class="breadcrumb-area section-space--half">
@@ -168,9 +168,9 @@
 
                                         </p>
 
-                                      @*   @if (!string.IsNullOrWhiteSpace(Model.SuccessMessage))
+                                        @*   @if (!string.IsNullOrWhiteSpace(Model.SuccessMessage))
                                         {
-                                            <p>@Model.SuccessMessage</p>
+                                        <p>@Model.SuccessMessage</p>
                                         } *@
 
 
@@ -213,26 +213,29 @@
                                         }
 
                                         <div class="product-actions">
-                                            <div class="quantity-selection">
-                                                <label>تعداد</label>
-                                                <input type="number" value="1" min="1" id="productCount">
+                                            <div class="box-store">
+                                                <i class="fa fa-minus" id="minus"></i>
+                                                <div id="counter">
+                                                    <span id="daveValue">1</span>
+                                                </div>
+                                                <i class="fa fa-plus" id="plus"></i>
                                             </div>
                                             <div id="product-test" class="product-buttons">
 
-                                            @*     <a class="cart-btn"
-                                                   style="border: none;"
-                                                   data-price=""
-                                                   data-colorname=""
-                                                   onclick="addToCart('@Model.Product.Id','@Model.Product.Name','@Model.Product.Picture', this.getAttribute('data-price'), this.getAttribute('data-colorname'))">
-                                                    <input type="button" id="button" class="btnstore" value="افزدون به سبد خرید">
+                                                @*     <a class="cart-btn"
+                                                style="border: none;"
+                                                data-price=""
+                                                data-colorname=""
+                                                onclick="addToCart('@Model.Product.Id','@Model.Product.Name','@Model.Product.Picture', this.getAttribute('data-price'), this.getAttribute('data-colorname'))">
+                                                <input type="button" id="button" class="btnstore" value="افزدون به سبد خرید">
                                                 </a> *@
                                                 <a class="cart-btn"
                                                    style="border: none;"
                                                    data-price=""
                                                    data-colorname=""
                                                    onclick="addToCart('@Model.Product.Id','@Model.Product.Name','@Model.Product.Picture', this.getAttribute('data-price'), this.getAttribute('data-colorname'))">
-                                                    <input type="button" id="button" class="btnstore"  value="افزدون به سبد خرید">
- 
+                                                    <input type="button" id="button" class="btnstore" value="افزدون به سبد خرید">
+
                                                 </a>
                                             </div>
                                         </div>
@@ -370,7 +373,7 @@
                                                 </div>
                                                 <div class="rating-form-wrapper fix">
                                                     <h3>نظر خود را به ما بگویید</h3>
-                                                    <form method="post">
+                                                    <form method="post" >
                                                         <div class="rating-form row">
                                                             <div class="col-md-6 col-12 form-group">
                                                                 <label for="name">نام:</label>
@@ -466,7 +469,7 @@
 
                                                                                         <span class="discounted-price">@_0_Framework.Application.Tools.ToFarsiPrice(product.PriceWithDiscount) تومان</span>
                                                                                         <span class="main-price discounted">@_0_Framework.Application.Tools.ToFarsiPrice(product.Price) تومان</span>
-                                                                                        
+
                                                                                     }
                                                                                     else
                                                                                     {
@@ -565,34 +568,34 @@
             }
         }
 
-    let price = document.getElementById('parent-list');
-            price.addEventListener('click', function (e) {
-                if (e.target.tagName === 'circle') {
-                    const UnitPrice = e.target.getAttribute('data-price');
-                    const UnitPriceToMoney = e.target.getAttribute('data-pricetomoney');
-                    const ProductColor = e.target.getAttribute('data-fill');
+        let price = document.getElementById('parent-list');
+        price.addEventListener('click', function (e) {
+            if (e.target.tagName === 'circle') {
+                const UnitPrice = e.target.getAttribute('data-price');
+                const UnitPriceToMoney = e.target.getAttribute('data-pricetomoney');
+                const ProductColor = e.target.getAttribute('data-fill');
 
-                    // Update the data attributes of the "افزودن به سبد خرید" button
-                    const cartButton = document.querySelector('.cart-btn');
-                    cartButton.setAttribute('data-price', UnitPrice);
-                    cartButton.setAttribute('data-colorname', ProductColor);
+                // Update the data attributes of the "افزودن به سبد خرید" button
+                const cartButton = document.querySelector('.cart-btn');
+                cartButton.setAttribute('data-price', UnitPrice);
+                cartButton.setAttribute('data-colorname', ProductColor);
 
 
-                    // Update the displayed price and discount if needed
-                    let pricemain = document.getElementById("pricemain");
-                    let discountmain = document.getElementById("discountmain");
-                    if (UnitPriceToMoney) {
-                        pricemain.textContent = UnitPriceToMoney;
-                        discountmain.textContent = dataDiscountPrice; // You'll need to retrieve this value from your data source.
-                    }
-
-                    event.preventDefault();
+                // Update the displayed price and discount if needed
+                let pricemain = document.getElementById("pricemain");
+                let discountmain = document.getElementById("discountmain");
+                if (UnitPriceToMoney) {
+                    pricemain.textContent = UnitPriceToMoney;
+                    discountmain.textContent = dataDiscountPrice; // You'll need to retrieve this value from your data source.
                 }
-            });
 
-       
+                event.preventDefault();
+            }
+        });
 
-        </script>
+
+
+    </script>
 
 
             }

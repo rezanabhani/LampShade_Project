@@ -16,6 +16,13 @@
         </div>
     </div>
 </div>
+
+<div class="productcount-search">
+    <strong >تعداد محصول یافت شده:@Model.Products.Count</strong>
+</div>
+
+
+
 <div class="page-content-area">
     <div class="container">
         <div class="row">
@@ -26,15 +33,15 @@
                             <div class="col-lg-12">
                                 <div class="shop-page-content">
 
-                                    <div class="row shop-product-wrap grid three-column">
-                                    @if (!@Model.Products.Any())
-                                    {
-                                        <div class="alert alert-warning">
+                                    <div class="shop-product-wrap grid three-column" >
+                                        @if (!@Model.Products.Any())
+                                        {
+                                            <div class="alert alert-warning">
 
-                                            <p class="text text-warning">@Model.Message</p>
+                                                <p class="text ">@Model.Message</p>
 
-                                        </div>
-                                    }
+                                            </div>
+                                        }
                                         @foreach (var product in Model.Products)
                                         {
                                             <div class="col-12 col-lg-4 col-md-4 col-sm-6" style="margin-bottom: 20px;">
@@ -66,7 +73,7 @@
                                                         </div>
 
                                                         <h3 class="single-grid-product__title">
-                                                            <a asp-page="/ProductDetails">@product.Name</a>
+                                                            <a asp-page="/Product" asp-route-id="@product.Slug">@product.Name</a>
                                                         </h3>
                                                         <p class="single-grid-product__price">
                                                             @if (product.HasDiscount)
@@ -96,8 +103,19 @@
                                     </div>
 
                                 </div>
+                                <div class="pagination">
+                                    <nav aria-label="Page navigation example">
+                                        <ul class="pagination">
+                                            @for (int i = 1; i <= Model.TotalPages; i++)
+                                            {
+                                                <li class="page-item @(i == Model.PageIndex ? "active" : "")">
+                                                    <a class="page-link" asp-page="./Search" asp-route-value="@Model.Value" asp-route-pageIndex="@i">@i</a>
+                                                </li>
+                                            }
+                                        </ul>
+                                    </nav>
+                                </div>
 
-                      
                             </div>
                         </div>
                     </div>

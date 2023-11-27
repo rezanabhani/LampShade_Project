@@ -44,5 +44,13 @@
         public const int RemoveSlide = 39;
         public const int RestoreSlide = 40;
 
+        // Order
+        public const int ShowOrderManagement = 41;
+        public const int ListOrders = 42;
+        public const int SearchOrders = 43;
+        public const int ConfirmOrder = 44;
+        public const int CancelOrder = 45;
+        public const int OrderItems = 46;
+
     }
 }

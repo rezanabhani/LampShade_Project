@@ -12,7 +12,7 @@ namespace ServiceHost.Pages
     public class ProductModel : PageModel
     {
         public OperationResult result;
-
+      
         public ProductQueryModel Product;
         public List<ProductQueryModel> RelatedProducts;
         private readonly IProductQuery _productQuery;
@@ -40,7 +40,7 @@ namespace ServiceHost.Pages
 
             if (result.IsSuccedded)
             {
-               result.Message  = "نظر شما با موفقیت ثبت شد و بعد از تایید کارشناسان در سایت منتشر خواهد شد .";
+                result.Message = "نظر شما با موفقیت ثبت شد و بعد از تایید کارشناسان در سایت منتشر خواهد شد .";
             }
 
             return RedirectToPage("/Product", new { Id = productSlug });

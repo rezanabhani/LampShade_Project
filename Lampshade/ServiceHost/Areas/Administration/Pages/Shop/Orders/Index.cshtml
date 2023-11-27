@@ -21,7 +21,7 @@
                 <h3 class="panel-title">جستجو در سفارشات</h3>
             </div>
             <div class="panel-body">
-                <form class="form-inline" role="form" method="get" permission="@ShopPermissions.SearchProductPictures">
+                <form class="form-inline" role="form" method="get" permission="@ShopPermissions.SearchOrders">
                     <div class="form-group">
                         <label class="sr-only" asp-for="SearchModel.AccountId"></label>
                         <select class="form-control" asp-for="SearchModel.AccountId" asp-items="Model.Accounts">
@@ -40,7 +40,7 @@
     </div>
 </div>
 
-<div class="row" permission="@ShopPermissions.ListProductCategories">
+<div class="row" permission="@ShopPermissions.ListOrders">
     <div class="col-md-12">
         <div class="panel panel-default">
             <div class="panel-heading">
@@ -48,7 +48,7 @@
             </div>
             <div class="panel-body">
                 <div class="row">
-                    <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-md-12 col-sm-12 col-xs-12 panle-order">
                         <table id="datatable" class="table table-striped table-bordered">
                             <thead>
                                 <tr>
@@ -97,20 +97,23 @@
                                         <td>
                                             @if (item.IsPaid == false)
                                             {
-                                                <a class="btn btn-success pull-right m-rl-5" asp-page-handler="Confirm" asp-route-id="@item.Id">
+                                                <a permission="@ShopPermissions.ConfirmOrder" class="btn btn-success pull-right m-rl-5" asp-page-handler="Confirm" asp-route-id="@item.Id">
                                                     <i class="fa fa-check"></i> تایید
                                                 </a>
-                                                <a class="btn btn-danger pull-right m-rl-5" asp-page-handler="Cancel" asp-route-id="@item.Id">
+                                                <a permission="@ShopPermissions.CancelOrder" class="btn btn-danger pull-right m-rl-5" asp-page-handler="Cancel" asp-route-id="@item.Id">
                                                     <i class="fa fa-close"></i> لغو
                                                 </a>
                                             }
-                                            <a class="btn btn-primary pull-right m-rl-5"
+                                            <a permission="@ShopPermissions.OrderItems" class="btn btn-primary pull-right m-rl-5"
                                                href="#showmodal=@Url.Page("./Index", "Items", new {id = item.Id})">
                                                 <i class="fa fa-id-card"></i> آیتم ها
                                             </a>
                                         </td>
                                     </tr>
                                 }
+                            
+                      
+
                             </tbody>
                         </table>
                     </div>

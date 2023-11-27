@@ -232,6 +232,8 @@ body {
         width: 150px;
         height: 150px;
     }
+
+
 @media screen and (max-width: 768px) {
     .test2 {
         flex-direction: column;
@@ -243,3 +245,25 @@ body {
         flex-direction: column;
     }
 }
+
+.box-store {
+     background-color: #fff;
+     box-shadow: 2px 3px 5px #ddd;
+     width: 70px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 10px;
+     border-radius: 5px;
+     color: rgb(233, 7, 7);
+ }
+
+#plus {
+    cursor: pointer;
+}
+
+#minus {
+    cursor: pointer;
+}
+
+

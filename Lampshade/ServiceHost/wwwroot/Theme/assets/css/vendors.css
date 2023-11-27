@@ -5277,7 +5277,10 @@ input[type=submit].btn-block {
     display: flex;
     padding-left: 0;
     list-style: none;
-    border-radius: .25rem
+    border-radius: .25rem;
+    justify-content: center;
+    padding: 15px 0;
+                   
 }
 
 .page-link {

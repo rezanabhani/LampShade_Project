@@ -1,11 +1,14 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using _0_Framework.Application;
 using _0_Framework.Infrastructure;
 using AccountManagement.Infrastructure.EFCore;
 using InventoryManagement.Application.Contract.Inventory;
 using InventoryManagement.Domain.InventoryAgg;
 using Microsoft.EntityFrameworkCore;
+using ShopManagement.Application.Contracts.Order;
 using ShopManagement.Infrastructure.EfCore;
 
 namespace InventoryManagement.Infrastructure.EfCore.Repository
@@ -104,6 +107,33 @@ namespace InventoryManagement.Infrastructure.EfCore.Repository
             return operations;
         }
 
-      
+
+        public List<OrderItemViewModel> GetOrdersItems(long orderId)
+        {
+            var products = _shopContext.Products.Select(x => new { x.Id, x.Name }).ToList();
+            var inventory = _context.Inventory.Include(x => x.ProductColor)
+                .Select(x => new { x.ProductId, x.ProductColor.ColorP }).ToList();
+            var order = _shopContext.Orders.Include(o => o.Items).FirstOrDefault(x => x.Id == orderId);
+            if (order == null)
+                return new List<OrderItemViewModel>();
+
+            var items = order.Items.Select(x => new OrderItemViewModel
+            {
+                Id = x.Id,
+                Count = x.Count,
+                DiscountRate = x.DiscountRate,
+                OrderId = x.OrderId,
+                ProductId = x.ProductId,
+                UnitPrice = x.UnitPrice
+            }).ToList();
+
+            foreach (var item in items)
+            {
+                item.Product = products.FirstOrDefault(x => x.Id == item.ProductId)?.Name;
+                item.ProductColor = inventory.FirstOrDefault(x => x.ProductId == item.ProductId)?.ColorP;
+            }
+
+            return items;
+        }
     }
 }

@@ -65,7 +65,19 @@ namespace ShopManagement.Configuration.Permissions
                         new PermissionsDto(ShopPermissions.EditSlide,"EditSlide"),
                         new PermissionsDto(ShopPermissions.RemoveSlide,"RemoveSlide"),
                         new PermissionsDto(ShopPermissions.RestoreSlide,"RestoreSlide"),
-                    } }
+                    }
+                },
+                {
+                "Order", new List<PermissionsDto>
+                {
+                    new PermissionsDto(ShopPermissions.ShowOrderManagement,"ShowOrderManagement"),
+                    new PermissionsDto(ShopPermissions.ListOrders,"ListOrders"),
+                    new PermissionsDto(ShopPermissions.SearchOrders,"SearchOrders"),
+                    new PermissionsDto(ShopPermissions.ConfirmOrder,"ConfirmOrder"),
+                    new PermissionsDto(ShopPermissions.CancelOrder,"CancelOrder"),
+                    new PermissionsDto(ShopPermissions.OrderItems,"OrderItems"),
+                }
+            },
             };
         }
     }

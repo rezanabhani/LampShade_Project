@@ -1,9 +1,12 @@
 using System.Collections.Generic;
+using _0_Framework.Infrastructure;
 using AccountManagement.Application.Contracts.Account;
+using InventoryManagement.Application.Contract.Inventory;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using ShopManagement.Application.Contracts.Order;
+using ShopManagement.Configuration.Permissions;
 
 namespace ServiceHost.Areas.Administration.Pages.Shop.Orders
 {
@@ -15,14 +18,16 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.Orders
 
         private readonly IOrderApplication _orderApplication;
         private readonly IAccountApplication _accountApplication;
+        private readonly IInventoryApplication _inventoryApplication;
 
-        public IndexModel(IOrderApplication orderApplication, IAccountApplication accountApplication)
+        public IndexModel(IOrderApplication orderApplication, IAccountApplication accountApplication, IInventoryApplication inventoryApplication)
         {
             _orderApplication = orderApplication;
             _accountApplication = accountApplication;
+            _inventoryApplication = inventoryApplication;
         }
 
-
+        [NeedsPermission(ShopPermissions.ListOrders)]
         public void OnGet(OrderSearchModel searchModel)
         {
             Accounts = new SelectList(_accountApplication.GetAccounts(), "Id", "Fullname");
@@ -43,9 +48,11 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.Orders
 
         public IActionResult OnGetItems(long id)
         {
-            var items = _orderApplication.GetItems(id);
+            var items = _inventoryApplication.GetOrdersItems(id);
+
             return Partial("Items", items);
         }
+
 
     }
 }

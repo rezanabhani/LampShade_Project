@@ -64,10 +64,6 @@ namespace ShopManagement.Application
 
         }
 
-        public List<OrderItemViewModel> GetItems(long orderId)
-        {
-            return _orderRepository.GetItems(orderId);
-        }
 
         public List<OrderViewModel> Search(OrderSearchModel searchModel)
         {

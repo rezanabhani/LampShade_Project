@@ -91,7 +91,7 @@
                                                 <td class="pro-subtotal ">
                                                     <span class="d-md-none d-flex float-right">قیمت کل :</span>
 
-                                                    <span id="totalItemPrice-@item.Id">@item.TotalItemPrice.ToMoney()</span>
+                                                    <span id="totalItemPrice-@item.Id">@_0_Framework.Application.Tools.ToFarsiPrice(item.TotalItemPrice.ToMoney())</span>
                                                 </td>
                                                @*  <td class="pro-remove">
                                                     <a asp-page-handler="RemoveFromCart" asp-route-id="@item.Id">

@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using _0_Framework.Application;
+using ShopManagement.Application.Contracts.Order;
 
 namespace InventoryManagement.Application.Contract.Inventory
 {
@@ -15,6 +16,7 @@ namespace InventoryManagement.Application.Contract.Inventory
         EditInventory GetDetails(long id);
         List<InventoryViewModel> Search(InventorySearchModel searchModel);
         List<InventoryOperationViewModel> GetOperationLog(long inventoryId);
-       
+        List<OrderItemViewModel> GetOrdersItems(long orderId);
+
     }
 }
