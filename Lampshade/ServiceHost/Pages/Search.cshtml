@@ -42,9 +42,54 @@
 
                                             </div>
                                         }
-                                        @foreach (var product in Model.Products)
-                                        {
-                                            <div class="col-12 col-lg-4 col-md-4 col-sm-6" style="margin-bottom: 20px;">
+                                        <div class="search-container">
+                                            <div class="search-content">
+                                                 @foreach (var product in Model.Products)
+                                                 {
+                                                     <div class="search-box">
+                                                         <a asp-page="/Product" asp-route-id="@product.Slug">
+                                                         <img src="~/ProductPictures/@product.Picture"
+                                                              alt="@product.PictureAlt" title="@product.PictureTitle">
+                                                         </a>
+                                                         <div class="slider-item">
+                                                             <span class="category">
+                                                                 <a asp-page="/ProductCategory" asp-route-id="@product.CategorySlug">@product.Category</a>
+                                                             </span>
+                                                             <h5>
+                                                                 <a asp-page="/Product" asp-route-id="@product.Slug">@product.Name</a>
+                                                             </h5>
+                                                             @if (product.HasDiscount)
+                                                             {
+                                                                <span class="percent-discount">@_0_Framework.Application.Tools.ToFarsiPrice(product.DiscountRate)%</span>
+                                                             }
+                                                             @if (product.HasDiscount)
+                                                             {
+
+                                                                 <span class="discounted-price">@_0_Framework.Application.Tools.ToFarsiPrice(product.PriceWithDiscount) تومان</span>
+                                                                 <span class="main-price discounted">@_0_Framework.Application.Tools.ToFarsiPrice(product.Price) تومان</span>
+
+                                                             }
+                                                             else
+                                                             {
+                                                                 <span class="main-price">@_0_Framework.Application.Tools.ToFarsiPrice(product.Price) تومان</span>
+                                                             }
+                                                             @if (product.HasDiscount)
+                                                             {
+                                                                 <div class="product-countdown" data-countdown="@_0_Framework.Application.Tools.ToFarsiPrice(product.DiscountExpireDate) "></div>
+                                                             }
+                                                         </div>
+
+                                                     </div>
+                                                     
+                                                 }
+                                            </div>
+                                        </div>
+
+                                        @* @foreach (var product in Model.Products)
+                                        { *@
+
+
+                                           @*  <div class="col-12 col-lg-4 col-md-4 col-sm-6" style="margin-bottom: 20px;">
                                                 <div class="single-grid-product grid-view-product">
                                                     <div class="single-grid-product__image">
                                                         @if (product.HasDiscount)
@@ -95,9 +140,9 @@
                                                     </div>
                                                 </div>
 
-                                            </div>
+                                            </div> *@
 
-                                        }
+                                       @*  } *@
 
 
                                     </div>

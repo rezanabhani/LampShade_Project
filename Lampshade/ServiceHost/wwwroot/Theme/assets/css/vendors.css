@@ -26049,7 +26049,8 @@ a.text-dark:hover {
 }
 
 .slick-slide img {
-    display: block
+    display: block;
+
 }
 
 .slick-slide.slick-loading img {

@@ -1,4 +1,6 @@
 ﻿using _0_Framework.Infrastructure;
+using _01_LampshadeQuery.Contracts.Inventory;
+using _01_LampshadeQuery.Query;
 using InventoryManagement.Application;
 using InventoryManagement.Application.Contract.Inventory;
 using InventoryManagement.Application.Contract.ProductColor;
@@ -23,6 +25,8 @@ namespace InventoryManagement.InfrastructureConfiguration
             services.AddTransient<IProductColorApplication, ProductColorApplication>();
 
             services.AddTransient<IPermissionsExposer, InventoryPermissionExposer>();
+
+            services.AddTransient<IInventoryQuery, InventoryQuery>();
 
             services.AddDbContext<InventoryContext>(x => x.UseSqlServer(connectionString));
         }

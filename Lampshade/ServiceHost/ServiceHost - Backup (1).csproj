@@ -25,9 +25,7 @@
     <ProjectReference Include="..\CommentManagement.Infrastructure.Configuration\CommentManagement.Infrastructure.Configuration.csproj" />
     <ProjectReference Include="..\DiscountManagement.Configuration\DiscountManagement.Configuration.csproj" />
     <ProjectReference Include="..\InventoryManagement.InfrastructureConfiguration\InventoryManagement.InfrastructureConfiguration.csproj" />
-    <ProjectReference Include="..\InventoryManagement.Presentation.Api\InventoryManagement.Presentation.Api.csproj" />
     <ProjectReference Include="..\ShopManagement.Configuration\ShopManagement.Configuration.csproj" />
-    <ProjectReference Include="..\ShopManagement.Presentation.Api\ShopManagement.Presentation.Api.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -55,6 +53,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Contro\" />
     <Folder Include="wwwroot\ProductPictures\" />
   </ItemGroup>
 
