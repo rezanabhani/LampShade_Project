@@ -1,4 +1,6 @@
 ﻿using _0_Framework.Infrastructure;
+using _01_LampshadeReport.Contracts.Account;
+using _01_LampshadeReport.Query;
 using AccountManagement.Application;
 using AccountManagement.Application.Contracts.Account;
 using AccountManagement.Application.Contracts.AccountAddress;
@@ -26,6 +28,8 @@ namespace AccountManagement.Configuration
 
             services.AddTransient<IAccountAddressApplication, AccountAddressApplication>();
             services.AddTransient<IAccountAddressRepository, AccountAddressRepository>();
+
+            services.AddTransient<IAccountReport, AccountReport>();
 
             services.AddTransient<IPermissionsExposer, AccountPermissionExposer>();
 

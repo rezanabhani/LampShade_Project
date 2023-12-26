@@ -165,7 +165,7 @@ namespace _01_LampshadeQuery.Query
                     PictureAlt = product.PictureAlt,
                     PictureTitle = product.PictureTitle,
                     Slug = product.Slug
-                }).AsNoTracking().OrderByDescending(x => x.Id).Take(6).ToList();
+                }).AsNoTracking().OrderByDescending(x => x.Id).Take(8).ToList();
 
             foreach (var product in products)
             {
@@ -209,6 +209,7 @@ namespace _01_LampshadeQuery.Query
                     PictureTitle = product.PictureTitle,
                     ShortDescription = product.ShortDescription,
                     Slug = product.Slug,
+                    CategorySlug = product.Category.Slug
                 }).AsNoTracking();
 
             if (!string.IsNullOrWhiteSpace(value))

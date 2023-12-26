@@ -4,6 +4,8 @@ using _01_LampshadeQuery.Contracts.Product;
 using _01_LampshadeQuery.Contracts.ProductCategory;
 using _01_LampshadeQuery.Contracts.Slide;
 using _01_LampshadeQuery.Query;
+using _01_LampshadeReport.Contracts.Order;
+using _01_LampshadeReport.Query;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using ShopManagement.Application;
@@ -21,6 +23,7 @@ using ShopManagement.Domain.ProductCategoryAgg;
 using ShopManagement.Domain.ProductPictureAgg;
 using ShopManagement.Domain.Services;
 using ShopManagement.Domain.SlideAgg;
+using ShopManagement.Infrastructure.AccountAcl;
 using ShopManagement.Infrastructure.EfCore;
 using ShopManagement.Infrastructure.EfCore.Repository;
 using ShopManagement.Infrastructure.InventoryAcl;
@@ -49,10 +52,13 @@ namespace ShopManagement.Configuration
             services.AddSingleton<ICartService, CartService>();
 
             services.AddTransient<IShopInventoryAcl, ShopInventoryAcl>();
+            services.AddTransient<IShopAccountAcl, ShopAccountAcl>();
 
             services.AddTransient<ISlideQuery, SlideQuery>();
             services.AddTransient<IProductCategoryQuery, ProductCategoryQuery>();
             services.AddTransient<IProductQuery, ProductQuery>();
+
+            services.AddTransient<IOrderReport, OrderReport>();
 
             services.AddTransient<ICartCalculatorService, CartCalculatorService>();
 

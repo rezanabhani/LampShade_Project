@@ -17,7 +17,7 @@
     </style>
 
 }
-<div class="col-12" id="successMessage" style="display:none;">
+<div class="col-12" id="successMessage" style="display:none">
     <p class="text-success">Form submitted successfully!</p>
 </div>
 
@@ -27,7 +27,6 @@
             <div class="col-lg-12">
                 <div class="breadcrumb-wrapper breadcrumb-bg">
                     <div class="breadcrumb-content">
-                        <h1 class="breadcrumb-content__title">@Model.Product.Name</h1>
                         <ul class="breadcrumb-content__page-map">
                             <li>
                                 <a asp-page="/Index">صفحه اصلی</a>
@@ -209,7 +208,13 @@
 
                                         @if (Model.Product.HasDiscount)
                                         {
-                                            <div class="product-countdown" data-countdown="@Model.Product.DiscountExpireDate"></div>
+                                            <div class="product-countdown-main">
+                                               
+                                                <div class="product-countdown" data-countdown="@Model.Product.DiscountExpireDate "></div>
+                                                <div >
+                                                    <p>پیشنهاد شگفتانه</p>
+                                                </div>
+                                            </div>
                                         }
 
                                         <div class="product-actions">
@@ -373,7 +378,7 @@
                                                 </div>
                                                 <div class="rating-form-wrapper fix">
                                                     <h3>نظر خود را به ما بگویید</h3>
-                                                    <form method="post" >
+                                                    <form method="post">
                                                         <div class="rating-form row">
                                                             <div class="col-md-6 col-12 form-group">
                                                                 <label for="name">نام:</label>
@@ -410,80 +415,41 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="row">
-                                                    <div class="col-lg-12">
-                                                        <div class="single-row-slider-wrapper">
-                                                            <div class="ht-slick-slider" data-slick-setting='{
-                    "slidesToShow": 4,
-                    "slidesToScroll": 1,
-                    "arrows": true,
-                    "autoplay": false,
-                    "autoplaySpeed": 5000,
-                    "speed": 1000,
-                    "infinite": true,
-                    "rtl": true,
-                    "prevArrow": {"buttonClass": "slick-prev", "iconClass": "ion-chevron-left" },
-                    "nextArrow": {"buttonClass": "slick-next", "iconClass": "ion-chevron-right" }
-                }' data-slick-responsive='[
-                    {"breakpoint":1501, "settings": {"slidesToShow": 4} },
-                    {"breakpoint":1199, "settings": {"slidesToShow": 4, "arrows": false} },
-                    {"breakpoint":991, "settings": {"slidesToShow": 3, "arrows": false} },
-                    {"breakpoint":767, "settings": {"slidesToShow": 2, "arrows": false} },
-                    {"breakpoint":575, "settings": {"slidesToShow": 2, "arrows": false} },
-                    {"breakpoint":479, "settings": {"slidesToShow": 1, "arrows": false} }
-                ]'>
-                                                                @foreach (var product in Model.RelatedProducts)
-                                                                {
-                                                                    <div class="col single-grid-product-pr">
-                                                                        <div class="single-grid-product">
-                                                                            <div class="single-grid-product__image">
-                                                                                <div class="single-grid-product__label">
-                                                                                    @if (product.HasDiscount)
-                                                                                    {
-                                                                                        <span class="sale">-@product.DiscountRate%</span>
-                                                                                    }
-                                                                                    <span class="new">مرتبط</span>
-                                                                                </div>
-                                                                                <a asp-page="/Product" asp-route-id="@product.Slug">
-                                                                                    <img src="~/ProductPictures/@product.Picture" class="img-fluid" alt="@product.PictureAlt" title="@product.PictureTitle">
-                                                                                </a>
-                                                                            </div>
-                                                                            <div class="single-grid-product__content">
-                                                                                <div class="single-grid-product__category-rating">
-                                                                                    <span class="category"><a asp-page="/ProductCategory" asp-route-id="@product.CategorySlug">@product.Category</a></span>
-                                                                                    <span class="rating">
-                                                                                        <i class="ion-android-star active"></i>
-                                                                                        <i class="ion-android-star active"></i>
-                                                                                        <i class="ion-android-star active"></i>
-                                                                                        <i class="ion-android-star active"></i>
-                                                                                        <i class="ion-android-star-outline"></i>
-                                                                                    </span>
-                                                                                </div>
 
-                                                                                <h3 class="single-grid-product__title">
-                                                                                    <a asp-page="/Product" asp-route-id="@product.Slug">@product.Name</a>
-                                                                                </h3>
-                                                                                <p class="single-grid-product__price">
-                                                                                    @if (product.HasDiscount)
-                                                                                    {
 
-                                                                                        <span class="discounted-price">@_0_Framework.Application.Tools.ToFarsiPrice(product.PriceWithDiscount) تومان</span>
-                                                                                        <span class="main-price discounted">@_0_Framework.Application.Tools.ToFarsiPrice(product.Price) تومان</span>
-
-                                                                                    }
-                                                                                    else
-                                                                                    {
-                                                                                        <span class="main-price">@_0_Framework.Application.Tools.ToFarsiPrice(product.Price) تومان</span>
-                                                                                    }
-                                                                                </p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                }
+                                                <div class="sliders-product">
+                                                    @foreach (var product in Model.RelatedProducts)
+                                                    {
+                                                        <div class="sliders-product-item">
+                                                            @if (product.HasDiscount)
+                                                            {
+                                                                <span class="sale percent-discount">-@product.DiscountRate%</span>
+                                                            }
+                                                            <span class="new">مرتبط</span>
+                                                            <a class="sliders-product-item-link" asp-page="/Product" asp-route-id="@product.Slug">
+                                                                <img src="~/ProductPictures/@product.Picture" alt="@product.PictureAlt" title="@product.PictureTitle">
+                                                            </a>
+                                                            <div class="slider-item">
+                                                                <span>
+                                                                    <a asp-page="/Product" asp-route-id="@product.Slug">@product.Name</a>
+                                                                </span>
+                                                                <p>
+                                                                    @if (product.HasDiscount)
+                                                                    {
+                                                                        <span class="discounted-price">@_0_Framework.Application.Tools.ToFarsiPrice(product.PriceWithDiscount) تومان</span>
+                                                                        <span class="main-price discounted">@_0_Framework.Application.Tools.ToFarsiPrice(product.Price) تومان</span>
+                                                                    }
+                                                                    else
+                                                                    {
+                                                                        <span class="main-price">@_0_Framework.Application.Tools.ToFarsiPrice(product.Price) تومان</span>
+                                                                    }
+                                                                </p>
                                                             </div>
+
                                                         </div>
-                                                    </div>
+                                                    }
                                                 </div>
+
                                             </div>
                                         </div>
                                     </div>

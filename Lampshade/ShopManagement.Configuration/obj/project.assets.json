@@ -2653,6 +2653,19 @@
           "bin/placeholder/01_LampshadeQuery.dll": {}
         }
       },
+      "01_LampshadeReport/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "ShopManagement.Infrastructure.EfCore": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/01_LampshadeReport.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/01_LampshadeReport.dll": {}
+        }
+      },
       "0_Framework/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -2932,6 +2945,20 @@
         },
         "runtime": {
           "bin/placeholder/ShopManagement.Domain.dll": {}
+        }
+      },
+      "ShopManagement.Infrastructure.AccountAcl/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "AccountManagement.Application.Contracts": "1.0.0",
+          "ShopManagement.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ShopManagement.Infrastructure.AccountAcl.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ShopManagement.Infrastructure.AccountAcl.dll": {}
         }
       },
       "ShopManagement.Infrastructure.EfCore/1.0.0": {
@@ -8317,6 +8344,11 @@
       "path": "../01_LampshadeQuery/01_LampshadeQuery.csproj",
       "msbuildProject": "../01_LampshadeQuery/01_LampshadeQuery.csproj"
     },
+    "01_LampshadeReport/1.0.0": {
+      "type": "project",
+      "path": "../01_LampshadeReport/01_LampshadeReport.csproj",
+      "msbuildProject": "../01_LampshadeReport/01_LampshadeReport.csproj"
+    },
     "0_Framework/1.0.0": {
       "type": "project",
       "path": "../0_Framework/0_Framework.csproj",
@@ -8412,6 +8444,11 @@
       "path": "../ShopManagement.Domain/ShopManagement.Domain.csproj",
       "msbuildProject": "../ShopManagement.Domain/ShopManagement.Domain.csproj"
     },
+    "ShopManagement.Infrastructure.AccountAcl/1.0.0": {
+      "type": "project",
+      "path": "../ShopManagement.Infrastructure.AccountAcl/ShopManagement.Infrastructure.AccountAcl.csproj",
+      "msbuildProject": "../ShopManagement.Infrastructure.AccountAcl/ShopManagement.Infrastructure.AccountAcl.csproj"
+    },
     "ShopManagement.Infrastructure.EfCore/1.0.0": {
       "type": "project",
       "path": "../ShopManagement.Infrastructure.EfCore/ShopManagement.Infrastructure.EfCore.csproj",
@@ -8426,9 +8463,11 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "01_LampshadeQuery >= 1.0.0",
+      "01_LampshadeReport >= 1.0.0",
       "Microsoft.Extensions.DependencyInjection.Abstractions >= 5.0.0",
       "ShopManagement.Application >= 1.0.0",
       "ShopManagement.Application.Contracts >= 1.0.0",
+      "ShopManagement.Infrastructure.AccountAcl >= 1.0.0",
       "ShopManagement.Infrastructure.EfCore >= 1.0.0",
       "ShopManagement.Infrastructure.InventoryAcl >= 1.0.0"
     ]
@@ -8463,11 +8502,17 @@
             "D:\\Project\\Code\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj": {
               "projectPath": "D:\\Project\\Code\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj"
             },
+            "D:\\Project\\Code\\Lampshade\\01_LampshadeReport\\01_LampshadeReport.csproj": {
+              "projectPath": "D:\\Project\\Code\\Lampshade\\01_LampshadeReport\\01_LampshadeReport.csproj"
+            },
             "D:\\Project\\Code\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
               "projectPath": "D:\\Project\\Code\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
             },
             "D:\\Project\\Code\\Lampshade\\ShopManagement.Application\\ShopManagement.Application.csproj": {
               "projectPath": "D:\\Project\\Code\\Lampshade\\ShopManagement.Application\\ShopManagement.Application.csproj"
+            },
+            "D:\\Project\\Code\\Lampshade\\ShopManagement.Infrastructure.AccountAcl\\ShopManagement.Infrastructure.AccountAcl.csproj": {
+              "projectPath": "D:\\Project\\Code\\Lampshade\\ShopManagement.Infrastructure.AccountAcl\\ShopManagement.Infrastructure.AccountAcl.csproj"
             },
             "D:\\Project\\Code\\Lampshade\\ShopManagement.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj": {
               "projectPath": "D:\\Project\\Code\\Lampshade\\ShopManagement.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj"

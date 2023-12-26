@@ -8,5 +8,6 @@ namespace _01_LampshadeQuery.Contracts.ProductCategory
         ProductCategoryQueryModel GetProductCategoryWithProductsBy(string slug);
         List<ProductCategoryQueryModel> GetProductCategories();
         List<ProductCategoryQueryModel> GetProductCategoriesWithProducts();
+
     }
 }

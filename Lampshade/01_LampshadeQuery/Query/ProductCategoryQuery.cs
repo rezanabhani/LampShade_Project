@@ -25,6 +25,7 @@ namespace _01_LampshadeQuery.Query
             _inventoryContext = inventoryContext;
         }
 
+
         public List<ProductCategoryQueryModel> GetProductCategories()
         {
             return _context.ProductCategories
@@ -57,6 +58,7 @@ namespace _01_LampshadeQuery.Query
                 {
                     Id = x.Id,
                     Name = x.Name,
+                    CategorySlug = x.Slug,
                     Products = MapProducts(x.Products)
                 }).AsNoTracking().ToList();
 
@@ -96,7 +98,7 @@ namespace _01_LampshadeQuery.Query
                 PictureAlt = product.PictureAlt,
                 PictureTitle = product.PictureTitle,
                 Slug = product.Slug,
-            }).ToList();
+            }).Take(8).ToList();
         }
 
         public ProductCategoryQueryModel GetProductCategoryWithProductsBy(string slug)

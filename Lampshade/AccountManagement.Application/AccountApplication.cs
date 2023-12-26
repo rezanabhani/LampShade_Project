@@ -28,6 +28,17 @@ namespace AccountManagement.Application
             _roleRepository = roleRepository;
         }
 
+        public AccountViewModel GetAccountBy(long id)
+        {
+            var account = _accountRepository.Get(id);
+
+            return new AccountViewModel()
+            {
+                Fullname = account.Fullname,
+                Mobile = account.Mobile
+            };
+        }
+
         public OperationResult Register(RegisterAccount command)
         {
             var operation = new OperationResult();
@@ -150,5 +161,6 @@ namespace AccountManagement.Application
         {
             return _accountRepository.GetAccounts();
         }
+
     }
 }

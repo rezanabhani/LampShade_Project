@@ -59,8 +59,39 @@ public class SmsService : ISmsService
             return false;
         }
     }
+
+    public async Task<bool> SendOrderMessageAsync(string phoneNumber, string ISSUETRACKINGNO)
+    {
+        HttpClient httpClient = new HttpClient();
+
+        httpClient.DefaultRequestHeaders.Add("x-api-key",
+            "XBWbrdy3TShY2Vbc7jS4avjb4dhDtvZ5oSo4J2tY6r8OhBassgTmch2Efw6hxewB");
+
+        VerifySendModel model = new VerifySendModel()
+        {
+            Mobile = phoneNumber,
+            TemplateId = 691610,
+            Parameters = new VerifySendParameterModel[]
+            {
+                new VerifySendParameterModel { Name = "ISSUETRACKINGNO", Value = ISSUETRACKINGNO }
+            }
+        };
+
+        string payload = JsonSerializer.Serialize(model);
+        StringContent stringContent = new(payload, Encoding.UTF8, "application/json");
+
+        HttpResponseMessage response = await httpClient.PostAsync("https://api.sms.ir/v1/send/verify", stringContent);
+
+        if (response.IsSuccessStatusCode)
+        {
+            // SMS sent successfully
+            return true;
+        }
+        else
+        {
+            // Handle the case when SMS sending fails
+            // You can log the error or throw an exception as needed
+            return false;
+        }
+    }
 }
-
-
-
-
