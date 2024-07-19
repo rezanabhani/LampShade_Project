@@ -19,7 +19,7 @@ namespace BlogManagement.Domain.ArticleAgg
         public string CanonicalAddress { get; private set; }
         public long CategoryId { get; private set; }
         public ArticleCategory Category { get; private set; }
-
+//test
 
         public Article(string title, string shortDescription, string description, string picture,
             string pictureAlt, string pictureTitle, DateTime publishDate, string slug, string keywords,
